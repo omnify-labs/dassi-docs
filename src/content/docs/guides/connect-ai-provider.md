@@ -11,9 +11,9 @@ dassi supports all major AI providers, including:
 
 | Provider | Models |
 |----------|--------|
-| **Anthropic** | Claude Opus, Sonnet, Haiku |
-| **OpenAI** | GPT-4o, GPT-4, GPT-3.5 |
-| **Google** | Gemini Pro, Gemini Flash |
+| **Anthropic** | Claude Opus 4.6, Sonnet 4.6, Haiku 4.5 |
+| **OpenAI** | GPT-5.2, GPT-4o, o3 |
+| **Google** | Gemini 3.1 Pro, Gemini 2.5 Flash |
 | **And 50+ more** | Any OpenAI-compatible API |
 
 ## Add your API key
