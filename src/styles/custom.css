@@ -84,9 +84,11 @@ starlight-theme-select {
 	color: #aaaaaa !important;
 }
 
-/* Search icon color */
+/* Search icon: 14px, #999 */
 [data-theme='light'] site-search button[data-open-modal] svg {
 	color: #999999;
+	width: 14px !important;
+	height: 14px !important;
 }
 
 /* Search placeholder text */
@@ -95,14 +97,23 @@ starlight-theme-select {
 	font-size: 12px;
 }
 
-/* Keyboard shortcut badge */
-[data-theme='light'] site-search button[data-open-modal] kbd {
+/* Outer keyboard shortcut badge: single subtle border */
+[data-theme='light'] site-search button[data-open-modal] > kbd {
 	background: transparent !important;
 	border: 1px solid #e5e5e5;
 	border-radius: 4px;
 	color: #cccccc;
 	font-size: 10px !important;
 	padding: 1px 5px !important;
+	gap: 0 !important;
+}
+
+/* Inner kbd elements: no border, no padding */
+[data-theme='light'] site-search button[data-open-modal] > kbd kbd {
+	border: none !important;
+	padding: 0 !important;
+	background: transparent !important;
+	font-size: inherit !important;
 }
 
 [data-theme='light'] site-search button[data-open-modal]:hover {
