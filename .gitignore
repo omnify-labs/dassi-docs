@@ -1,4 +1,45 @@
+# Dependencies
 node_modules/
+
+# Build output
 dist/
 .astro/
+
+# Environment & secrets
+.env
+.env.*
+.env.local
+.env.production
+*.pem
+*.key
+*.cert
+*.p12
+*.pfx
+
+# API keys & credentials
+credentials.json
+service-account*.json
+*-credentials.json
+secrets.json
+*.secret
+
+# IDE & OS
 .DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Internal / proprietary — dassi source code is NOT open source
+internal/
+private/
+proprietary/
+.private/
+
+# Worktrees
+.worktrees/
+
+# Claude Code
+.claude/
