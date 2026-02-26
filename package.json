@@ -1,0 +1,28 @@
+{
+  "name": "dassi-docs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/omnify-labs/dassi-docs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/omnify-labs/dassi-docs/issues"
+  },
+  "homepage": "https://github.com/omnify-labs/dassi-docs#readme",
+  "dependencies": {
+    "@astrojs/starlight": "^0.37.6",
+    "astro": "^5.18.0"
+  }
+}
