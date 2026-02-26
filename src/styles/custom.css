@@ -77,8 +77,8 @@ starlight-theme-select {
 	border: 1px solid #e5e5e5 !important;
 	border-radius: 6px !important;
 	padding: 8px 16px !important;
-	width: 260px !important;
-	max-width: 260px !important;
+	width: 100% !important;
+	max-width: 22rem !important;
 	height: auto !important;
 	font-size: 12px !important;
 	color: #aaaaaa !important;
