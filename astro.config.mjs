@@ -14,6 +14,18 @@ export default defineConfig({
 			expressiveCode: {
 				themes: ['starlight-dark'],
 				useStarlightUiThemeColors: false,
+				styleOverrides: {
+					codeBackground: '#1a1a1a',
+					codeForeground: '#e5e5e5',
+					borderColor: 'transparent',
+					borderRadius: '6px',
+					codePaddingBlock: '16px',
+					codePaddingInline: '20px',
+					codeFontSize: '13px',
+					frames: {
+						frameBoxShadowCssValue: 'none',
+					},
+				},
 			},
 			customCss: ['./src/styles/custom.css'],
 			head: [
