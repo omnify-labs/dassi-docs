@@ -8,6 +8,7 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'dassi docs',
+			favicon: '/favicon.ico',
 			components: {
 				SiteTitle: './src/components/SiteTitle.astro',
 			},
