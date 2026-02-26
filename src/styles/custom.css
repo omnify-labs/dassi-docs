@@ -1,0 +1,28 @@
+/* Load JetBrains Mono from Google Fonts — must be first */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+
+/* Custom Starlight styles to match dassi brand */
+
+:root {
+	/* Use JetBrains Mono to match the main site */
+	--sl-font: 'JetBrains Mono', 'SF Mono', Monaco, Consolas, monospace;
+	--sl-font-mono: 'JetBrains Mono', 'SF Mono', Monaco, Consolas, monospace;
+
+	/* Black/white brand colors */
+	--sl-color-accent-low: #e6e6e6;
+	--sl-color-accent: #000000;
+	--sl-color-accent-high: #333333;
+	--sl-color-white: #ffffff;
+	--sl-color-gray-1: #e5e5e5;
+	--sl-color-gray-2: #c4c4c4;
+	--sl-color-gray-3: #888888;
+	--sl-color-gray-4: #555555;
+	--sl-color-gray-5: #333333;
+	--sl-color-gray-6: #1a1a1a;
+	--sl-color-black: #000000;
+}
+
+/* Hide the theme toggle since we're light-only */
+starlight-theme-select {
+	display: none;
+}
