@@ -15,12 +15,15 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "CC-BY-4.0",
   "type": "commonjs",
   "bugs": {
     "url": "https://github.com/omnify-labs/dassi-docs/issues"
   },
   "homepage": "https://github.com/omnify-labs/dassi-docs#readme",
+  "pnpm": {
+    "onlyBuiltDependencies": ["esbuild", "sharp"]
+  },
   "dependencies": {
     "@astrojs/starlight": "^0.37.6",
     "astro": "^5.18.0"
