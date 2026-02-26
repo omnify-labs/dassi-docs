@@ -10,9 +10,9 @@ Documentation site for **dassi** — an AI browser agent Chrome extension. Built
 ## Commands
 
 ```bash
-npm run dev       # Dev server at localhost:4321
-npm run build     # Production build to dist/
-npm run preview   # Preview production build
+pnpm dev          # Dev server at localhost:4321
+pnpm build        # Production build to dist/
+pnpm preview      # Preview production build
 ```
 
 No test or lint commands are configured.
