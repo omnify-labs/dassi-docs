@@ -2,19 +2,21 @@
 const { siteTitleHref } = Astro.locals.starlightRoute;
 ---
 
-<a href={siteTitleHref} class="site-title sl-flex">
-	<span class="logo-icon">
-		<span class="bracket">[</span>
-		<span class="logo-d">d</span>
-		<span class="bracket">]</span>
-	</span>
-	<span class="logo-text" translate="no">dassi</span>
+<div class="site-title sl-flex">
+	<a href="https://dassi.ai" class="logo-link">
+		<span class="logo-icon">
+			<span class="bracket">[</span>
+			<span class="logo-d">d</span>
+			<span class="bracket">]</span>
+		</span>
+		<span class="logo-text" translate="no">dassi</span>
+	</a>
 	<span class="logo-divider">/</span>
-	<span class="logo-label-group">
+	<a href={siteTitleHref} class="docs-link">
 		<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg>
 		<span class="logo-label">docs</span>
-	</span>
-</a>
+	</a>
+</div>
 
 <style>
 	@layer starlight.core {
@@ -23,10 +25,16 @@ const { siteTitleHref } = Astro.locals.starlightRoute;
 			gap: 8px;
 			font-size: 18px;
 			font-weight: 700;
-			text-decoration: none;
 			white-space: nowrap;
 			min-width: 0;
 			font-family: 'JetBrains Mono', monospace;
+		}
+		.logo-link,
+		.docs-link {
+			display: flex;
+			align-items: center;
+			text-decoration: none;
+			gap: 8px;
 		}
 		.logo-icon {
 			display: flex;
@@ -58,9 +66,7 @@ const { siteTitleHref } = Astro.locals.starlightRoute;
 			color: #dddddd;
 			font-weight: 400;
 		}
-		.logo-label-group {
-			display: flex;
-			align-items: center;
+		.docs-link {
 			gap: 6px;
 			color: #999999;
 		}
