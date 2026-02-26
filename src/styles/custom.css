@@ -143,9 +143,8 @@ starlight-theme-select {
 	color: #cc4a00;
 }
 
-/* Code blocks: dark background #1a1a1a, 6px radius */
+/* Code blocks: 6px radius */
 [data-theme='light'] .sl-markdown-content pre {
-	background-color: #1a1a1a !important;
 	border: none !important;
 	border-radius: 6px;
 }
@@ -181,4 +180,6 @@ starlight-theme-select {
 
 [data-theme='light'] .pagination-links .link-title {
 	color: #000000;
+	font-size: 14px;
+	font-weight: 600;
 }

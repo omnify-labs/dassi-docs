@@ -11,6 +11,10 @@ export default defineConfig({
 			components: {
 				SiteTitle: './src/components/SiteTitle.astro',
 			},
+			expressiveCode: {
+				themes: ['starlight-dark'],
+				useStarlightUiThemeColors: false,
+			},
 			customCss: ['./src/styles/custom.css'],
 			head: [
 				{
