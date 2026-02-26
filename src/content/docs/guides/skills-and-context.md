@@ -1,86 +1,122 @@
 ---
 title: Skills & Context
-description: Teach dassi about yourself and extend its capabilities with skills, context files, and memory.
+description: Teach dassi reusable workflows with skills, give it background knowledge with context files, and save preferences with memory.
 ---
 
-dassi can learn about you and your workflows through three systems: **skills**, **context files**, and **memory**.
+dassi can learn about you and your workflows through three systems: **skills**, **context files**, and **memory**. All three are managed through natural language — just tell dassi what you want.
 
 ## Skills
 
-Skills are reusable prompts that run as shortcuts. They let you trigger complex workflows with a single command.
+Skills are reusable instruction sets that dassi saves and can run again later. Think of them as saved prompts with a name.
 
-### Built-in skills
+### Creating a skill
 
-dassi comes with built-in skills for common tasks. You can browse and run them from the **Skills** section in the sidebar.
-
-### Custom skills
-
-You can create your own skills:
-
-1. Open **Settings** (gear icon in the sidebar toolbar)
-2. Go to the **Skills** section
-3. Click **Create Skill**
-4. Give your skill a name, command, and prompt
-
-For example, you could create a skill called "summarize" that runs:
+Tell dassi to save a workflow as a skill:
 
 ```
-Read this page and give me a 3-bullet summary focused on key takeaways
+Save this as a skill called "weekly-report".
+When I ask for a weekly report, read all my open tabs
+and summarize the key points into a markdown report
+with sections for Highlights, Action Items, and Metrics.
 ```
 
-Then trigger it by typing `/summarize` in the chat.
+dassi will create and store the skill for you.
 
-### Skill options
+### Running a skill
 
-Each skill can include:
-- **Name** — a display name
-- **Command** — the shortcut trigger (e.g., `/summarize`)
-- **Description** — what the skill does
-- **Prompt** — the full instructions dassi follows when the skill runs
+Ask dassi to run a skill by name:
+
+```
+Run the weekly-report skill
+```
+
+Or reference it naturally:
+
+```
+Generate my weekly report
+```
+
+dassi matches your request to installed skills automatically.
+
+### Managing skills
+
+You can manage skills through conversation:
+
+- **List skills** — "What skills do I have installed?"
+- **Read a skill** — "Show me the weekly-report skill"
+- **Update a skill** — "Update the weekly-report skill to also include a timeline section"
+- **Delete a skill** — "Remove the weekly-report skill"
+
+### Installing skills from a URL
+
+If someone shares a skill file, you can install it:
+
+```
+Install the skill from https://example.com/skills/my-skill/SKILL.md
+```
+
+### Skill naming
+
+Skills use kebab-case names like `weekly-report`, `pdf-processing`, or `code-review`. dassi handles the naming automatically when you create a skill, but if you want a specific name, just tell it.
 
 ## Context files
 
-Context files let you give dassi background information it can reference during conversations. This is useful for:
+Context files give dassi background information it can reference during conversations. Unlike skills (which are instructions to follow), context files are knowledge for dassi to draw on.
+
+Good uses for context files:
 
 - Your role and responsibilities
 - Company-specific terminology
 - Preferred writing style or tone
 - Project details and conventions
 
-### Adding context
+### Managing context files
 
-1. Open **Settings**
-2. Go to the **Context** section
-3. Add text files containing information you want dassi to know
+Tell dassi to save context:
 
-dassi reads context files at the start of each conversation, so the information is always available.
+```
+Save this as context: I work at Acme Corp as a product manager.
+Our main product is a B2B SaaS platform. We use formal tone
+in customer communications and casual tone internally.
+```
+
+You can also list, read, update, or delete context files by asking:
+
+```
+What context files do I have?
+```
+
+```
+Update my company context to add that we recently launched a mobile app
+```
 
 ## Memory
 
-dassi can remember things you tell it across conversations. When you say something like:
+dassi can remember things you tell it across conversations:
 
 ```
-Remember that I prefer formal email tone
+Remember that I prefer bullet points over paragraphs
 ```
 
-dassi saves this to its memory and applies it in future conversations.
+dassi saves this and applies it in future conversations.
 
 ### How memory works
 
 - Memory persists across conversations within your account
 - dassi stores memories locally in the extension
-- You can view and manage saved memories in **Settings > Memory**
-- To forget something, tell dassi: "Forget that I prefer formal email tone"
+- To forget something, tell dassi: "Forget that I prefer bullet points"
 
 ### What to save in memory
 
 - Personal preferences (writing tone, formatting style)
 - Frequently used information (your name, title, team)
 - Workflow preferences (how you like tasks structured)
-- Context that applies across many tasks
 
-## Tips
+## Skills vs. context vs. memory
 
-- **Skills for repeated tasks** — if you find yourself typing the same prompt often, create a skill
-- **Context for background** — use context files for information dassi should always know
-- **Memory for preferences** — use memory for things that evolve over time
+| | Skills | Context files | Memory |
+|---|---|---|---|
+| **Purpose** | Reusable workflows | Background knowledge | Quick preferences |
+| **Example** | "Summarize page in 3 bullets" | "Company info and terminology" | "I prefer formal tone" |
+| **Triggered by** | Asking dassi to run it | dassi reads automatically | dassi applies automatically |
+| **Best for** | Repeated tasks | Reference material | Evolving preferences |
