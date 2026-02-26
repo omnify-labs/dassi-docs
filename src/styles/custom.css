@@ -64,6 +64,11 @@ starlight-theme-select {
 	color: #666666 !important;
 }
 
+/* Remove divider line after social icons (theme toggle is hidden) */
+.social-icons::after {
+	display: none !important;
+}
+
 /* ---- Search bar ---- */
 
 /* Search trigger button: match design (bg #FAFAFA, border #E5E5E5, rounded) */
