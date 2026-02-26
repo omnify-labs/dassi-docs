@@ -25,17 +25,17 @@ export default defineConfig({
 				{
 					label: 'Getting Started',
 					items: [
-						{ label: 'Introduction', slug: 'index' },
-						{ label: 'Installation', slug: 'getting-started/installation' },
-						{ label: 'Quick Start', slug: 'getting-started/quick-start' },
+						{ label: 'Introduction', link: '/' },
+						{ label: 'Installation', link: '/getting-started/installation/' },
+						{ label: 'Quick Start', link: '/getting-started/quick-start/' },
 					],
 				},
 				{
 					label: 'Guides',
 					items: [
-						{ label: 'Connect Your AI Provider', slug: 'guides/connect-ai-provider' },
-						{ label: 'Your First Task', slug: 'guides/first-task' },
-						{ label: 'Using the Sidebar', slug: 'guides/using-the-sidebar' },
+						{ label: 'Connect Your AI Provider', link: '/guides/connect-ai-provider/' },
+						{ label: 'Your First Task', link: '/guides/first-task/' },
+						{ label: 'Using the Sidebar', link: '/guides/using-the-sidebar/' },
 					],
 				},
 			],
