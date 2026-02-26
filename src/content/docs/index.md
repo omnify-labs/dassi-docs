@@ -1,30 +1,34 @@
 ---
 title: Introduction
-description: Learn how to use dassi, the AI coworking agent that lives in your browser sidebar.
+description: dassi is an AI browser agent that automates work directly in your Chrome browser.
 ---
 
-dassi is an AI-powered browser agent that works alongside you in a sidebar. It can automate tasks, write emails, fill out forms, and help you work smarter — all from your browser.
+dassi is an AI browser agent Chrome extension. It lives in your browser's side panel and can see, understand, and interact with any web page — automating tasks on your behalf.
 
-## What is dassi?
+## What dassi can do
 
-dassi is a Chrome extension that gives you an AI coworking agent right in your browser. Connect your preferred AI provider (Claude, GPT, Gemini, and 50+ more), and dassi can:
-
-- **See your screen** — dassi understands the page you're on
-- **Take actions** — click, type, navigate, and fill forms on your behalf
-- **Automate workflows** — handle repetitive browser tasks
-- **Write and edit** — draft emails, messages, and documents
+- **See your screen** — dassi reads page content, understands layouts, and takes screenshots to verify its work
+- **Take actions** — click buttons, fill forms, type text, navigate between pages, and manage multiple tabs
+- **Automate workflows** — chain together multi-step tasks like researching across tabs, filling out applications, or extracting data
+- **Write and edit** — draft emails, summarize articles, rewrite text, and compose messages
+- **Create tools** — build mini dashboards, visualizations, and interactive widgets right inside web pages
+- **Remember context** — save knowledge about you and your preferences across conversations
 
 ## How it works
 
 1. **Install** the dassi Chrome extension
-2. **Connect** your AI provider API key
+2. **Sign in** with your Google account
 3. **Open the sidebar** and start a conversation
-4. **Ask dassi** to help with any browser task
+4. **Ask dassi** to help with any browser task — it plans, executes, and verifies the results
 
-dassi runs entirely in your browser. Your data stays local — dassi connects directly to your AI provider without any intermediary servers.
+dassi connects to AI models like Claude, Gemini, and GPT. You can use managed credits (no API key needed) or bring your own OpenAI key.
+
+## Privacy first
+
+dassi runs entirely in your browser. Your browsing data is only sent to the AI provider you choose, and only when you ask dassi for help. No browsing history, passwords, or personal data is collected by dassi.
 
 ## Next steps
 
-- [Install dassi](/getting-started/installation/) — Get the extension from the Chrome Web Store
-- [Quick Start](/getting-started/quick-start/) — Complete your first task in under 2 minutes
-- [Connect your AI provider](/guides/connect-ai-provider/) — Set up Claude, GPT, Gemini, or another LLM
+- [Install dassi](/getting-started/installation/) to get started
+- [Quick start guide](/getting-started/quick-start/) for a 2-minute walkthrough
+- [AI Models & Providers](/guides/connect-ai-provider/) to understand your options
