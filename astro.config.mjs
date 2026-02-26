@@ -50,9 +50,20 @@ export default defineConfig({
 				{
 					label: 'Guides',
 					items: [
-						{ label: 'Connect Your AI Provider', link: '/guides/connect-ai-provider/' },
+						{ label: 'AI Models & Providers', link: '/guides/connect-ai-provider/' },
 						{ label: 'Your First Task', link: '/guides/first-task/' },
 						{ label: 'Using the Sidebar', link: '/guides/using-the-sidebar/' },
+						{ label: 'Browser Automation', link: '/guides/browser-automation/' },
+						{ label: 'Skills & Context', link: '/guides/skills-and-context/' },
+					],
+				},
+				{
+					label: 'Reference',
+					items: [
+						{ label: 'Keyboard Shortcuts', link: '/reference/keyboard-shortcuts/' },
+						{ label: 'Limitations', link: '/reference/limitations/' },
+						{ label: 'Privacy & Security', link: '/reference/privacy-and-security/' },
+						{ label: 'Plans & Billing', link: '/reference/plans-and-billing/' },
 					],
 				},
 			],

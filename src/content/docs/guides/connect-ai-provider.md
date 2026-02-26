@@ -1,53 +1,62 @@
 ---
-title: Connect Your AI Provider
-description: Set up your preferred AI provider to power dassi.
+title: AI Models & Providers
+description: Choose your AI model — use managed credits or bring your own API key.
 ---
 
-dassi works with 50+ AI providers. You bring your own API key, and dassi connects directly to your provider — no middleman.
+dassi supports multiple AI models. You can use managed credits (default, no setup required) or bring your own OpenAI API key.
 
-## Supported providers
+## Managed credits (default)
 
-dassi supports all major AI providers, including:
+When you sign in, dassi automatically provisions managed credits. No API key is needed — just pick a model and start working.
 
-| Provider | Models |
-|----------|--------|
-| **Anthropic** | Claude Opus 4.6, Sonnet 4.6, Haiku 4.5 |
-| **OpenAI** | GPT-5.2, GPT-4o, o3 |
-| **Google** | Gemini 3.1 Pro, Gemini 2.5 Flash |
-| **And 50+ more** | Any OpenAI-compatible API |
+Available models depend on your plan:
 
-## Add your API key
+| Model | Free Trial | Paid plans |
+|-------|-----------|------------|
+| Gemini 3 Pro | yes | yes |
+| Claude Haiku 4.5 | — | yes |
+| Claude Sonnet 4.5 | — | yes |
+| Claude Opus 4.6 | — | yes |
+| Gemini 3 Flash | — | yes |
+| DeepSeek V3.2 | — | yes |
+| GLM 4.7 | — | yes |
 
-1. Open the dassi sidebar by clicking the **dassi icon**
-2. Click the **Settings** gear icon
-3. Select your **AI provider** from the dropdown
-4. Paste your **API key**
-5. Click **Save**
+The default model is **Gemini 3 Pro**. You can switch models in **Settings** at any time.
 
-## Get an API key
+### Choosing a model
 
-If you don't have an API key yet:
+- **Gemini 3 Pro** — great all-around model, fast and capable. Good default choice
+- **Claude Sonnet 4.5** — excellent for writing, analysis, and complex reasoning
+- **Claude Haiku 4.5** — fastest response times, good for simple tasks
+- **Claude Opus 4.6** — most capable, best for complex multi-step tasks
+- **Gemini 3 Flash** — very fast, good for quick questions
 
-- **Anthropic (Claude):** Sign up at [console.anthropic.com](https://console.anthropic.com)
-- **OpenAI (GPT):** Sign up at [platform.openai.com](https://platform.openai.com)
-- **Google (Gemini):** Sign up at [aistudio.google.com](https://aistudio.google.com)
+## Bring your own key (BYOK)
 
-## Using a custom endpoint
+If you prefer to use your own OpenAI API key:
 
-dassi supports any OpenAI-compatible API endpoint. This is useful for:
+1. Open **Settings** (gear icon in the sidebar toolbar)
+2. Select **BYOK** as the billing mode
+3. Enter your **OpenAI API key**
+4. Choose a model:
 
-- Self-hosted models (Ollama, vLLM, etc.)
-- Corporate API proxies
-- Alternative providers
+| Model | Description |
+|-------|-------------|
+| GPT-5 | Most capable OpenAI model |
+| GPT-5 Mini | Balanced performance and cost |
+| GPT-5 Nano | Fastest, most affordable |
 
-To configure a custom endpoint:
+### Getting an OpenAI API key
 
-1. Open **Settings** in the dassi sidebar
-2. Select **Custom** as your provider
-3. Enter your **API endpoint URL**
-4. Enter your **API key** (if required)
-5. Select your **model name**
+1. Sign up at [platform.openai.com](https://platform.openai.com)
+2. Navigate to **API Keys** in your account settings
+3. Click **Create new secret key**
+4. Copy the key and paste it in dassi's settings
 
-## Next steps
+## How dassi uses models
 
-Once connected, try the [Quick Start](/getting-started/quick-start/) to run your first task.
+dassi uses your selected model as the main reasoning engine. For certain visual tasks (like clicking at specific coordinates on a page), dassi automatically uses a faster secondary model to keep things quick and cost-efficient. You don't need to configure this — it happens automatically.
+
+## Switching models
+
+You can switch models at any time from the **Settings** page. The change takes effect for your next message. Your conversation history is preserved when switching models.

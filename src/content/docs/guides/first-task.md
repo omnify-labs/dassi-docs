@@ -3,11 +3,11 @@ title: Your First Task
 description: A detailed walkthrough of using dassi to complete a real browser task.
 ---
 
-This guide walks through a complete example of using dassi to help with a real task.
+This guide walks through a complete example to show how dassi works in practice.
 
 ## Example: Drafting an email reply
 
-Let's say you've received an email and want dassi to help you reply.
+Let's say you've received an email and want help replying.
 
 ### Step 1: Navigate to your email
 
@@ -15,7 +15,7 @@ Open your email client (Gmail, Outlook, etc.) in Chrome.
 
 ### Step 2: Open the dassi sidebar
 
-Click the **dassi icon** in your toolbar. The sidebar opens on the right side of your browser.
+Click the **dassi icon** in your toolbar or press `Alt+Shift+D`.
 
 ### Step 3: Ask dassi to help
 
@@ -27,31 +27,71 @@ Accept the meeting invitation and suggest
 Wednesday at 2pm as an alternative time.
 ```
 
-### Step 4: Review and send
+### Step 4: Watch dassi work
 
 dassi will:
 1. Read the email content on your screen
-2. Draft a reply based on your instructions
-3. Show you the draft for review
+2. Take a screenshot to understand the layout
+3. Draft a reply based on your instructions
+4. Show you the draft in the sidebar
 
-You can then ask dassi to refine the draft, or approve it to have dassi type it into the reply field.
+Each of these steps appears in the **activity section** of the response — you can expand it to see exactly what dassi did.
+
+### Step 5: Review and refine
+
+You can ask dassi to adjust the draft:
+
+```
+Make it more casual and shorter
+```
+
+Once you're happy, ask dassi to type it:
+
+```
+Type this reply into the email compose box and send it
+```
+
+dassi will present a plan before acting — approve it and dassi will fill in the reply field.
 
 ## Tips for effective prompts
 
-- **Be specific** — "Write a polite decline" works better than "reply to this"
-- **Give context** — Tell dassi your role, preferences, or constraints
-- **Iterate** — Ask dassi to adjust tone, length, or content after seeing the first draft
+- **Be specific** — "Write a polite decline mentioning I'm unavailable that week" is better than "reply to this"
+- **Give context** — tell dassi your role, tone preferences, or constraints
+- **Iterate** — ask dassi to adjust tone, length, or content
+- **Use natural language** — talk to dassi like you would a colleague
 
-## What dassi can do
+## More things to try
 
-Beyond email, dassi can help with:
+**Research across multiple sites:**
+```
+Compare the pricing of Notion, Coda, and Confluence.
+Open each site in a new tab and create a comparison table.
+```
 
-- **Research** — "Find the pricing for this product and compare it with competitors"
-- **Data entry** — "Fill out this form with the information from that spreadsheet"
-- **Navigation** — "Go to my account settings and change my notification preferences"
-- **Writing** — "Write a LinkedIn post about this article"
+**Automate data entry:**
+```
+Read the data from this spreadsheet and fill out
+the form on the next tab with each row
+```
+
+**Navigate and configure:**
+```
+Go to my GitHub notification settings and
+disable email notifications for pull request reviews
+```
+
+**Summarize and extract:**
+```
+Read this 10-page article and give me the 5 key takeaways
+```
+
+**Create visualizations:**
+```
+Read the sales data on this page and create
+an interactive bar chart showing monthly trends
+```
 
 ## Next steps
 
-- [Using the Sidebar](/guides/using-the-sidebar/) — Master the sidebar interface
-- [Connect more providers](/guides/connect-ai-provider/) — Try different AI models
+- [Browser Automation](/guides/browser-automation/) — learn what dassi can automate
+- [Skills & Context](/guides/skills-and-context/) — teach dassi about yourself
