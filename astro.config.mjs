@@ -8,8 +8,24 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'dassi docs',
-			logo: {
-				src: './public/icon128.png',
+			components: {
+				SiteTitle: './src/components/SiteTitle.astro',
+			},
+			expressiveCode: {
+				themes: ['starlight-dark'],
+				useStarlightUiThemeColors: false,
+				styleOverrides: {
+					codeBackground: '#1a1a1a',
+					codeForeground: '#e5e5e5',
+					borderColor: 'transparent',
+					borderRadius: '6px',
+					codePaddingBlock: '16px',
+					codePaddingInline: '20px',
+					codeFontSize: '13px',
+					frames: {
+						frameBoxShadowCssValue: 'none',
+					},
+				},
 			},
 			customCss: ['./src/styles/custom.css'],
 			head: [
@@ -40,6 +56,7 @@ export default defineConfig({
 				},
 			],
 			social: [
+				{ icon: 'github', label: 'GitHub', href: 'https://github.com/omnify-labs/dassi-docs' },
 				{ icon: 'discord', label: 'Discord', href: 'https://discord.gg/G6K58Q7xmj' },
 			],
 		}),
