@@ -8,8 +8,8 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'dassi docs',
-			logo: {
-				src: './public/icon128.png',
+			components: {
+				SiteTitle: './src/components/SiteTitle.astro',
 			},
 			customCss: ['./src/styles/custom.css'],
 			head: [
@@ -40,6 +40,7 @@ export default defineConfig({
 				},
 			],
 			social: [
+				{ icon: 'github', label: 'GitHub', href: 'https://github.com/omnify-labs/dassi-docs' },
 				{ icon: 'discord', label: 'Discord', href: 'https://discord.gg/G6K58Q7xmj' },
 			],
 		}),

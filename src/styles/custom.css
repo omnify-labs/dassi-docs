@@ -4,25 +4,181 @@
 /* Custom Starlight styles to match dassi brand */
 
 :root {
-	/* Use JetBrains Mono to match the main site */
+	/* Use JetBrains Mono throughout */
 	--sl-font: 'JetBrains Mono', 'SF Mono', Monaco, Consolas, monospace;
 	--sl-font-mono: 'JetBrains Mono', 'SF Mono', Monaco, Consolas, monospace;
-
-	/* Black/white brand colors */
-	--sl-color-accent-low: #e6e6e6;
-	--sl-color-accent: #000000;
-	--sl-color-accent-high: #333333;
-	--sl-color-white: #ffffff;
-	--sl-color-gray-1: #e5e5e5;
-	--sl-color-gray-2: #c4c4c4;
-	--sl-color-gray-3: #888888;
-	--sl-color-gray-4: #555555;
-	--sl-color-gray-5: #333333;
-	--sl-color-gray-6: #1a1a1a;
-	--sl-color-black: #000000;
 }
 
-/* Hide the theme toggle since we're light-only */
+/* Light-mode color overrides (Starlight swaps white↔black in light mode) */
+:root[data-theme='light'],
+[data-theme='light'] ::backdrop {
+	/* Orange accent: #FF5C00 */
+	--sl-color-accent-high: #FF5C00;
+	--sl-color-accent: #FF5C00;
+	--sl-color-accent-low: #ff5c0015;
+
+	/* Text and background (light mode: white=dark text, black=light bg) */
+	--sl-color-white: #000000;
+	--sl-color-gray-1: #1a1a1a;
+	--sl-color-gray-2: #333333;
+	--sl-color-gray-3: #666666;
+	--sl-color-gray-4: #999999;
+	--sl-color-gray-5: #c4c4c4;
+	--sl-color-gray-6: #e5e5e5;
+	--sl-color-gray-7: #f5f5f5;
+	--sl-color-black: #ffffff;
+
+	--sl-color-bg-sidebar: #ffffff;
+	--sl-color-bg-nav: #ffffff;
+	--sl-color-hairline: #e5e5e5;
+	--sl-color-hairline-light: #e5e5e5;
+	--sl-color-hairline-shade: #e5e5e5;
+
+	/* Typography sizes matching design */
+	--sl-text-h1: 36px;
+	--sl-text-h2: 24px;
+	--sl-text-h3: 20px;
+	--sl-text-body: 14px;
+	--sl-text-sm: 13px;
+	--sl-text-xs: 12px;
+	--sl-line-height: 1.8;
+
+	/* Content width */
+	--sl-content-width: 48rem;
+}
+
+/* Hide the theme toggle — light-only */
 starlight-theme-select {
 	display: none;
+}
+
+/* ---- Header ---- */
+
+.site-title {
+	font-weight: 700 !important;
+	gap: 0.75rem !important;
+}
+
+/* Social icons: gray per design, not accent orange */
+.social-icons a {
+	color: #666666 !important;
+}
+
+/* ---- Sidebar ---- */
+
+/* Section group labels: uppercase, small, bold (design: 13px 700 uppercase) */
+[data-theme='light'] .group-label span {
+	color: #000000;
+	font-weight: 700;
+	font-size: 13px;
+	text-transform: uppercase;
+	letter-spacing: 0.02em;
+}
+
+/* Hide the caret/chevron to match the cleaner design */
+[data-theme='light'] .group-label .caret {
+	color: #999999;
+}
+
+/* Active sidebar item: override Starlight variables within sidebar scope */
+.sidebar-content {
+	--sl-color-text-accent: #ff5c0015;
+	--sl-color-text-invert: #FF5C00;
+}
+
+/* Sidebar link colors */
+[data-theme='light'] .sidebar-content a:not([aria-current='page']) {
+	color: #666666;
+}
+
+[data-theme='light'] .sidebar-content a:not([aria-current='page']):hover {
+	color: #000000;
+}
+
+/* Separators between sidebar sections */
+[data-theme='light'] .sidebar-content .top-level > li + li {
+	border-top: 1px solid #e5e5e5;
+	padding-top: 0.75rem;
+}
+
+/* ---- Right sidebar (Table of Contents) ---- */
+
+/* TOC heading: uppercase to match design "ON THIS PAGE" */
+[data-theme='light'] #starlight__on-this-page {
+	text-transform: uppercase;
+	font-size: 13px;
+	font-weight: 700;
+	letter-spacing: 0.02em;
+}
+
+/* TOC active link */
+[data-theme='light'] starlight-toc a[aria-current='true'] {
+	color: #FF5C00;
+	font-weight: 600;
+}
+
+/* TOC links */
+[data-theme='light'] starlight-toc a {
+	color: #666666;
+}
+
+[data-theme='light'] starlight-toc a:hover {
+	color: #000000;
+}
+
+/* ---- Content area ---- */
+
+/* Body text: 14px with 1.8 line-height from design */
+[data-theme='light'] .sl-markdown-content {
+	font-size: 14px;
+	line-height: 1.8;
+}
+
+/* Links in markdown: orange */
+[data-theme='light'] .sl-markdown-content a {
+	color: #FF5C00;
+}
+
+[data-theme='light'] .sl-markdown-content a:hover {
+	color: #cc4a00;
+}
+
+/* Code blocks: dark background #1a1a1a, 6px radius */
+[data-theme='light'] .sl-markdown-content pre {
+	background-color: #1a1a1a !important;
+	border: none !important;
+	border-radius: 6px;
+}
+
+/* Inline code */
+[data-theme='light'] .sl-markdown-content :not(pre) > code {
+	background-color: #f5f5f5;
+	color: #000000;
+	border: 1px solid #e5e5e5;
+	border-radius: 4px;
+	padding: 0.15em 0.35em;
+}
+
+/* Asides / callouts: orange accent */
+[data-theme='light'] .starlight-aside {
+	border-color: #ff5c0030;
+	background-color: #ff5c0008;
+}
+
+[data-theme='light'] .starlight-aside .starlight-aside__title {
+	color: #FF5C00;
+}
+
+/* ---- Pagination (prev/next) ---- */
+
+[data-theme='light'] .pagination-links a {
+	border-color: #e5e5e5;
+}
+
+[data-theme='light'] .pagination-links a:hover {
+	border-color: #FF5C00;
+}
+
+[data-theme='light'] .pagination-links .link-title {
+	color: #000000;
 }

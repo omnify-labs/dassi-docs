@@ -1,0 +1,48 @@
+---
+const { siteTitleHref } = Astro.locals.starlightRoute;
+---
+
+<a href={siteTitleHref} class="site-title sl-flex">
+	<span class="logo-icon">d</span>
+	<span class="logo-text" translate="no">dassi</span>
+	<span class="logo-divider">/</span>
+	<span class="logo-label">docs</span>
+</a>
+
+<style>
+	@layer starlight.core {
+		.site-title {
+			align-items: center;
+			gap: 0.75rem;
+			font-size: 20px;
+			font-weight: 700;
+			text-decoration: none;
+			white-space: nowrap;
+			min-width: 0;
+		}
+		.logo-icon {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 28px;
+			height: 28px;
+			background: #FF5C00;
+			color: #ffffff;
+			border-radius: 6px;
+			font-size: 16px;
+			font-weight: 700;
+			line-height: 1;
+		}
+		.logo-text {
+			color: #000000;
+		}
+		.logo-divider {
+			color: #cccccc;
+			font-weight: 400;
+		}
+		.logo-label {
+			color: #666666;
+			font-weight: 400;
+		}
+	}
+</style>
