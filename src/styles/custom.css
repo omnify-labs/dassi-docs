@@ -71,12 +71,38 @@ starlight-theme-select {
 
 /* ---- Search bar ---- */
 
-/* Search trigger button: match design (bg #FAFAFA, border #E5E5E5, rounded) */
+/* Search trigger button: match design */
 [data-theme='light'] site-search button[data-open-modal] {
 	background: #fafafa !important;
 	border: 1px solid #e5e5e5 !important;
 	border-radius: 6px !important;
+	padding: 8px 16px !important;
+	width: 260px !important;
+	max-width: 260px !important;
+	height: auto !important;
+	font-size: 12px !important;
+	color: #aaaaaa !important;
+}
+
+/* Search icon color */
+[data-theme='light'] site-search button[data-open-modal] svg {
+	color: #999999;
+}
+
+/* Search placeholder text */
+[data-theme='light'] site-search button[data-open-modal] > span {
 	color: #aaaaaa;
+	font-size: 12px;
+}
+
+/* Keyboard shortcut badge */
+[data-theme='light'] site-search button[data-open-modal] kbd {
+	background: transparent !important;
+	border: 1px solid #e5e5e5;
+	border-radius: 4px;
+	color: #cccccc;
+	font-size: 10px !important;
+	padding: 1px 5px !important;
 }
 
 [data-theme='light'] site-search button[data-open-modal]:hover {
