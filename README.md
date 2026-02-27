@@ -13,13 +13,15 @@ The official documentation site for [dassi](https://dassi.ai) — an AI browser 
 ## Local Development
 
 ```bash
-npm install
-npm run dev        # http://localhost:4321
-npm run build      # production build → dist/
-npm run preview    # preview the production build
+pnpm install
+pnpm dev          # http://localhost:4321
+pnpm build        # production build → dist/
+pnpm preview      # preview the production build
+pnpm typecheck    # Astro type checking
+pnpm lint         # ESLint
 ```
 
-Requires Node.js 18+.
+Requires Node.js 18+ and [pnpm](https://pnpm.io).
 
 ## Project Structure
 
@@ -28,7 +30,8 @@ src/
 ├── content/docs/        # Markdown documentation pages
 │   ├── index.md         # Introduction (home)
 │   ├── getting-started/ # Installation, quick start
-│   └── guides/          # Usage guides
+│   ├── guides/          # Usage guides
+│   └── reference/       # Keyboard shortcuts, limitations, privacy, billing
 ├── components/          # Custom Starlight component overrides
 └── styles/              # Custom CSS theming
 astro.config.mjs         # Site config, sidebar nav, social links
