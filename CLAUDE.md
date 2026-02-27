@@ -13,9 +13,9 @@ Documentation site for **dassi** — an AI browser agent Chrome extension. Built
 pnpm dev          # Dev server at localhost:4321
 pnpm build        # Production build to dist/
 pnpm preview      # Preview production build
+pnpm typecheck    # Astro type checking (astro check)
+pnpm lint         # ESLint with astro plugin
 ```
-
-No test or lint commands are configured.
 
 ## Architecture
 
