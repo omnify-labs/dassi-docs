@@ -7,6 +7,20 @@ Stay up to date with the latest dassi features, improvements, and fixes.
 
 ---
 
+## v0.32.2
+
+### Monthly/Yearly toggle on the Plan tab
+
+The Plan & Billing tab now shows all four plans — BYOK, Starter, Pro, and Max — side by side in a single flat grid. A **Monthly** / **Yearly** toggle above the cards lets you compare prices at both billing intervals without leaving the tab.
+
+Switch to **Yearly** to see the discounted annual price for each plan, with the equivalent monthly cost struck through and a "Save X%" badge so the difference is obvious at a glance. BYOK yearly is $60/year (50% off the monthly rate); managed plans (Starter, Pro, Max) save approximately 17%.
+
+Your current plan appears in the **Current Plan** row at the top. Click **Manage** on that row to switch plans, update payment, or cancel through the Stripe billing portal.
+
+<!-- TODO: screenshot of the new flat tier picker with Yearly selected -->
+
+---
+
 ## v0.23.0
 
 ### Conversation history
