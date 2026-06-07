@@ -85,6 +85,22 @@ When dassi finishes a task, it automatically closes any intermediate tabs it ope
 
 This keeps your browser tidy without you having to close leftover tabs manually.
 
+## App-native integrations
+
+For some apps, Dassi uses a native integration rather than clicking through the UI directly. This is more reliable — it works the same way regardless of UI updates, and completes the action through the app's own internal pipeline.
+
+### Gmail
+
+When you're on Gmail, Dassi can send email through Gmail's own message pipeline instead of simulating button clicks in the compose window. The message lands correctly in your Sent folder, and behaves exactly like any email you'd send yourself.
+
+Just ask naturally:
+
+```
+Email alice@example.com and let her know the Q1 report is ready. Subject: Q1 Report.
+```
+
+Dassi confirms your intent before sending. It supports recipients (`to`, `cc`, `bcc`), subjects, and plain-text or simple HTML bodies.
+
 ## Plan approval
 
 Before visiting new domains or taking actions on sensitive pages, dassi presents a plan showing:

@@ -7,6 +7,24 @@ Stay up to date with the latest dassi features, improvements, and fixes.
 
 ---
 
+## v0.34.0
+
+### Scheduled tasks
+
+You can now set up recurring daily tasks that Dassi runs automatically. Ask Dassi in the side panel with a time, a site, and what to do — Dassi shows a consent card, and once you approve, the task runs every day at that time, even when the side panel is closed, as long as Chrome is open. [Learn more](/guides/scheduled-tasks/)
+
+Manage all your schedules from the **Schedules** tab in Options — pause, resume, or delete tasks at any time.
+
+### Gmail integration
+
+When you're on Gmail, Dassi can now send email through Gmail's own message pipeline instead of clicking through the compose UI. Messages land correctly in your Sent folder and support `to`, `cc`, `bcc`, subjects, and plain-text or HTML bodies. [Learn more](/guides/browser-automation/#gmail)
+
+### Bug fixes
+
+- **Scheduled tasks now fail independently.** Previously, a single recurring task that failed repeatedly could affect all tasks in the session. Now each task tracks failures on its own — after three consecutive failures, only that task is paused. It stays visible in the **Schedules** tab and can be resumed once the underlying problem is fixed.
+
+---
+
 ## v0.23.0
 
 ### Conversation history
