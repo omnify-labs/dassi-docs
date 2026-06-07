@@ -41,5 +41,7 @@ proprietary/
 # Worktrees
 .worktrees/
 
-# Claude Code
-.claude/
+# Claude Code (ignore local settings, but track shared skills)
+.claude/*
+!.claude/skills/
+.claude/skills/*/settings.local.json
