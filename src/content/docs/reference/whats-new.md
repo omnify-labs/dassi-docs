@@ -7,6 +7,43 @@ Stay up to date with the latest dassi features, improvements, and fixes.
 
 ---
 
+## v0.28.0
+
+### AI-generated user scripts
+
+Dassi can now write and manage persistent JavaScript snippets — called user scripts — that run automatically on every future visit to matching sites. Tell Dassi what you want in chat ("highlight all TODO comments on our wiki", "pre-fill this form field"), and it creates, registers, and manages the script for you.
+
+A confirmation card appears in the chat after each script is created, with an **Undo** button so you can remove a script immediately if you change your mind.
+
+The first time you ask Dassi to create a script, a setup card walks you through two one-time Chrome permissions. [Learn more](/guides/user-scripts/)
+
+<!-- TODO: screenshot of user script confirmation card -->
+
+### More providers for BYOK
+
+Bring your own API key from four new providers:
+
+- **DeepSeek** — DeepSeek V4 Pro and V4 Flash
+- **OpenRouter** — routes to GPT, Grok, Kimi, Qwen, and more via a single key
+- **Kimi (Moonshot AI)** — Kimi K2.6 and K2.5
+- **xAI (Grok)** — Grok 4.3, Grok 4 Fast, and Grok 4 Fast (1M context)
+
+Provider configuration is now in the **Plan** tab (the **BYOK** section), replacing the separate Connection tab. [Learn more](/guides/connect-ai-provider/)
+
+### Model refresh
+
+The BYOK model lineup is updated: OpenAI adds **GPT-5.5**, Anthropic adds **Claude Opus 4.7**, and Google's **Gemini 3.1 Flash Lite** is now generally available.
+
+### Welcome screen on fresh install
+
+A welcome modal appears the first time you open Dassi after installing it, pointing you to key features including Remote control.
+
+### Remote control reliability
+
+The Telegram push subscription layer now automatically detects and repairs drift, so Remote control sessions stay connected more reliably after long idle periods.
+
+---
+
 ## v0.23.0
 
 ### Conversation history

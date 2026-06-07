@@ -54,6 +54,7 @@ export default defineConfig({
 						{ label: 'Your First Task', link: '/guides/first-task/' },
 						{ label: 'Using the Sidebar', link: '/guides/using-the-sidebar/' },
 						{ label: 'Browser Automation', link: '/guides/browser-automation/' },
+						{ label: 'Persistent Scripts', link: '/guides/user-scripts/' },
 						{ label: 'Skills & Context', link: '/guides/skills-and-context/' },
 					],
 				},
