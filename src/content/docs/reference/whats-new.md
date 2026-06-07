@@ -7,6 +7,30 @@ Stay up to date with the latest dassi features, improvements, and fixes.
 
 ---
 
+## v0.24.1
+
+### Save on BYOK with annual billing
+
+The BYOK plan card in **Settings > Plan** now has a **Monthly / Annual** toggle. Annual billing costs $12 per year — a 90% saving compared to paying $10 month-to-month. Switch the toggle before you subscribe to pick the interval that works for you.
+
+The Plan & Billing settings page is also reorganized into two clear sections — **BYOK Plans** (bring your own API key) and **Managed Plans** (credits included) — so it's easier to compare your options at a glance.
+
+### Your account now lives in the settings header
+
+Your name and profile picture appear in the top-right corner of the Settings page header, alongside a sign-out button. There's no longer a separate Account tab.
+
+### Rate dassi from the sidebar
+
+Open the sidebar overflow menu (**⋮**) and select **Rate dassi** to leave a review on the Chrome Web Store.
+
+### Bug fixes and reliability
+
+- Completing a subscription checkout now automatically dismisses the paywall prompt in the chat panel — no manual reload needed.
+- Tasks that stop responding mid-run now auto-recover instead of staying stuck indefinitely.
+- Subscription status refreshes each time you open the sidebar and after each task completes, so plan changes take effect without a manual reload.
+
+---
+
 ## v0.23.0
 
 ### Conversation history

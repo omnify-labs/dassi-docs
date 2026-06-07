@@ -9,7 +9,7 @@ dassi offers a free trial and several paid options. All plans include full brows
 
 | | Free Trial | BYOK | Starter | Pro | Max |
 |---|---|---|---|---|---|
-| **Price** | $0 | $10/mo | $30/mo | $100/mo | $300/mo |
+| **Price** | $0 | $10/mo or $12/yr | $30/mo | $100/mo | $300/mo |
 | **Managed credits** | Limited | — | Included | Included | Included |
 | **Models** | Gemini 3 Pro | OpenAI models | All models | All models | All models |
 | **Custom skills** | yes | yes | yes | yes | yes |
@@ -19,9 +19,11 @@ dassi offers a free trial and several paid options. All plans include full brows
 
 Try dassi at no cost. Includes access to Gemini 3 Pro with limited managed credits. Good for trying dassi before committing to a paid plan.
 
-### BYOK — $10/month
+### BYOK — $10/month or $12/year
 
-Bring your own OpenAI API key. You pay OpenAI directly for model usage, and dassi charges $10/month for platform access. Available OpenAI models include GPT-5, GPT-5 Mini, and GPT-5 Nano.
+Bring your own OpenAI API key. You pay OpenAI directly for model usage, and dassi charges a flat platform fee. Choose monthly ($10/month) or annual ($12/year) billing — the annual option saves 90% compared to month-to-month. You can switch between intervals on the **Plan** card in Settings before you subscribe.
+
+Available OpenAI models include GPT-5, GPT-5 Mini, and GPT-5 Nano.
 
 See [AI Models & Providers](/guides/connect-ai-provider/) for setup instructions.
 
