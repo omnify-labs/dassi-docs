@@ -33,12 +33,15 @@ The default model is **Gemini 3 Pro**. You can switch models in **Settings** at 
 
 ## Bring your own key (BYOK)
 
-If you prefer to use your own OpenAI API key:
+If you prefer to use your own API key, dassi supports OpenAI, Anthropic, and Google AI. An active BYOK subscription is required — see [Plans & Billing](/reference/plans-and-billing/) for pricing. If you connect a key without a subscription, dassi shows a banner where you can subscribe or switch to free managed credits.
+
+To connect an API key:
 
 1. Open **Settings** (gear icon in the sidebar toolbar)
-2. Select **BYOK** as the billing mode
-3. Enter your **OpenAI API key**
-4. Choose a model:
+2. Select **Connection** and choose your provider
+3. Enter your API key and pick a model
+
+Available OpenAI models:
 
 | Model | Description |
 |-------|-------------|

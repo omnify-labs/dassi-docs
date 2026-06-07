@@ -7,21 +7,28 @@ dassi offers a free trial and several paid options. All plans include full brows
 
 ## Plans
 
-| | Free Trial | BYOK | Starter | Pro | Max |
-|---|---|---|---|---|---|
-| **Price** | $0 | $10/mo | $30/mo | $100/mo | $300/mo |
-| **Managed credits** | Limited | — | Included | Included | Included |
-| **Models** | Gemini 3 Pro | OpenAI models | All models | All models | All models |
-| **Custom skills** | yes | yes | yes | yes | yes |
-| **Priority support** | — | — | — | yes | yes |
+| | Free Trial | BYOK | BYOK Annual | Starter | Pro | Max |
+|---|---|---|---|---|---|---|
+| **Price** | $0 | $10/mo | $12/yr | $30/mo | $100/mo | $300/mo |
+| **Managed credits** | Limited | — | — | Included | Included | Included |
+| **Models** | Gemini 3 Pro | OpenAI, Anthropic, Google | OpenAI, Anthropic, Google | All models | All models | All models |
+| **Custom skills** | yes | yes | yes | yes | yes | yes |
+| **Priority support** | — | — | — | — | yes | yes |
 
 ### Free Trial
 
 Try dassi at no cost. Includes access to Gemini 3 Pro with limited managed credits. Good for trying dassi before committing to a paid plan.
 
-### BYOK — $10/month
+### BYOK — $10/month or $12/year
 
-Bring your own OpenAI API key. You pay OpenAI directly for model usage, and dassi charges $10/month for platform access. Available OpenAI models include GPT-5, GPT-5 Mini, and GPT-5 Nano.
+Bring your own API key for OpenAI, Anthropic, or Google AI. You pay the AI provider directly for model usage, and dassi charges a platform fee for access. An active BYOK subscription is required before you can connect an API key.
+
+Two billing options are available:
+
+- **Monthly** — $10/month
+- **Annual** — $12/year (90% off the monthly rate)
+
+If you connect an API key without an active subscription, a banner appears in the chat where you can subscribe or switch to free managed credits.
 
 See [AI Models & Providers](/guides/connect-ai-provider/) for setup instructions.
 

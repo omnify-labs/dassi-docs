@@ -36,7 +36,13 @@ Or reference it naturally:
 Generate my weekly report
 ```
 
-dassi matches your request to installed skills automatically.
+If you have a skill installed that matches what you're asking for, dassi picks it up and applies it automatically — no explicit invocation needed.
+
+#### Using the slash command menu
+
+Type `/` in the message box to open a command menu listing all your installed skills and built-in commands. Start typing after the slash to filter the list — for example, `/weekly` narrows results to skills with "weekly" in their name. Use ↑↓ to navigate and press Enter or Tab to run the selected command. Press Escape to dismiss without running anything.
+
+<!-- TODO: screenshot of slash command menu -->
 
 ### Managing skills
 

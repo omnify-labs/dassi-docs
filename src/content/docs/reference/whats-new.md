@@ -7,6 +7,38 @@ Stay up to date with the latest dassi features, improvements, and fixes.
 
 ---
 
+## v0.24.0
+
+### Slash command menu for skills and commands
+
+Type `/` in the message box to open a floating menu listing all your installed skills and built-in commands. Start typing to filter the list, use ↑↓ to navigate, then press Enter or Tab to run. Press Escape to dismiss without running anything.
+
+[Learn more about running skills](/guides/skills-and-context/#running-a-skill)
+
+### Dassi automatically applies relevant skills
+
+When you have skills installed, dassi now recognizes when one applies to your request and uses it without you having to explicitly ask. You can still invoke skills by name or through the slash command menu.
+
+[Learn more about skills](/guides/skills-and-context/)
+
+### Smarter response formatting
+
+Dassi adapts how it presents information based on your task: shopping and recommendation requests surface images and direct links, comparison questions use tables, drafting tasks offer multiple variations, and multi-step workflows show progress summaries.
+
+### BYOK subscription required for API key providers
+
+Using your own OpenAI, Anthropic, or Google AI key now requires an active BYOK plan. A new annual option ($12/yr) is available alongside the monthly plan ($10/mo).
+
+If you're on a BYOK provider without an active subscription, a banner appears in the chat with options to subscribe or switch to free managed credits.
+
+[See plans](/reference/plans-and-billing/)
+
+### Bug fixes
+
+- Dassi no longer asks you to log in before navigating to authenticated services like Gmail, GitHub, or Google Search Console. It goes directly to the page and only surfaces an auth issue if it actually hits a login wall.
+
+---
+
 ## v0.23.0
 
 ### Conversation history
