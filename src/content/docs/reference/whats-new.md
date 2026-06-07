@@ -7,6 +7,30 @@ Stay up to date with the latest dassi features, improvements, and fixes.
 
 ---
 
+## v0.26.0
+
+### Redesigned Plan & Billing tab
+
+The **Settings > Plan** tab now has dedicated sections for **Managed Plans** and **BYOK**, so you can browse and subscribe to each independently. A **Current Plan** card at the top shows all active subscriptions at a glance. Each active subscription has its own **Manage** button that opens the Stripe billing portal scoped to just that subscription. [Learn more](/reference/plans-and-billing/)
+
+### BYOK and Managed plans can now run together
+
+You can now subscribe to both a BYOK plan and a Managed plan at the same time. The Current Plan card shows both, and managing one subscription doesn't affect the other. [Learn more](/reference/plans-and-billing/#running-byok-and-a-managed-plan-together)
+
+### BYOK annual billing
+
+BYOK is now available as an annual subscription for $12/year — a 90% saving compared to the monthly rate. The BYOK section shows both Monthly and Annual cards so you can pick the interval that works for you.
+
+### Starter repriced to $25/month
+
+The Starter managed plan dropped from $30/month to $25/month. Everything included in Starter stays the same.
+
+### Bug fixes
+
+- The dassi sidebar now reliably refreshes state from the correct storage area, fixing edge cases where plan or provider changes weren't reflected until the extension reloaded.
+
+---
+
 ## v0.23.0
 
 ### Conversation history
