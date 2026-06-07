@@ -7,6 +7,16 @@ Stay up to date with the latest dassi features, improvements, and fixes.
 
 ---
 
+## v0.27.0
+
+### Control Dassi from Telegram
+
+You can now send tasks to Dassi from your phone via Telegram and get replies without touching your computer. Link your Telegram account in **Settings → Gateway**, then message `@dassi_ai_bot` with whatever you want done. Dassi runs the task in Chrome and replies when it's finished — attachments and photos work too.
+
+The same conversation appears in Dassi's side panel, so you can watch tasks run live or review them later. If you have Dassi on multiple computers, you can link them all and use `/use <label>` to choose which one handles requests. [Learn more](/guides/telegram-remote-control/)
+
+---
+
 ## v0.23.0
 
 ### Conversation history
