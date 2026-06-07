@@ -1,0 +1,44 @@
+name: Docs Style Review
+
+# Runs the docs-review skill on PRs that touch documentation, so generated and
+# hand-written docs are checked against Dassi's writing style. Complements the
+# generic Claude Code Review (claude-code-review.yml) with style-specific feedback.
+
+on:
+  pull_request:
+    types: [opened, synchronize, ready_for_review, reopened]
+    paths:
+      - 'src/content/docs/**'
+
+jobs:
+  docs-style-review:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+      issues: read
+      id-token: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Run docs-review
+        uses: anthropics/claude-code-action@v1
+        with:
+          claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          # Generated docs PRs are opened by the github-actions bot from the dassi
+          # release workflow; allow that trusted dispatcher so this review still runs.
+          allowed_bots: 'github-actions'
+          prompt: |
+            Invoke the `docs-review` skill (in this repo at .claude/skills/docs-review/)
+            and review the documentation changes in this PR against it.
+
+            PR: ${{ github.repository }}/pull/${{ github.event.pull_request.number }}
+
+            Look only at files under src/content/docs/. Post your review as a single PR
+            comment. You MUST always leave a comment: if there are no style issues, post
+            "LGTM — docs-review found no style issues."
+          claude_args: '--model sonnet --allowedTools "Bash(gh pr:*),Bash(gh api:*),Read,Grep,Glob,Skill(docs-review),mcp__github_inline_comment__create_inline_comment"'
