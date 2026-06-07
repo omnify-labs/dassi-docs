@@ -24,6 +24,8 @@ dassi can read and understand any web page:
 
 All tabs dassi opens are grouped into a Chrome tab group, keeping your workspace organized.
 
+Dassi verifies each URL it visits actually resolves to a live page. It detects soft 404s, robot-check pages, and silent redirects (where a page returns an HTTP 200 but the content is a "not found" or homepage). If a URL turns out to be dead or redirected, Dassi won't cite it as a valid result.
+
 ### Clicking and interaction
 
 - **Click buttons and links** — dassi identifies elements by their role, text, and position
@@ -57,6 +59,8 @@ For advanced tasks, dassi can run JavaScript in the page to:
 - Interact with complex web applications
 - Create interactive dashboards and visualizations
 - Inject custom tools directly into the page
+
+When Dassi runs JavaScript that clicks a button, submits a form, or fires a UI event, it automatically checks whether the page actually changed afterward. If the URL and title both stayed the same — a sign the action may not have worked — Dassi treats the result as unconfirmed and investigates further rather than assuming success.
 
 ### Screenshots
 

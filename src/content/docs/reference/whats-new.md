@@ -7,6 +7,38 @@ Stay up to date with the latest dassi features, improvements, and fixes.
 
 ---
 
+## v0.31.1
+
+### More reliable JavaScript actions
+
+When Dassi uses JavaScript to click a button, submit a form, or dispatch a UI event, it now checks whether the action actually had an effect. If the page URL and title both stayed the same after a state-changing script ran — a strong sign the click missed its target or the event was rejected — Dassi flags the result as unconfirmed and investigates further instead of reporting success. This eliminates a class of false "I did it" responses, most notably on single-page apps where a failed submit returns no error.
+
+### Dead-link and redirect detection
+
+Dassi now verifies every URL it visits resolves to a live page. It detects soft 404s, robot-check pages, and silent redirects (where a URL appears to succeed but lands on a homepage or generic search page). When Dassi finds a dead or redirected URL it won't cite that address as a valid result — it'll tell you what happened and try a different approach.
+
+### Gemini 3.5 Flash available via Google BYOK
+
+If you've connected your own Google AI Studio API key, Gemini 3.5 Flash is now available as a model option. See [AI Models & Providers](/guides/connect-ai-provider/) for setup details.
+
+### Title-change trigger for scheduled tasks
+
+Scheduled tasks can now use a `"title"` trigger in addition to the default timer. A title-triggered task wakes up whenever the watched tab's page title changes — no polling interval required. This is ideal for monitoring inboxes, chat apps, and dashboards that reflect new activity in their title (for example, "(28) WhatsApp Web" or "Inbox (12) – Gmail"). The trigger mutes itself while Dassi is working and briefly after, so Dassi's own activity can't accidentally re-trigger the task.
+
+### Smarter tool routing on WebMCP pages
+
+On web pages that expose [WebMCP](https://github.com/google-deepmind/model-context-protocol) tools, Dassi now preferentially calls those page-native tools instead of DOM scraping. Page-declared tools return canonical IDs and confirmed state rather than scraped values, so automation on WebMCP-enabled apps is more reliable.
+
+### Telegram: typing indicator
+
+The Telegram integration now shows a "typing…" indicator while Dassi is processing your request, giving you visual feedback right away.
+
+### Bug fixes
+
+- Fixed `fetch_url` incorrectly sending a request body on GET and HEAD requests, which caused some servers to reject the call.
+
+---
+
 ## v0.23.0
 
 ### Conversation history

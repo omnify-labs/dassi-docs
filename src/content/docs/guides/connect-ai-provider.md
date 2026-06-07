@@ -33,25 +33,36 @@ The default model is **Gemini 3 Pro**. You can switch models in **Settings** at 
 
 ## Bring your own key (BYOK)
 
-If you prefer to use your own OpenAI API key:
+If you prefer to use your own API key, dassi supports several providers:
 
 1. Open **Settings** (gear icon in the sidebar toolbar)
 2. Select **BYOK** as the billing mode
-3. Enter your **OpenAI API key**
-4. Choose a model:
+3. Choose a provider, enter your API key, and select a model
+
+### OpenAI
 
 | Model | Description |
 |-------|-------------|
-| GPT-5 | Most capable OpenAI model |
-| GPT-5 Mini | Balanced performance and cost |
-| GPT-5 Nano | Fastest, most affordable |
+| GPT-5.5 | Most capable OpenAI model |
+| GPT-5.4 | Balanced performance and cost |
+| GPT-5.4 mini | Faster and more affordable |
+| GPT-4o mini | Budget-friendly option |
 
-### Getting an OpenAI API key
+To get an OpenAI API key: sign up at [platform.openai.com](https://platform.openai.com), go to **API Keys**, and click **Create new secret key**.
 
-1. Sign up at [platform.openai.com](https://platform.openai.com)
-2. Navigate to **API Keys** in your account settings
-3. Click **Create new secret key**
-4. Copy the key and paste it in dassi's settings
+### Google Gemini
+
+| Model | Description |
+|-------|-------------|
+| Gemini 3.5 Flash | Fast and capable, 1M context |
+| Gemini 3.1 Pro Preview | Most capable Gemini model |
+| Gemini 3.1 Flash Lite | Efficient, lower cost |
+
+To get a Google AI Studio API key: visit [aistudio.google.com](https://aistudio.google.com), open **Get API key**, and create a key for your project.
+
+### Other providers
+
+Dassi also supports Anthropic, DeepSeek, OpenRouter, xAI Grok, Moonshot Kimi, and more. Open **Settings → Connections** to see all available providers and their supported models.
 
 ## How dassi uses models
 
