@@ -60,6 +60,7 @@ export default defineConfig({
 				{
 					label: 'Reference',
 					items: [
+						{ label: "What's New", link: '/reference/whats-new/' },
 						{ label: 'Keyboard Shortcuts', link: '/reference/keyboard-shortcuts/' },
 						{ label: 'Limitations', link: '/reference/limitations/' },
 						{ label: 'Privacy & Security', link: '/reference/privacy-and-security/' },

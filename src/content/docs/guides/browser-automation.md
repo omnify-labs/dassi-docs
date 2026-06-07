@@ -79,6 +79,12 @@ and create a price comparison table.
 
 All tabs stay within the same Chrome tab group, and dassi can switch between them as needed.
 
+### Automatic tab cleanup
+
+When dassi finishes a task, it automatically closes any intermediate tabs it opened along the way — like search results pages or reference sites it visited during research. Only the tabs with your final deliverables stay open.
+
+This keeps your browser tidy without you having to close leftover tabs manually.
+
 ## Plan approval
 
 Before visiting new domains or taking actions on sensitive pages, dassi presents a plan showing:
