@@ -58,6 +58,16 @@ For advanced tasks, dassi can run JavaScript in the page to:
 - Create interactive dashboards and visualizations
 - Inject custom tools directly into the page
 
+### Persistent site tools
+
+dassi can install lightweight JavaScript tools on specific websites that persist across sessions. Once installed, dassi can call these tools whenever it visits a matching page — without re-injecting code each time.
+
+This is useful for giving dassi a specialized capability on a site you use regularly. For example, you might ask dassi to install a tool on a job board that structures listings into a consistent format, and it will reuse that same tool on future visits.
+
+Installed tools show up in **Settings > User Scripts**. You can delete any tool there if you no longer want it, or ask dassi directly: "Remove the tool you installed on LinkedIn."
+
+<!-- TODO: screenshot of User Scripts settings panel -->
+
 ### Screenshots
 
 dassi takes screenshots throughout its work to:

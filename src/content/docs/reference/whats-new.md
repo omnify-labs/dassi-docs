@@ -7,6 +7,34 @@ Stay up to date with the latest dassi features, improvements, and fixes.
 
 ---
 
+## v0.29.0
+
+### Persistent site tools
+
+dassi can now install lightweight JavaScript tools directly on specific websites that persist across sessions. Once installed, dassi calls them automatically on matching pages without re-injecting code each time. You can view and delete installed tools in **Settings > User Scripts**. [Learn more](/guides/browser-automation/#persistent-site-tools)
+
+### More models on OpenRouter
+
+The OpenRouter provider now includes Qwen 3 (vision and text-only reasoning variants), Z.ai GLM (vision and text-only), and MiniMax M2.7, alongside the existing GPT-5.5, Grok 4, Kimi K2.6, and Llama 4 Scout. [See the full model list](/guides/connect-ai-provider/#openrouter)
+
+### Vision capability warning
+
+When you select a text-only model (one that can't analyze screenshots), dassi now shows a **⚠ No vision** badge next to the model name and a persistent reminder below the chat input. Models without vision still work well for writing, coding, and reasoning tasks. [Learn more](/guides/connect-ai-provider/#vision-capability)
+
+### Improved subscription management
+
+The **Manage** button on the Current Plan card now opens a dropdown with separate **Switch plan** and **Cancel subscription** options. [Learn more](/reference/plans-and-billing/#managing-your-subscription)
+
+### BYOK on managed plans
+
+Starter, Pro, and Max subscribers can now connect their own API keys (BYOK) in addition to using managed credits.
+
+### Richer skill details
+
+The skill detail view in **Settings > Skills** now shows each skill's token footprint (always-loaded tokens vs. on-activation tokens), any tool restrictions, and custom metadata from the skill's specification. [Learn more](/guides/skills-and-context/#skill-details)
+
+---
+
 ## v0.23.0
 
 ### Conversation history

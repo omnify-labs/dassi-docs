@@ -47,6 +47,17 @@ You can manage skills through conversation:
 - **Update a skill** — "Update the weekly-report skill to also include a timeline section"
 - **Delete a skill** — "Remove the weekly-report skill"
 
+### Skill details
+
+You can also view skills directly in **Settings > Skills**. Click any skill to open its detail view, which shows:
+
+- **Token footprint** — how many tokens the skill adds to every message (always loaded), and how many more load only when the skill activates. Lighter skills have less impact on response times.
+- **Allowed tools** — if the skill restricts dassi to a specific set of tools, those are listed here.
+- **Metadata** — any custom fields the skill author included in its specification.
+- **Instructions** — the full rendered instructions dassi follows when the skill activates.
+
+From the detail view you can also edit or delete the skill.
+
 ### Installing skills from a URL
 
 If someone shares a skill file, you can install it:
