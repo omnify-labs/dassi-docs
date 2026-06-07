@@ -7,6 +7,20 @@ Stay up to date with the latest dassi features, improvements, and fixes.
 
 ---
 
+## v0.26.2
+
+### Refreshed provider icons in Connection settings
+
+The **Connection** settings tab now shows each AI provider's official logo — the ChatGPT mark for OpenAI, Claude's logo for Anthropic, and Gemini's gradient icon for Google — alongside each provider's full product name. It's much easier to tell at a glance which provider you're connecting or have already connected. [Learn more](/guides/connect-ai-provider/)
+
+<!-- TODO: screenshot of the Connection tab with the three provider cards -->
+
+### Enter key works correctly in rich text editors
+
+Dassi now handles Enter correctly when typing into rich text editors like Gmail compose, Slack, and LinkedIn messaging. Previously, Enter in these editors would insert a raw line break instead of triggering the editor's own Enter handler, which could cause unexpected behavior when submitting messages or creating paragraph breaks. The fix applies automatically — no settings change needed.
+
+---
+
 ## v0.23.0
 
 ### Conversation history
