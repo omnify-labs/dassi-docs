@@ -7,6 +7,28 @@ Stay up to date with the latest dassi features, improvements, and fixes.
 
 ---
 
+## v0.26.3
+
+### File references
+
+You can now give Dassi persistent access to files and folders on your computer. Add references in **Settings → References**, then pin the ones you want to share for a given conversation. Dassi can browse directories, read documents and code files, and write new files inside any pinned reference — so you can ask it to, say, read a folder of invoices or write a script to your project directory. [Learn more](/guides/file-references/)
+
+### Background task status bar
+
+When scheduled background tasks are active, a status bar now appears at the top of the chat. Each task shows a preview of its instruction, how often it runs, and a **Stop** button. A green dot means the task is running normally; a red dot means it stopped due to an error.
+
+If Dassi exhausts your AI budget while running background tasks, it automatically cancels all scheduled tasks for that session, shows a red **!** badge on the extension icon, and sends a desktop notification.
+
+### Settings tab order
+
+The **Plan** tab now appears first in the settings navigation, and the BYOK pricing section is the default view within it.
+
+### Bug fix
+
+The `/compact` command now correctly reloads the agent's working context after compressing conversation history, so subsequent messages reflect the compacted summary.
+
+---
+
 ## v0.23.0
 
 ### Conversation history

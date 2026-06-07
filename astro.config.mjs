@@ -55,6 +55,7 @@ export default defineConfig({
 						{ label: 'Using the Sidebar', link: '/guides/using-the-sidebar/' },
 						{ label: 'Browser Automation', link: '/guides/browser-automation/' },
 						{ label: 'Skills & Context', link: '/guides/skills-and-context/' },
+						{ label: 'File References', link: '/guides/file-references/' },
 					],
 				},
 				{
