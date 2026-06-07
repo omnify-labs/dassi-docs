@@ -7,6 +7,25 @@ Stay up to date with the latest dassi features, improvements, and fixes.
 
 ---
 
+## v0.32.1
+
+### Free trial: $3 per day for your first 7 days
+
+New accounts now get $3 in free managed credits every day for the first 7 days. Each day's credits are separate — unused credit doesn't carry over to the next day, so it's worth using Dassi while the trial is active.
+
+When you install Dassi, the welcome screen shows the offer. Sign in to claim it.
+
+See [Plans & Billing](/reference/plans-and-billing/) for details on what managed credits cover.
+
+<!-- TODO: screenshot of welcome modal -->
+
+### Bug fixes
+
+- Signing in or out from the options page (or an OAuth popup) now immediately updates the sidebar panel, without needing to close and reopen it.
+- New accounts are no longer incorrectly blocked by a paywall before Dassi finishes setting up the account.
+
+---
+
 ## v0.23.0
 
 ### Conversation history

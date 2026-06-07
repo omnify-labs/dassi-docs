@@ -17,7 +17,7 @@ dassi offers a free trial and several paid options. All plans include full brows
 
 ### Free Trial
 
-Try dassi at no cost. Includes access to Gemini 3 Pro with limited managed credits. Good for trying dassi before committing to a paid plan.
+New accounts get $3 in free managed credits every day for the first 7 days. Each day's allocation is independent — unused credit doesn't roll over to the next day. Sign in to activate it; no payment info required.
 
 ### BYOK — $10/month
 
