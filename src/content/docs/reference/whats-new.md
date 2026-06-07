@@ -7,6 +7,36 @@ Stay up to date with the latest dassi features, improvements, and fixes.
 
 ---
 
+## v0.33.0
+
+### Automate WhatsApp Web
+
+Dassi now works with WhatsApp Web. Open [web.whatsapp.com](https://web.whatsapp.com) in a tab and Dassi automatically gains 12 tools for reading messages, sending text and files, reacting, searching chats, and managing group members. Every write action asks for your confirmation before it runs. [Learn more](/guides/whatsapp/)
+
+<!-- TODO: screenshot of WhatsApp tools in action -->
+
+### Connect to Azure, Ollama, or any OpenAI-compatible endpoint
+
+You can now point Dassi at any server that speaks the OpenAI Chat Completions API — Azure OpenAI, LiteLLM, Ollama, vLLM, or any self-hosted inference proxy. Enter a base URL, model ID, and API key in the **Custom (OpenAI-compatible)** card in **Settings → Connection**. [Learn more](/guides/connect-ai-provider/#custom-openai-compatible-endpoint)
+
+### New default model: Gemini 3.5 Flash
+
+Managed accounts now default to **Gemini 3.5 Flash**, which is faster and more cost-efficient than the previous default. You can switch to any other available model in **Settings** at any time.
+
+### Updates apply automatically
+
+When Chrome downloads a new version of Dassi, it now applies the update in the background without waiting for a browser restart — as long as no task is running and the sidebar isn't open.
+
+### Token and cost tracking with /usage
+
+Type `/usage` in the message composer to see a breakdown of how many tokens the current task and the full session have used, along with the estimated API cost.
+
+### Bug fixes and improvements
+
+- WebMCP tools now surface the full underlying error message when something goes wrong on the page, instead of a generic failure notice.
+
+---
+
 ## v0.23.0
 
 ### Conversation history
