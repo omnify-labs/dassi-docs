@@ -7,6 +7,24 @@ Stay up to date with the latest dassi features, improvements, and fixes.
 
 ---
 
+## v0.26.1
+
+### Sign in with Google for free Gemini access
+
+You can now connect your Google account to use Gemini models through Google's Cloud Code Assist free tier — no subscription or API key required. In **Settings → Connection**, find the Google row and click **Sign In**. Dassi opens Google's login page, you grant access, and Dassi automatically provisions a Cloud Code Assist project. [Learn more](/guides/connect-ai-provider/#sign-in-with-google)
+
+<!-- TODO: screenshot of Google sign-in button in Connection tab -->
+
+### Clearer plan page
+
+Your active plan is now easier to spot: the button on your current tier turns a deeper orange and reads **Current**, replacing the small badge that used to sit at the top of the card. The **RECOMMENDED** badge stays visible on its card at all times, even when you've selected a different tier, so you can always see which plan Dassi suggests.
+
+### Bug fixes
+
+- The Google sign-in button on the settings overlay now shows Google's official brand mark.
+
+---
+
 ## v0.23.0
 
 ### Conversation history

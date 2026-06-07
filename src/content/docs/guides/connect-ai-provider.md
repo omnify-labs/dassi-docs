@@ -57,6 +57,30 @@ If you prefer to use your own OpenAI API key:
 
 dassi uses your selected model as the main reasoning engine. For certain visual tasks (like clicking at specific coordinates on a page), dassi automatically uses a faster secondary model to keep things quick and cost-efficient. You don't need to configure this — it happens automatically.
 
+## Sign in with Google
+
+If you have a personal Google account, you can connect it to use Gemini models through Google's Cloud Code Assist free tier — no API key needed.
+
+1. Open **Settings** (gear icon in the sidebar toolbar)
+2. Go to the **Connection** tab
+3. Find the **Google** row under "Other providers"
+4. Click **Sign In** — a new tab opens to accounts.google.com
+5. Sign in with your Google account and grant the requested permissions
+6. Dassi automatically provisions a Cloud Code Assist project for your account
+7. Once connected, Gemini models are available in your model selector
+
+Dassi shows your Google account email in the Connection tab once you're signed in. To disconnect, click **Disconnect** in the Google row.
+
+**Accounts that may not work with this option:**
+
+- Google Workspace accounts managed by an organization
+- Accounts subject to VPC Service Controls
+- Accounts that already have a paid Cloud Code Assist subscription without a provisioned project
+
+If your account isn't eligible, Dassi shows an error message and you can connect a Google API key instead — see below.
+
+If the sign-in tab closes but nothing connects, Google may still be setting up your account in the background. Wait a moment and try signing in again.
+
 ## Switching models
 
 You can switch models at any time from the **Settings** page. The change takes effect for your next message. Your conversation history is preserved when switching models.
