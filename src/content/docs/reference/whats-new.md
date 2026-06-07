@@ -7,6 +7,42 @@ Stay up to date with the latest dassi features, improvements, and fixes.
 
 ---
 
+## v0.31.0
+
+### Four new BYOK providers: Groq, Cerebras, HuggingFace, and Mistral
+
+You can now bring your own API key for four more providers — Groq, Cerebras, HuggingFace, and Mistral — alongside the existing lineup of OpenAI, Google, Anthropic, DeepSeek, OpenRouter, Kimi, and xAI. Each new provider shows up as its own card in **Settings → Connections**. Add your key, pick a model, and Dassi routes your tasks through it.
+
+[See all supported BYOK providers](/guides/connect-ai-provider/#supported-byok-providers)
+
+### Telegram voice notes
+
+If you use Dassi through Telegram, you can now send a voice note instead of typing. Dassi transcribes it using Whisper and treats the text as your prompt. You'll need a BYOK key for either OpenAI or Groq, and you pick which one handles transcription in **Settings → Preferences → Voice transcription**.
+
+[Set up voice transcription](/guides/connect-ai-provider/#voice-transcription-for-telegram)
+
+### Import skill bundles from .zip files
+
+The **Import Skill** dialog now accepts `.zip` bundles in addition to a SKILL.md URL. A bundle is a folder containing `SKILL.md` at the root, plus optional `references/` and `assets/` subdirectories, zipped together. Drop the file in and Dassi installs the skill along with all its included text files.
+
+[Import a skill bundle](/guides/skills-and-context/#importing-a-skill-bundle)
+
+### German language support
+
+The Dassi interface is now available in German. Switch the language in **Settings → Preferences**.
+
+### Contact tab in Settings
+
+A new **Contact** tab in Settings gives you quick access to the support email, Discord, and Reddit community — without leaving your browser.
+
+### Bug fixes
+
+- Adding a BYOK key while on a free trial no longer clears your remaining free-tier credits.
+- The notification gateway now automatically recovers a stale push endpoint when the service worker wakes — this fixes occasional missed Telegram notifications.
+- Signing in from the Settings page now triggers proper account provisioning.
+
+---
+
 ## v0.23.0
 
 ### Conversation history

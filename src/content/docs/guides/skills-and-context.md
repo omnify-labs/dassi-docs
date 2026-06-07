@@ -49,11 +49,25 @@ You can manage skills through conversation:
 
 ### Installing skills from a URL
 
-If someone shares a skill file, you can install it:
+If someone shares a skill file, you can install it by asking Dassi:
 
 ```
 Install the skill from https://example.com/skills/my-skill/SKILL.md
 ```
+
+You can also import from the Settings UI: open **Settings → Skills**, click **Import Skill**, paste the URL, and click **Import**.
+
+### Importing a skill bundle
+
+Some skills come packaged as a `.zip` bundle — a folder containing `SKILL.md` at the root, plus optional `references/` and `assets/` subdirectories with supporting files. This is useful for skills that need sample documents, templates, or lookup tables to do their job.
+
+To install a bundled skill:
+
+1. Open **Settings** (gear icon in the sidebar toolbar) and go to the **Skills** tab.
+2. Click **Import Skill**.
+3. Click **Choose .zip file…** and select the bundle.
+
+Dassi validates the archive, installs the skill, and makes the included reference files available for it to read during execution. The bundle must be 10 MB or smaller (compressed), and binary files like images and fonts are skipped automatically — only text files are stored.
 
 ### Skill naming
 
