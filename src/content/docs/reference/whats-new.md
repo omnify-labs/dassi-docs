@@ -7,6 +7,30 @@ Stay up to date with the latest dassi features, improvements, and fixes.
 
 ---
 
+## v0.34.1
+
+### Annual pricing in the Plans tab
+
+The **Plans & Billing** tab now defaults to the yearly billing view and shows annual prices as a per-month-billed-annually figure — so a plan billed at $120/year displays as $10/month. Use the **Monthly / Yearly** toggle to compare both intervals side by side. Choosing annual billing saves up to 50% across all plans.
+
+The button on each plan card now reads "Get Starter", "Get Pro", and so on, so it's clear which tier you're selecting before you commit.
+
+[See Plans & Billing](/reference/plans-and-billing/)
+
+### Model picker now scrolls
+
+The model dropdown in the sidebar now scrolls when there are more models than fit on screen. This was most noticeable when several AI providers were connected at the same time.
+
+### CLI: multiple Chrome profiles
+
+If you use the Dassi CLI with more than one Chrome profile open, each profile now registers with the CLI daemon using a stable install ID and an optional label. This lets CLI commands reliably target the right browser when multiple profiles are running.
+
+### Bug fixes
+
+- Model picker dropdown overflowed the panel when many providers were connected. It now scrolls.
+
+---
+
 ## v0.23.0
 
 ### Conversation history
