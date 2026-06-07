@@ -7,6 +7,27 @@ Stay up to date with the latest dassi features, improvements, and fixes.
 
 ---
 
+## v0.30.0
+
+### Cross-tab image capture
+
+dassi can now pick up an image from one web page and use it as an attachment on another — without any manual downloading. For example, it can copy a product photo from a catalog and attach it to an upload field on a different site.
+
+Captured images respect the source page's login session, so photos behind authentication work the same as public ones. [Learn more](/guides/browser-automation/#image-capture)
+
+### Telegram reaction feedback
+
+When you send dassi a task via Telegram, your message now gets a 👀 reaction as soon as dassi picks it up. You'll see ✅ when the task completes and ❌ if something goes wrong — so you always know the state of your request without waiting for a reply.
+
+### More reliable handling of long tasks and large pages
+
+Two under-the-hood improvements make extended tasks more consistent:
+
+- **Screenshot memory** — screenshots dassi takes during a session are now stored locally. If a long task triggers context compression, dassi can still retrieve and reason about earlier screenshots rather than losing them.
+- **Large content handling** — when a page produces a very large amount of text (search results, documentation, data exports), dassi now saves it to local storage and reads it in chunks instead of loading everything into context at once. This prevents context overload on content-heavy pages.
+
+---
+
 ## v0.23.0
 
 ### Conversation history
