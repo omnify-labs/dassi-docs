@@ -7,6 +7,14 @@ Stay up to date with the latest dassi features, improvements, and fixes.
 
 ---
 
+## v0.23.1
+
+### Bug fixes
+
+- Desktop notifications now consistently show "Agent completed the task" as the message body. Previously the body sometimes repeated the app name instead. The task name (tab group title) is still appended as context when available.
+
+---
+
 ## v0.23.0
 
 ### Conversation history
