@@ -104,6 +104,17 @@ Click **Switch Away** to jump to another tab outside the agent's workspace. dass
 To receive notifications when dassi finishes, make sure desktop notifications are enabled in **Settings > Notifications**.
 :::
 
+## Background task status
+
+When scheduled background tasks are running, a status bar appears at the top of the chat area. Each task shows:
+
+- A **colored dot** — green means active, red means the task stopped due to an error
+- A **preview** of the task instruction (truncated if long)
+- How often the task runs (for example, "every 5 min")
+- A **Stop** button to cancel that task
+
+If dassi runs out of AI budget while running scheduled tasks, it automatically cancels all of them for that session, puts a red **!** badge on the extension icon, and sends a desktop notification so you know what happened. The badge clears the next time you open the side panel.
+
 ## Plan approval
 
 Before visiting new websites or taking sensitive actions, dassi may present a **plan** for your approval. The plan shows:

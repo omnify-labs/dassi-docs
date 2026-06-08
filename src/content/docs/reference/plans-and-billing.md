@@ -37,6 +37,12 @@ Higher credit allocation for heavy use. Includes priority support.
 
 The highest credit allocation for power users and teams with intensive automation needs.
 
+## Billing intervals
+
+You can pay monthly or annually. Use the **Monthly / Yearly** toggle in **Settings > Plan & Billing** to compare. When you choose yearly, each plan card shows the annual price as a per-month-billed-annually figure so you can compare it directly to the monthly option. Annual billing saves up to 50% across all plans.
+
+The prices in the table above are monthly-billed rates. Annual rates are shown live in the Plans tab.
+
 ## Managed credits
 
 Managed credits cover the cost of AI model usage. Each message you send uses credits based on:
