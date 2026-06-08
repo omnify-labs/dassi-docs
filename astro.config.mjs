@@ -55,6 +55,11 @@ export default defineConfig({
 						{ label: 'Using the Sidebar', link: '/guides/using-the-sidebar/' },
 						{ label: 'Browser Automation', link: '/guides/browser-automation/' },
 						{ label: 'Skills & Context', link: '/guides/skills-and-context/' },
+						{ label: 'File References', link: '/guides/file-references/' },
+						{ label: 'Persistent Scripts', link: '/guides/user-scripts/' },
+						{ label: 'Scheduled Tasks', link: '/guides/scheduled-tasks/' },
+						{ label: 'Telegram Remote Control', link: '/guides/telegram-remote-control/' },
+						{ label: 'Automate WhatsApp Web', link: '/guides/whatsapp/' },
 					],
 				},
 				{
