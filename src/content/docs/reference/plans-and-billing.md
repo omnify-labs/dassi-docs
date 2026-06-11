@@ -43,6 +43,15 @@ You can pay monthly or annually. Use the **Monthly / Yearly** toggle in **Settin
 
 The prices in the table above are monthly-billed rates. Annual rates are shown live in the Plans tab.
 
+## One-time purchases with WeChat Pay
+
+If Dassi's interface language is set to Chinese, a **微信支付** (WeChat Pay) button appears on each plan card in **Settings → Plan & Billing**. This lets you purchase any tier as a one-time payment — no recurring subscription required.
+
+- Selecting the **Monthly** interval and clicking **微信支付** grants access for 30 days at the monthly price.
+- Selecting the **Yearly** interval grants access for 365 days at the annual price.
+
+Prices are in USD. Stripe shows the ¥ equivalent at checkout. When the term ends, access expires on its own — there's no auto-renew. One-time purchases aren't available to people who already have an active subscription.
+
 ## Managed credits
 
 Managed credits cover the cost of AI model usage. Each message you send uses credits based on:
