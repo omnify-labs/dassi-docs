@@ -7,6 +7,22 @@ Stay up to date with the latest dassi features, improvements, and fixes.
 
 ---
 
+## v0.35.0
+
+### Pay with WeChat
+
+If your Dassi interface language is set to Chinese, plan cards in **Settings → Plan & Billing** now show a **微信支付** (WeChat Pay) button. This lets you buy any tier — BYOK, Starter, Pro, or Max — as a one-time payment without signing up for a recurring subscription.
+
+The term matches the billing interval toggle: 30 days at the monthly price, or 365 days at the annual price. Prices are in USD; Stripe shows the ¥ equivalent at checkout. The purchase doesn't auto-renew — when the term ends, access expires automatically.
+
+The WeChat Pay button only appears when you have no active subscription. [See Plans & Billing](/reference/plans-and-billing/)
+
+### Bug fix: monthly credits on annual plans
+
+Annual managed subscribers (Starter, Pro, and Max) were only receiving their tier's credit allowance once per year — when the annual invoice was paid — rather than monthly. This is now fixed. If you're on an annual plan, your credit refreshes every month throughout the year.
+
+---
+
 ## v0.34.1
 
 ### Annual pricing in the Plans tab
