@@ -11,7 +11,7 @@ When you sign in, dassi automatically provisions managed credits. No API key is 
 
 Available models depend on your plan:
 
-| Model | Free | Paid plans |
+| Model | Free credit | Paid plans |
 |-------|-----------|------------|
 | Gemini 3.5 Flash | yes | yes |
 | Gemini 3 Pro | yes | yes |
