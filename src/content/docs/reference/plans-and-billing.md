@@ -1,23 +1,23 @@
 ---
 title: Plans & Billing
-description: dassi pricing plans — Free Trial, BYOK, Starter, Pro, and Max.
+description: dassi pricing plans — Free, BYOK, Starter, Pro, and Max.
 ---
 
-dassi offers a free trial and several paid options. All plans include full browser automation capabilities.
+dassi offers a free tier and several paid options. All plans include full browser automation capabilities.
 
 ## Plans
 
-| | Free Trial | BYOK | Starter | Pro | Max |
+| | Free | BYOK | Starter | Pro | Max |
 |---|---|---|---|---|---|
-| **Price** | $0 | $10/mo | $30/mo | $100/mo | $300/mo |
-| **Managed credits** | Limited | — | Included | Included | Included |
+| **Price** | $0 | $10/mo | $25/mo | $100/mo | $300/mo |
+| **Managed credits** | $5 one-time | — | Included | Included | Included |
 | **Models** | Gemini 3 Pro | OpenAI models | All models | All models | All models |
 | **Custom skills** | yes | yes | yes | yes | yes |
 | **Priority support** | — | — | — | yes | yes |
 
-### Free Trial
+### Free
 
-Try dassi at no cost. Includes access to Gemini 3 Pro with limited managed credits. Good for trying dassi before committing to a paid plan.
+Try dassi at no cost. New accounts get a one-time $5 in managed credits and access to Gemini 3 Pro — no credit card. Good for trying dassi before committing to a paid plan.
 
 ### BYOK — $10/month
 
@@ -25,7 +25,7 @@ Bring your own OpenAI API key. You pay OpenAI directly for model usage, and dass
 
 See [AI Models & Providers](/guides/connect-ai-provider/) for setup instructions.
 
-### Starter — $30/month
+### Starter — $25/month
 
 Unlocks all managed models (Claude Sonnet 4.5, Claude Opus 4.6, Gemini 3 Flash, DeepSeek V3.2, GLM 4.7) with managed credits. No API key needed.
 

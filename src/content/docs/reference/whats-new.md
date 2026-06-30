@@ -111,9 +111,9 @@ Your current plan appears in the **Current Plan** row at the top. Click **Manage
 
 ## v0.32.1
 
-### Free trial: $3 per day for your first 7 days
+### Free credit for new users
 
-New accounts now get $3 in free managed credits every day for the first 7 days. Each day's credits are separate — unused credit doesn't carry over to the next day, so it's worth using Dassi while the trial is active.
+New accounts now get $5 in free managed credits to get started — no credit card. Use it to try Dassi before committing to a paid plan.
 
 When you install Dassi, the welcome screen shows the offer. Sign in to claim it.
 
