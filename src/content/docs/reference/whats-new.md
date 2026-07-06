@@ -7,6 +7,24 @@ Stay up to date with the latest dassi features, improvements, and fixes.
 
 ---
 
+## v0.39.0
+
+### Task dashboard at app.dassi.ai
+
+A new web page, [app.dassi.ai](https://app.dassi.ai), shows every dassi task across your browser in one place — what's running, what needs your approval, what's scheduled, and what's recently finished. Type a prompt into its command bar to start a new task without opening a tab first. [Learn more](/guides/task-dashboard/)
+
+### Custom endpoints: no API key required, plus adjustable timeout
+
+The **Custom (OpenAI-compatible)** connection card no longer requires an API key — servers that don't need auth, like LM Studio, Ollama, and vLLM, can leave the field blank. Plain HTTP base URLs are now accepted for any host, not just `localhost`, so self-hosted servers elsewhere on your LAN connect too.
+
+A new **Advanced** section lets you set how long dassi waits for the model to start responding (10–600 seconds, default 600) — useful for large local models with a slow first token. If a request fails right after a successful connection, dassi now shows a specific message pointing at the server's CORS settings instead of a generic network error. [Learn more](/guides/connect-ai-provider/#custom-openai-compatible-endpoint)
+
+### Auto-approve sessions no longer expire
+
+Choosing **Approve + auto-approve rest of session** on a plan used to stop auto-approving after 20 plans or 30 minutes, whichever came first. It now stays active for the whole conversation until you click **Stop**.
+
+---
+
 ## v0.35.0
 
 ### Pay with WeChat

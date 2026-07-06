@@ -70,17 +70,22 @@ You can connect any server that speaks the [OpenAI Chat Completions API](https:/
 2. Find the **Custom (OpenAI-compatible)** card and click **Add endpoint**
 3. Enter the **Base URL** of your endpoint — for example, `https://my-resource.openai.azure.com/openai/v1` for Azure or `http://localhost:11434` for a local Ollama server
 4. Enter the **Model ID** — the exact identifier your server expects, e.g. `gpt-4o`, `llama3.2`, or `mistral-7b`
-5. Enter your **API key**. For Ollama running locally, enter any non-empty string (e.g. `ollama`)
+5. Enter your **API key**, if your server needs one. Servers that don't require auth (LM Studio, Ollama, vLLM) can leave this blank
 6. Click **Connect** — Chrome will ask to allow access to that endpoint, then dassi verifies the connection
 
 ### Supported model families
 
 Dassi accepts model IDs from these families: GPT, Claude, Gemini/Gemma, Grok, Kimi/Moonshot, DeepSeek, Llama, Qwen, Mistral/Mixtral, Phi, Command-R, GLM, Nemotron, and Yi. If your model ID doesn't match a supported family, the connection will be blocked with a message telling you which families are accepted.
 
+### Advanced: response timeout
+
+Click **Advanced** in the Custom card to set a **response timeout** — how long dassi waits for the model to start responding before giving up. It defaults to 600 seconds and can be set as low as 10. Raise it if you're running a large local model that takes a while to produce its first token; lower it if you'd rather fail fast on a slow or stuck server.
+
 ### Notes
 
-- Local servers using plain HTTP (e.g. `http://localhost:11434`) are allowed. Remote endpoints must use HTTPS.
+- Plain HTTP base URLs (e.g. `http://localhost:11434` or `http://192.168.1.20:11434`) are allowed for the custom endpoint, since self-hosted servers on your machine or LAN often don't have HTTPS set up. Named presets like Azure still require HTTPS.
 - Dassi normalizes your base URL to end with `/v1`, so entering `http://localhost:11434` or `http://localhost:11434/v1` connects to the same endpoint.
+- If a request fails right after connecting successfully, it's usually the server's CORS policy blocking dassi's requests rather than a bad connection. For Ollama, restart it with `OLLAMA_ORIGINS=<your-origin> ollama serve` to allow the extension's origin, then retry.
 
 ## How dassi uses models
 

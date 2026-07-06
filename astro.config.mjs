@@ -53,6 +53,7 @@ export default defineConfig({
 						{ label: 'AI Models & Providers', link: '/guides/connect-ai-provider/' },
 						{ label: 'Your First Task', link: '/guides/first-task/' },
 						{ label: 'Using the Sidebar', link: '/guides/using-the-sidebar/' },
+						{ label: 'Task Dashboard', link: '/guides/task-dashboard/' },
 						{ label: 'Browser Automation', link: '/guides/browser-automation/' },
 						{ label: 'Skills & Context', link: '/guides/skills-and-context/' },
 						{ label: 'File References', link: '/guides/file-references/' },

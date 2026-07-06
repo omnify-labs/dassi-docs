@@ -124,6 +124,8 @@ Before visiting new websites or taking sensitive actions, dassi may present a **
 
 Click **Approve** to proceed or **Reject** to stop. dassi will not act until you approve.
 
+If you're comfortable letting dassi keep going without asking each time, click **Approve + auto-approve rest of session** instead. dassi auto-approves further plans for the rest of that conversation. A strip appears above the composer while this is active — click **Stop** at any time to go back to approving plans one by one.
+
 ## Visual feedback
 
 When dassi is actively controlling a browser tab:
