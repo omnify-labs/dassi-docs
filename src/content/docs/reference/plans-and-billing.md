@@ -1,19 +1,19 @@
 ---
 title: Plans & Billing
-description: dassi pricing plans — Free, BYOK, Starter, Pro, and Max.
+description: dassi pricing plans — Free, BYOK, Starter, and Pro.
 ---
 
 dassi offers a free tier and several paid options. All plans include full browser automation capabilities.
 
 ## Plans
 
-| | Free | BYOK | Starter | Pro | Max |
-|---|---|---|---|---|---|
-| **Price** | $0 | $10/mo | $25/mo | $100/mo | $300/mo |
-| **Managed credits** | $5 one-time | — | Included | Included | Included |
-| **Models** | Gemini 3 Pro, 3.5 Flash | OpenAI models | All models | All models | All models |
-| **Custom skills** | yes | yes | yes | yes | yes |
-| **Priority support** | — | — | — | yes | yes |
+| | Free | BYOK | Starter | Pro |
+|---|---|---|---|---|
+| **Price** | $0 | $10/mo | $25/mo | $100/mo |
+| **Managed credits** | $5 one-time | — | $25/mo | $120/mo |
+| **Models** | Gemini 3 Pro, 3.5 Flash | OpenAI models | All models | All models |
+| **Custom skills** | yes | yes | yes | yes |
+| **Priority support** | — | — | — | yes |
 
 ### Free
 
@@ -27,15 +27,11 @@ See [AI Models & Providers](/guides/connect-ai-provider/) for setup instructions
 
 ### Starter — $25/month
 
-Unlocks all managed models (Claude Sonnet 4.5, Claude Opus 4.6, Gemini 3 Flash, DeepSeek V3.2, GLM 4.7) with managed credits. No API key needed.
+Unlocks all managed models (Claude Sonnet 4.5, Claude Opus 4.6, Gemini 3 Flash, DeepSeek V3.2, GLM 4.7) with $25 of managed credit a month. No API key needed.
 
 ### Pro — $100/month
 
-Higher credit allocation for heavy use. Includes priority support.
-
-### Max — $300/month
-
-The highest credit allocation for power users and teams with intensive automation needs.
+$120 of managed credit a month for heavy use. Includes priority support.
 
 ## Billing intervals
 
@@ -60,7 +56,7 @@ Managed credits cover the cost of AI model usage. Each message you send uses cre
 - The complexity of the task (longer conversations use more credits)
 - Screenshot and page content processing
 
-Paid-plan credits refresh monthly with your billing cycle; the Free tier's $5 is a one-time credit that doesn't refresh. You can track your usage in **Settings > Billing**.
+Paid-plan credits refresh monthly with your billing cycle; the Free tier's $5 is a one-time credit that doesn't refresh. You can track your usage in **Settings > Billing** — Starter and Pro subscribers see a usage bar on their Current Plan row that turns red once they've used 80% of that month's credit. If you're running low, a small badge also appears next to the model name in the sidebar showing the percentage of credit you have left.
 
 ## Managing your subscription
 
