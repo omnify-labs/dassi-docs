@@ -7,6 +7,45 @@ Stay up to date with the latest dassi features, improvements, and fixes.
 
 ---
 
+## v0.41.0
+
+### Follow-up suggestions after every reply
+
+After dassi finishes a reply, up to three suggested next messages appear as chips above the message composer — quick ideas for what to ask next, based on what you just discussed. Click one to drop it into the composer so you can edit it before sending; it doesn't send automatically. Generation runs on dassi's own servers, so it never touches your API key or plan credits, and it works the same way whether you're on a managed plan or BYOK. If nothing useful comes to mind, no chips appear — there's nothing to configure.
+
+### Read PDFs open in a tab
+
+dassi can now read the text of a PDF that's open in a browser tab, whether you opened it yourself or dassi navigated there as part of a task. If a PDF is a scanned image with no selectable text, dassi looks at the first several pages visually instead of giving up. Reading a PDF on a site dassi doesn't already have access to triggers the same permission prompt you'd see for any other page — grant access and it continues.
+
+### Flexible schedules for recurring tasks
+
+[Scheduled tasks](/guides/scheduled-tasks/) aren't limited to "every day" anymore. Ask for a schedule that runs every few days, on specific weekdays, or on a day of the month, and dassi sets it up accordingly:
+
+```
+Every Friday at 09:00, check my calendar for next week and email me a summary.
+```
+
+```
+On the last day of every month, download my bank statement and log the total in my budget spreadsheet.
+```
+
+The consent card and the **Schedules** tab both show a plain-language label for whatever you set up — "Every Friday at 09:00", "Monthly on the last day at 18:00", and so on — so it's easy to confirm you got it right.
+
+### See how much of your plan you've used
+
+The **Plan & Billing** tab now shows a usage bar on your current plan, so Starter and Pro subscribers can see at a glance how much of their monthly credit they've used — it turns red once you've crossed 80%. The Starter and Pro cards also list the actual monthly credit included ($25 and $120) instead of a vague usage multiplier. If you're running low, a small badge next to the model name in the sidebar shows the percentage of credit you have left once you've used more than 80%.
+
+### Bug fixes and improvements
+
+- **User scripts fail loudly instead of silently.** If dassi writes a broken JavaScript snippet for a persistent site tool, it's now caught and rejected before being saved — previously a broken script could report success and only fail later, when it actually ran on the page.
+- **dassi double-checks fast-moving facts before writing them into a plan.** Asked to research something like "the top 3 X", dassi now verifies current information in the browser before committing to a worklist, instead of occasionally leaning on out-of-date training knowledge for rankings, prices, or recent events.
+- **Stalled responses now retry automatically.** If a model stream stalls mid-response, dassi retries once on a fresh connection before showing an error — most stalls now resolve without you noticing.
+- Clicking a scheduled task's "Running your scheduled task on…" desktop notification now correctly jumps to that task's tab.
+- Fixed a visual bug where the glowing "dassi is controlling your browser" overlay could appear unstyled, with an oversized icon and a non-functional Stop button.
+- When you interrupt a task, the chat now shows a clear note — "Interrupted — send a message to tell Dassi what to do instead" — instead of a raw status marker.
+
+---
+
 ## v0.39.0
 
 ### Task dashboard at app.dassi.ai

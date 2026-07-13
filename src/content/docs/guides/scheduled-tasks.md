@@ -1,9 +1,9 @@
 ---
 title: Scheduled tasks
-description: Set up recurring daily tasks that Dassi runs for you automatically — even when you're not watching.
+description: Set up recurring tasks that Dassi runs for you automatically — even when you're not watching.
 ---
 
-Scheduled tasks let you tell Dassi to do something every day at a specific time, on a specific site, on your behalf. Once you've confirmed a task, it runs whether or not the side panel is open.
+Scheduled tasks let you tell Dassi to do something on a recurring schedule, on a specific site, on your behalf. Once you've confirmed a task, it runs whether or not the side panel is open.
 
 ## Why use scheduled tasks
 
@@ -32,6 +32,26 @@ Each evening at 18:00, open my X home timeline and like the top 3 posts.
 ```
 
 Dassi will prepare the task and show you a consent card before activating it.
+
+### Recurrence options
+
+By default a task runs daily, but you can ask for other patterns too:
+
+```
+Every other day at 08:30, check my flight status and text me if it changed.
+```
+
+```
+Every weekday at 09:00, post our team's GitHub activity summary to Slack.
+```
+
+```
+On the 1st of every month, open our expense tracker and email me last month's total.
+```
+
+Dassi understands "every N days," specific weekdays (including "weekdays" and "weekends"), and a day of the month (including "the last day of the month," which adjusts for shorter months). The consent card and the Schedules tab both show a plain-language label for the schedule you set, like "Every Friday at 09:00" or "Monthly on the last day at 18:00," so you can confirm it's right before it runs.
+
+To change a schedule's recurrence or time later, delete it and create a new one — there's no in-place edit, so the consent card appears again for the new version.
 
 ## Confirm the task
 
@@ -70,5 +90,5 @@ If a task fails three times in a row, Dassi pauses it automatically and marks it
 
 - **Chrome must be open.** Scheduled tasks don't run if Chrome isn't running. If Chrome was closed when a task was due, Dassi runs it shortly after you reopen Chrome.
 - **Runs on your device.** Tasks run in your browser using your logged-in sessions and cookies — Dassi isn't hosted in the cloud. If you're logged out of a site, the task will fail.
-- **Once per day.** Each schedule fires once a day at the specified time. Per-minute or per-hour scheduling isn't supported.
+- **Once a day, at most.** A schedule fires at most once a day, at the time and recurrence pattern you set. Per-minute or per-hour scheduling isn't supported.
 - **Timezone required.** Specify a timezone in your prompt ("9:00 Eastern", "17:00 Europe/London") so Dassi schedules the task correctly. If you don't, Dassi infers it from your browser's local timezone.

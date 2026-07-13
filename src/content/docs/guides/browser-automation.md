@@ -14,6 +14,7 @@ dassi can read and understand any web page:
 - **Full page content** — reads text, headings, links, and structure
 - **Interactive elements** — identifies buttons, inputs, dropdowns, and other controls
 - **Screenshots** — takes visual snapshots to verify its work and understand complex layouts
+- **PDFs** — reads the text of a PDF open in a browser tab, whether you had it open already or dassi navigated there as part of a task. If a PDF is a scanned image with no selectable text, dassi looks at the pages visually instead
 
 ### Navigation
 

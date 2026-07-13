@@ -135,6 +135,12 @@ When dassi is actively controlling a browser tab:
 - A **Stop button** is shown in the banner
 - You can also press `Ctrl+Shift+C` (or `Cmd+Shift+C` on Mac) to stop
 
+## Follow-up suggestion chips
+
+Not to be confused with the [suggestions widget](#suggestions-widget) below — after dassi finishes a reply, up to three suggestion chips can appear above the message composer — quick ideas for what to ask next, based on what you just discussed. Click a chip to drop its text into the composer; it doesn't send automatically, so you can edit it first. Chips disappear as soon as you send a new message or start another task.
+
+Generating suggestions runs on dassi's own servers, so it never uses your API key or plan credits, and it doesn't add any extra latency to dassi's reply. If nothing useful comes to mind — or the run was stopped or hit an error — no chips appear.
+
 ## Suggestions widget
 
 When the sidebar is closed, a small orange button may appear on the right edge of web pages. Hover over it to see contextual suggestions — things dassi can help with on the current page. Click a suggestion to open the sidebar and send it automatically.
