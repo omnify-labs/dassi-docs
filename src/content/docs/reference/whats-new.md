@@ -7,6 +7,18 @@ Stay up to date with the latest dassi features, improvements, and fixes.
 
 ---
 
+## v0.42.0
+
+### Repeating tasks stay fast over long runs
+
+When you ask Dassi to keep checking back on something — like watching an inbox until a new message arrives, or polling a page every few minutes — each check now starts from a clean, focused context instead of carrying the growing history of every earlier check. Long-running repeating tasks stay quick and don't slow down the longer they run. Your task history in the side panel looks exactly the same as before.
+
+### Branded payment confirmation email
+
+Subscribing to a paid plan now sends you a Dassi-branded confirmation email instead of Stripe's generic receipt.
+
+---
+
 ## v0.39.0
 
 ### Task dashboard at app.dassi.ai
