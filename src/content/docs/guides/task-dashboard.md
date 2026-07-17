@@ -23,7 +23,7 @@ Tasks are grouped into four buckets in the sidebar:
 
 - **Needs you** — a plan is waiting for your approval, or dassi hit something it can't resolve on its own
 - **Running** — dassi is actively working right now
-- **Scheduled** — [scheduled tasks](/guides/scheduled-tasks/) waiting for their next run
+- **Your Workflows** — [scheduled tasks](/guides/scheduled-tasks/) and their status: waiting for their next run, paused, awaiting your consent, needing attention, or that their last run failed
 - **Done** — recently finished tasks
 
 Click a bucket to filter the list, or select **All tasks** to see everything together.

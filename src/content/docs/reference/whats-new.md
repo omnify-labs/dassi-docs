@@ -7,6 +7,26 @@ Stay up to date with the latest dassi features, improvements, and fixes.
 
 ---
 
+## v0.43.0
+
+### Repeated tasks get faster the more you use them
+
+When dassi finishes a multi-step task on a site, it can now save what it did as a **workflow** — a script that replays those exact steps instead of reasoning through the page again from scratch. Ask dassi to save one directly ("Save that as a workflow so it's faster next time"), or let it offer after a longer task on its own.
+
+The first couple of times a workflow runs, dassi keeps a close eye on it. Once it has succeeded with two different sets of details, dassi trusts it and starts using it automatically the next time you ask for that task on that site — so it gets faster and cheaper each time. If a site changes and a workflow breaks, dassi finishes the task manually from where it broke and fixes the script before moving on. [Learn more](/guides/skills-and-context/#workflows)
+
+### Task dashboard: "Scheduled" is now "Your Workflows"
+
+The **Scheduled** bucket on the [task dashboard](/guides/task-dashboard/) is renamed **Your Workflows**. Each row now shows more about its status — paused, awaiting your consent, needing attention, or that its last run failed — instead of just the schedule, and rows with an upcoming run sort to the top, soonest first.
+
+### Bug fixes
+
+- The side panel, Options page, and CLI now stay in sync when you switch models from any one of them. Previously, the Options page could keep showing the old model until you reloaded it.
+- The glowing border that shows dassi is controlling a tab no longer gets stuck on screen if the extension reloads or updates mid-task.
+- Clicking, typing, and filling out forms is more reliable — dassi now checks a screenshot of the result after each action instead of assuming it worked.
+
+---
+
 ## v0.39.0
 
 ### Task dashboard at app.dassi.ai

@@ -73,6 +73,37 @@ Dassi validates the archive, installs the skill, and makes the included referenc
 
 Skills use kebab-case names like `weekly-report`, `pdf-processing`, or `code-review`. dassi handles the naming automatically when you create a skill, but if you want a specific name, just tell it.
 
+## Workflows
+
+Workflows are a special kind of skill: instead of instructions dassi follows step by step, a workflow is a script that replays a site task dassi already figured out — so it doesn't have to look at the page and decide what to click all over again.
+
+### Creating a workflow
+
+dassi decides on its own. After it finishes a task that took several steps on a site — filling out a multi-step form, exporting a table, checking a dashboard — it may offer to save what it did as a workflow. You can also ask directly:
+
+```
+Save that as a workflow so it's faster next time.
+```
+
+A workflow is scoped to the site it was captured on, so dassi only suggests it there.
+
+### Why replays get faster
+
+Redoing a task from scratch means dassi has to look at the page, decide what to click, and check the result at every step. A workflow skips most of that reasoning by replaying the exact steps as code.
+
+The first couple of runs are treated as unproven, so dassi keeps watching them closely. Once a workflow has succeeded with two different sets of details — for example, searching for two different products — dassi trusts it and starts using it automatically the next time you ask for that task on the same site.
+
+### If a workflow breaks
+
+Sites change. If a saved workflow fails partway through, dassi finishes the task manually from where it broke, then fixes the underlying script before ending the task, so it keeps working next time.
+
+### Managing workflows
+
+Workflows are stored the same way as skills, so the same commands work:
+
+- **List them** — "What skills do I have installed?" (workflows show up alongside regular skills)
+- **Remove one** — "Remove the [name] workflow"
+
 ## Context files
 
 Context files give dassi background information it can reference during conversations. Unlike skills (which are instructions to follow), context files are knowledge for dassi to draw on.
