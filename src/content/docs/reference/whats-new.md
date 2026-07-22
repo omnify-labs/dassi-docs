@@ -7,6 +7,14 @@ Stay up to date with the latest dassi features, improvements, and fixes.
 
 ---
 
+## v0.46.0
+
+### Profile card shows your email only
+
+The account profile in **Settings** used to show your full name above your email, which often just repeated the same information. It now shows your email address alone, and your avatar's initials are generated from it too.
+
+---
+
 ## v0.39.0
 
 ### Task dashboard at app.dassi.ai
