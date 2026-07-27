@@ -28,7 +28,9 @@ Tasks are grouped into four buckets in the sidebar:
 
 Click a bucket to filter the list, or select **All tasks** to see everything together.
 
-Click any task to open its details in the right-hand rail. If the task has a live tab, click **Open in Chrome** to focus that tab and open its side panel — useful for approving a plan or picking up where dassi left off.
+Click any task to open its details in the right-hand rail. If the task is still live, click **Open in Chrome** to focus that tab and open its side panel — useful for approving a plan or picking up where dassi left off.
+
+For a task in the **Done** bucket, the same button reads **Reopen in Chrome**. Click it and dassi opens a new tab with the full conversation restored, so you can review what happened or keep going from there — reopening doesn't start any new work on its own. This needs a reasonably recent version of the dassi extension; on older installs, done tasks don't show a reopen button.
 
 ## Starting a new task
 

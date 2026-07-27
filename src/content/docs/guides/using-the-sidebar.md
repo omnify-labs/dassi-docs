@@ -42,6 +42,12 @@ The bottom bar is where you type messages:
 - **Send** — press `Enter` to send, `Shift+Enter` for a new line
 - **Stop** — while dassi is working, the send button becomes a stop button
 
+### Send a follow-up while dassi is working
+
+If you type a message and press Enter while dassi is still working on the current task, it doesn't interrupt what's happening — it queues instead. Your message appears as a chip with a clock icon above the composer, and dassi sends it automatically once the current step finishes. If you queue more than one, they're combined into a single follow-up message.
+
+Changed your mind? Click the **×** on a chip to remove it before it's sent.
+
 ## Conversations
 
 Each Chrome tab group has its own independent conversation. When dassi opens new tabs during a task, they join the same tab group and share the conversation context.
