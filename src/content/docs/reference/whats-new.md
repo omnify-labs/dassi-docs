@@ -7,6 +7,34 @@ Stay up to date with the latest dassi features, improvements, and fixes.
 
 ---
 
+## v0.47.0
+
+### Queue messages instead of interrupting a running task
+
+Sending a message while dassi is already working used to redirect it immediately. Now it queues instead: your message appears as a removable chip above the composer and is delivered once the current step finishes. Send more than one and they're combined into a single follow-up. [Learn more](/guides/using-the-sidebar/#send-a-follow-up-while-dassi-is-working)
+
+### Reopen finished tasks from the task dashboard
+
+The [task dashboard](/guides/task-dashboard/) at app.dassi.ai now has a **Reopen in Chrome** button on tasks in the **Done** bucket. Click it and dassi opens a new tab with the full conversation restored, so you can review what happened or continue from there.
+
+### Choose how scheduled tasks alert you
+
+A new **Notification channels** section in **Settings → Remote control** lets you turn Telegram and email alerts on or off independently for scheduled tasks that need your attention. Telegram alerts are actionable — approve or reply right from the chat — while email is just a heads-up with a link back to dassi. [Learn more](/guides/telegram-remote-control/#choose-how-youre-alerted)
+
+### Dassi can ask you a question mid-task over Telegram
+
+If a scheduled task hits something it needs your input on and you have Telegram remote control connected, dassi now pauses and messages you instead of guessing or failing. Approval requests come with **✅ Approve** / **❌ Skip** buttons; open questions ask you to reply directly in the chat. dassi waits up to 30 minutes for your answer before giving up on that step. [Learn more](/guides/telegram-remote-control/#dassi-can-ask-you-questions-mid-task)
+
+### Sign-in expired? Reconnect without retyping your message
+
+If your ChatGPT/Codex sign-in stops working — most often because the same account signed in somewhere else — dassi now shows a **Reconnect** button instead of a generic error. Click it, sign in again, and dassi automatically retries the message that failed.
+
+### Early look: record a demonstration
+
+A new **Record demonstration** option in the sidebar's **⋯** menu captures the clicks, typing, and navigation you do yourself across a tab group into a local recording. It's an early building block for turning what you do by hand into something dassi can repeat later — recordings stay on your device and there's no way to play one back yet. Stopping a recording asks what you were doing, so that context is ready for when it can.
+
+---
+
 ## v0.39.0
 
 ### Task dashboard at app.dassi.ai

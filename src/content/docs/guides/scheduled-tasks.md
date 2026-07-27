@@ -64,6 +64,8 @@ Dassi opens the target site in a new tab and works through your instruction, the
 
 Once the task finishes, Dassi sends a desktop notification.
 
+If Dassi needs your input mid-task — approving a sensitive step or answering a question — and you have [Telegram remote control](/guides/telegram-remote-control/#dassi-can-ask-you-questions-mid-task) connected, it pauses and messages you there instead of guessing or failing outright.
+
 If a task fails three times in a row, Dassi pauses it automatically and marks it as **Error** in the Schedules tab. Check the task description, fix whatever caused the failure (for example, being logged out of the site), then click **Resume** to restart it.
 
 ## Limitations
