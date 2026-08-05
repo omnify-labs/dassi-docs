@@ -7,6 +7,16 @@ Stay up to date with the latest dassi features, improvements, and fixes.
 
 ---
 
+## v0.51.4
+
+### Two Chrome permissions removed
+
+Dassi no longer requests the `system.cpu` and `system.memory` permissions. If you already have Dassi installed, Chrome drops the permissions automatically on update — you don't need to do anything, and Chrome doesn't show a prompt for it either way.
+
+The device details those permissions provided come from permission-free browser APIs instead, so this doesn't change anything about how Dassi behaves.
+
+---
+
 ## v0.39.0
 
 ### Task dashboard at app.dassi.ai
