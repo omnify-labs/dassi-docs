@@ -11,7 +11,7 @@ This feature is in **beta**. You'll see a BETA badge on the Gateway tab in Setti
 
 You're away from your desk and want Dassi to look something up, fill out a form, or run a multi-step task. Instead of waiting until you get back, you send a message from your phone and Dassi replies when it's done.
 
-It also pairs well with having multiple devices — you can link Dassi on different Chrome profiles and switch between them from the same Telegram chat.
+If you use Dassi on more than one computer, you can move Telegram to whichever one you're at by connecting it there — see [moving Telegram to a different computer](#move-telegram-to-a-different-computer) below.
 
 ## Before you start
 
@@ -51,19 +51,14 @@ The **Linked connections** card in the Gateway tab shows every active pairing. E
 
 - The Telegram chat it came from
 - The bot it paired through
-- Which Chrome installation handles requests from that chat
+- The Chrome installation paired to that chat, labeled with its OS and browser (something like `macOS Chrome`)
+- Whether it's connected to **this** browser or to a different one
 - When the device was last active
 
-### Switch which computer handles requests
+### Move Telegram to a different computer
 
-If you have Dassi installed on more than one computer or Chrome profile, you can link all of them to the same Telegram chat. To choose which one handles requests, send this from the `@dassi_ai_bot` chat:
-
-```
-/use <label>
-```
-
-The label matches the device name shown in the Linked connections list — something like `macOS Chrome` or `My Chrome`.
+Telegram runs in one browser at a time — the browser you most recently connected. If you have Dassi installed on more than one computer or Chrome profile, open Dassi in the one you want to use, go to the Gateway tab, and click **Connect Telegram**. That moves every one of your linked chats to this browser at once; there's no per-chat switch.
 
 ### Unlink a connection
 
-Send `/unlink` from inside the `@dassi_ai_bot` chat to disconnect that Chrome profile from the chat.
+Send `/unlink` from inside the `@dassi_ai_bot` chat to disconnect that chat from Dassi entirely.
