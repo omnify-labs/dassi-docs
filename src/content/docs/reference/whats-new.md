@@ -7,6 +7,16 @@ Stay up to date with the latest dassi features, improvements, and fixes.
 
 ---
 
+## v0.56.0
+
+### Telegram now moves cleanly between computers
+
+Previously, linking Dassi on a second computer let you send `/use <label>` from Telegram to pick which one handled requests. That command is gone — Telegram now runs in one browser at a time, whichever one you most recently connected. To move it, open Dassi on the computer you want to use, go to **Settings → Gateway**, and click **Connect Telegram**. That re-points every one of your linked chats to that browser at once.
+
+The **Linked connections** list in the Gateway tab now shows each row as connected to *this* browser or to a different one, and labels the device with its OS and browser name (like `macOS Chrome`) instead of a generic name. [Learn more](/guides/telegram-remote-control/#move-telegram-to-a-different-computer)
+
+---
+
 ## v0.39.0
 
 ### Task dashboard at app.dassi.ai
