@@ -45,7 +45,7 @@ Click **Enable daily task** to activate it. Click **Cancel** to discard it witho
 
 ## Manage your schedules
 
-Open the Dassi **Options** page (the gear icon in the toolbar) and go to the **Schedules** tab. You'll see all your scheduled tasks listed with their site, time, and current status.
+Open the Dassi **Options** page (**⋮** menu in the sidebar toolbar → **Settings**) and go to the **Schedules** tab. You'll see all your scheduled tasks listed with their site, time, and current status.
 
 From the list you can:
 

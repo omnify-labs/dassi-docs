@@ -65,7 +65,7 @@ Paid-plan credits refresh monthly with your billing cycle; the Free tier's $5 is
 ## Managing your subscription
 
 1. Open the dassi sidebar
-2. Click **Settings** (gear icon)
+2. Click **⋮** in the sidebar toolbar, then **Settings**
 3. Go to **Billing**
 
 From here you can view your current plan, credit usage, and manage your subscription.
