@@ -22,7 +22,7 @@ You need:
 
 ## Connect your Telegram account
 
-1. Open **Settings** (gear icon in the sidebar toolbar).
+1. Open **Settings** (**⋮** menu in the sidebar toolbar → **Settings**).
 2. Click the **Gateway** tab.
 3. Click **Connect Telegram**. Dassi generates a pairing token — it expires in 5 minutes.
 4. Do one of the following:

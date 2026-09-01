@@ -63,7 +63,7 @@ Some skills come packaged as a `.zip` bundle — a folder containing `SKILL.md` 
 
 To install a bundled skill:
 
-1. Open **Settings** (gear icon in the sidebar toolbar) and go to the **Skills** tab.
+1. Open **Settings** (**⋮** menu in the sidebar toolbar → **Settings**) and go to the **Skills** tab.
 2. Click **Import Skill**.
 3. Click **Choose .zip file…** and select the bundle.
 
