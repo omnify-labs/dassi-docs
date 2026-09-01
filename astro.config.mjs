@@ -73,6 +73,7 @@ export default defineConfig({
 						{ label: 'Limitations', link: '/reference/limitations/' },
 						{ label: 'Privacy & Security', link: '/reference/privacy-and-security/' },
 						{ label: 'Plans & Billing', link: '/reference/plans-and-billing/' },
+						{ label: 'Why repeat runs cost less', link: '/reference/cost-and-caching/' },
 					],
 				},
 			],
