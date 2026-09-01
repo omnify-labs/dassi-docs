@@ -45,7 +45,7 @@ Click **Enable daily task** to activate it. Click **Cancel** to discard it witho
 
 ## Manage your schedules
 
-Open the Dassi **Options** page (**⋮** menu in the sidebar toolbar → **Settings**) and go to the **Schedules** tab. You'll see all your scheduled tasks listed with their site, time, and current status.
+Open the Dassi **Options** page (**⋮** menu in the sidebar toolbar → **Settings**) and go to the **Automations** tab. You'll see all your scheduled tasks listed with their site, time, and current status.
 
 From the list you can:
 
@@ -56,7 +56,7 @@ From the list you can:
 
 The list refreshes automatically when you return to the tab, so changes you make from the side panel always show up here.
 
-<!-- TODO: screenshot of Schedules tab -->
+<!-- TODO: screenshot of the Automations tab -->
 
 ## What happens when a task runs
 
@@ -64,7 +64,7 @@ Dassi opens the target site in a new tab and works through your instruction, the
 
 Once the task finishes, Dassi sends a desktop notification.
 
-If a task fails three times in a row, Dassi pauses it automatically and marks it as **Error** in the Schedules tab. Check the task description, fix whatever caused the failure (for example, being logged out of the site), then click **Resume** to restart it.
+If a task fails three times in a row, Dassi pauses it automatically and marks it as **Error** in the Automations tab. Check the task description, fix whatever caused the failure (for example, being logged out of the site), then click **Resume** to restart it.
 
 ## Limitations
 

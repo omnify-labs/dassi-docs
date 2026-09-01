@@ -60,12 +60,12 @@ Managed credits cover the cost of AI model usage. Each message you send uses cre
 - The complexity of the task (longer conversations use more credits)
 - Screenshot and page content processing
 
-Paid-plan credits refresh monthly with your billing cycle; the Free tier's $5 is a one-time credit that doesn't refresh. You can track your usage in **Settings > Billing**.
+Paid-plan credits refresh monthly with your billing cycle; the Free tier's $5 is a one-time credit that doesn't refresh. You can track your usage in **Settings > Plan**.
 
 ## Managing your subscription
 
 1. Open the dassi sidebar
 2. Click **⋮** in the sidebar toolbar, then **Settings**
-3. Go to **Billing**
+3. Go to **Plan**
 
 From here you can view your current plan, credit usage, and manage your subscription.
