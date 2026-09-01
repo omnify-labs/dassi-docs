@@ -30,7 +30,7 @@ The first time dassi does a job, it pays full price. Every time after, most of t
 <text x="60"  y="222" class="seg">The actual work — same job, same price</text>
 <line x1="0" y1="250" x2="720" y2="250" stroke="#e5e5e5" stroke-width="1"/>
 <rect x="0" y="266" width="10" height="10" fill="#FF5C00"/>
-<text x="18" y="275" class="seg">Context dassi already sent — billed at cached rates</text>
+<text x="18" y="275" class="seg">Context dassi already sent — reused, not reprocessed</text>
 <rect x="0" y="286" width="10" height="10" fill="#FFB088"/>
 <text x="18" y="295" class="seg">Figuring out the page — replaced by a shortcut dassi wrote itself</text>
 </svg>
@@ -41,9 +41,16 @@ Two things shrink.
 
 ## It doesn't re-read what it already sent
 
-Every model charges for the text you send it. A lot of that text is the same on every run — the instructions, what you taught dassi, the rules you set.
+A lot of what dassi sends is the same on every run: the instructions, what you taught it, the rules you set.
 
-Model providers will bill repeated text at a steep discount, but only if it arrives *identical* to last time. So dassi is careful to keep it identical: anything that changes between runs is kept out of that part, right down to the current date. Put today's date in the wrong place and every run starts from scratch, once a day, forever.
+Anything running a model can skip that repeated part instead of chewing through it again — and every one of them has the same condition attached: it has to arrive *identical* to last time. Change one character near the start and the whole thing gets processed from scratch.
+
+So dassi is careful to keep it identical. Anything that varies between runs is kept out of that part, right down to the current date. Put today's date in the wrong place and every run starts cold, once a day, forever.
+
+What you get back for it depends on who's running the model, not on how big they are:
+
+- **Someone else's model** bills the repeated part at a discount — on Claude, up to 90% cheaper.
+- **Your own machine or your own server** isn't billing you at all, so it comes back as speed instead. Ollama does this out of the box, and self-hosted servers like vLLM do the same.
 
 ## It doesn't work out the same website twice
 
@@ -60,7 +67,7 @@ Which means the economics run the right way: a job gets cheaper the longer you k
 ## What it doesn't do
 
 - **New work costs what new work costs.** This is a discount on repetition. A job dassi has never done, on a site it has never seen, pays full price.
-- **The discount is your provider's, not ours.** How much comes off depends on who you're pointed at — on Claude, repeated text is up to 90% cheaper. Other providers differ, and a few don't discount it at all.
+- **How much it's worth varies.** A hosted model turns it into money off a bill; your own hardware turns it into time. Either way the size of the win tracks how much of the job actually repeats.
 - **A redesign resets the shortcut.** When a site changes shape, the shortcut dassi wrote for it can stop fitting, and it goes back to working the page out directly until it has learned the new one.
 
 ## Related
