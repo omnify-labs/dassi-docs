@@ -37,7 +37,7 @@ The default model is **Gemini 3.5 Flash**. You can switch models in **Settings**
 
 If you prefer to use your own OpenAI API key:
 
-1. Open **Settings** (gear icon in the sidebar toolbar)
+1. Open **Settings** (**⋮** menu in the sidebar toolbar → **Settings**)
 2. Select **BYOK** as the billing mode
 3. Enter your **OpenAI API key**
 4. Choose a model:
@@ -60,18 +60,18 @@ If you prefer to use your own OpenAI API key:
 You can connect any server that speaks the [OpenAI Chat Completions API](https://platform.openai.com/docs/api-reference/chat), including:
 
 - **Azure OpenAI** — a model deployed in your Azure subscription
-- **Ollama** — local models running on your machine
+- **Ollama** — local models running on your machine ([step-by-step guide](/guides/ollama/))
 - **LiteLLM** — a proxy that routes to many providers under one endpoint
 - **vLLM** and other self-hosted inference servers
 
 ### Connecting
 
-1. Open **Settings** (gear icon in the sidebar toolbar) and select the **Connection** tab
-2. Find the **Custom (OpenAI-compatible)** card and click **Add endpoint**
+1. Open **Settings** (**⋮** menu in the sidebar toolbar → **Settings**) and go to **Models**
+2. Expand the **API keys** section, scroll to the **Custom (OpenAI-compatible)** card at the bottom, and click **Add endpoint**
 3. Enter the **Base URL** of your endpoint — for example, `https://my-resource.openai.azure.com/openai/v1` for Azure or `http://localhost:11434` for a local Ollama server
-4. Enter the **Model ID** — the exact identifier your server expects, e.g. `gpt-4o`, `llama3.2`, or `mistral-7b`
+4. Enter the **Model ID** — the exact identifier your server expects, e.g. `gpt-4o`, `llama3.2`, or `mistral-7b`. This is optional: leave it blank and dassi lists the models your endpoint reports so you can pick one in chat
 5. Enter your **API key**, if your server needs one. Servers that don't require auth (LM Studio, Ollama, vLLM) can leave this blank
-6. Click **Connect** — Chrome will ask to allow access to that endpoint, then dassi verifies the connection
+6. Click **Save** — Chrome will ask to allow access to that endpoint, then dassi verifies the connection
 
 ### Supported model families
 
@@ -85,7 +85,7 @@ Click **Advanced** in the Custom card to set a **response timeout** — how long
 
 - Plain HTTP base URLs (e.g. `http://localhost:11434` or `http://192.168.1.20:11434`) are allowed for the custom endpoint, since self-hosted servers on your machine or LAN often don't have HTTPS set up. Named presets like Azure still require HTTPS.
 - Dassi normalizes your base URL to end with `/v1`, so entering `http://localhost:11434` or `http://localhost:11434/v1` connects to the same endpoint.
-- If a request fails right after connecting successfully, it's usually the server's CORS policy blocking dassi's requests rather than a bad connection. For Ollama, restart it with `OLLAMA_ORIGINS=<your-origin> ollama serve` to allow the extension's origin, then retry.
+- If a request fails right after connecting successfully, it's usually the server's CORS policy blocking dassi's requests rather than a bad connection. For Ollama, restart it with `OLLAMA_ORIGINS=<your-origin> ollama serve` to allow the extension's origin, then retry — the [Ollama guide](/guides/ollama/) covers this in full.
 
 ## How dassi uses models
 
