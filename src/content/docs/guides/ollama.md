@@ -16,6 +16,38 @@ The setting is real but it's buried: it lives behind a collapsed section on the 
 - **No per-token bill.** You're spending your own GPU time, not credits — on a [cheaper flat monthly plan](#unlock-the-developer-plan).
 - **Your choice of model.** Swap between anything you've pulled, straight from the model picker in chat.
 
+<figure>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 300" style="width:100%;height:auto;max-width:720px" role="img" aria-labelledby="costTitle costDesc">
+<title id="costTitle">What a run costs, first time versus every time after</title>
+<desc id="costDesc">Two bars. The first run is made of three parts: reading everything, working out the site, and doing the actual work. On every run after, the first two shrink to slivers and the rest of the bar is gone; only the actual work stays the same size.</desc>
+<style>
+.lbl { font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 13px; fill: #1a1a1a; font-weight: 700; }
+.seg { font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; fill: #666666; }
+.gone{ font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; fill: #999999; }
+</style>
+<text x="0" y="16" class="lbl">First run</text>
+<rect x="0"   y="30" width="250" height="40" fill="#FF5C00"/>
+<rect x="250" y="30" width="210" height="40" fill="#FFB088"/>
+<rect x="460" y="30" width="180" height="40" fill="#1a1a1a"/>
+<text x="0"   y="88" class="seg">Reading everything</text>
+<text x="250" y="88" class="seg">Working out the site</text>
+<text x="460" y="88" class="seg">The actual work</text>
+<text x="0" y="150" class="lbl">Every run after</text>
+<rect x="0"  y="164" width="26"  height="40" fill="#FF5C00"/>
+<rect x="26" y="164" width="34"  height="40" fill="#FFB088"/>
+<rect x="60" y="164" width="180" height="40" fill="#1a1a1a"/>
+<rect x="240" y="164" width="400" height="40" fill="none" stroke="#c4c4c4" stroke-width="1" stroke-dasharray="4 4"/>
+<text x="252" y="189" class="gone">you no longer pay for this part</text>
+<text x="60"  y="222" class="seg">The actual work — same job, same price</text>
+<line x1="0" y1="250" x2="720" y2="250" stroke="#e5e5e5" stroke-width="1"/>
+<rect x="0" y="266" width="10" height="10" fill="#FF5C00"/>
+<text x="18" y="275" class="seg">Context dassi already sent — reused, not reprocessed</text>
+<rect x="0" y="286" width="10" height="10" fill="#FFB088"/>
+<text x="18" y="295" class="seg">Figuring out the page — replaced by a shortcut dassi wrote itself</text>
+</svg>
+<figcaption>Illustrative. On your own hardware the reuse comes back as speed rather than a bill — <a href="/reference/cost-and-caching/">why repeat runs cost less</a> explains both parts.</figcaption>
+</figure>
+
 The tradeoff is capability. Browser automation is a demanding, long-horizon, tool-calling workload — a 7B model will feel noticeably less reliable than a frontier model at multi-step tasks.
 
 ## Before you start
