@@ -105,6 +105,8 @@ To check or change it, click **Advanced** in the same Custom endpoint form:
 
 This is how long Dassi waits for the model to *start* responding before giving up. If you're hitting that ceiling, the fix is on the Ollama side — see [Set up Ollama for Dassi](/guides/ollama-server-setup/#keeping-a-slow-model-responsive).
 
+It's also worth knowing that Dassi works to send your model less to chew on: it keeps repeated context stable between runs, and it writes itself shortcuts for sites it has worked before instead of re-reading them every time. On a hosted model that shows up as a smaller bill. On your own hardware there is no bill — it shows up as less waiting. [Why repeat runs cost less](/reference/cost-and-caching/) explains both.
+
 ## Troubleshooting
 
 | What you see | What it means |
@@ -126,3 +128,4 @@ With Ollama connected, the model calls — prompts, page content, and screenshot
 - [Set up Ollama for Dassi](/guides/ollama-server-setup/) — the server side: pulling a model, allowing Dassi's origin, running Ollama on another machine
 - [AI Models & Providers](/guides/connect-ai-provider/) — every connection option, including managed credits and other OpenAI-compatible endpoints
 - [Your First Task](/guides/first-task/) — what to ask Dassi once it's connected
+- [Why repeat runs cost less](/reference/cost-and-caching/) — how Dassi cuts the work a repeat run needs, which on local hardware means less waiting
