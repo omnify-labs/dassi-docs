@@ -51,6 +51,8 @@ export default defineConfig({
 					label: 'Guides',
 					items: [
 						{ label: 'AI Models & Providers', link: '/guides/connect-ai-provider/' },
+						{ label: 'Use Dassi with Ollama', link: '/guides/ollama/' },
+						{ label: 'Set up Ollama for Dassi', link: '/guides/ollama-server-setup/' },
 						{ label: 'Your First Task', link: '/guides/first-task/' },
 						{ label: 'Using the Sidebar', link: '/guides/using-the-sidebar/' },
 						{ label: 'Task Dashboard', link: '/guides/task-dashboard/' },
