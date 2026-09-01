@@ -7,11 +7,12 @@ Dassi can run on a model you host yourself. If you already use [Ollama](https://
 
 The setting is real but it's buried: it lives behind a collapsed section on the Models page, at the bottom of a long list of providers. This guide shows you exactly where to click.
 
-**On pricing:** running your own model puts you on **Developer**, which costs less than the managed-credit tiers — you supply the keys, so you're only paying for the extension. It's hidden until you've connected a provider, so don't go looking for it first. See [Unlock the Developer plan](#unlock-the-developer-plan) below, or [Plans & Billing](/reference/plans-and-billing/) for the full comparison.
+**On pricing:** running your own model puts you on **Developer** — $10 a month, or $36 for a full year, which works out to about 10¢ a day. You supply the keys, so you're only paying for the extension, and it costs less than any managed-credit tier. The option is hidden until you've connected a provider, so don't go looking for it first: see [Unlock the Developer plan](#unlock-the-developer-plan) below, or [Plans & Billing](/reference/plans-and-billing/) for the full comparison.
 
 ## Why you'd use it
 
 - **Your data stays on your machine.** Page text, screenshots, and prompts go to `localhost`, not to a model vendor.
+- **One of the cheapest ways on the market to run a browser agent.** Dassi's [caching](/reference/cost-and-caching/) keeps the repeated part of a job identical between runs, so it gets reused instead of paid for — or on your own hardware, waited for — again.
 - **No per-token bill.** You're spending your own GPU time, not credits — on a [cheaper flat monthly plan](#unlock-the-developer-plan).
 - **Your choice of model.** Swap between anything you've pulled, straight from the model picker in chat.
 
