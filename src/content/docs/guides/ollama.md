@@ -7,10 +7,12 @@ Dassi can run on a model you host yourself. If you already use [Ollama](https://
 
 The setting is real but it's buried: it lives behind a collapsed section on the Models page, at the bottom of a long list of providers. This guide shows you exactly where to click.
 
+**On pricing:** bringing your own model doesn't make Dassi free — it moves you off the managed-credit tiers and onto **Developer**, a separate, cheaper track for people who supply their own keys. That option is hidden until you've connected a provider, so don't go looking for it first. See [Unlock the Developer plan](#unlock-the-developer-plan) below, or [Plans & Billing](/reference/plans-and-billing/) for the full comparison.
+
 ## Why you'd use it
 
 - **Your data stays on your machine.** Page text, screenshots, and prompts go to `localhost`, not to a model vendor.
-- **No usage costs.** You're spending your own GPU time, not credits.
+- **No per-token bill.** You're spending your own GPU time, not credits — on a [flat monthly plan](#unlock-the-developer-plan) for the client itself.
 - **Your choice of model.** Swap between anything you've pulled, straight from the model picker in chat.
 
 The tradeoff is capability. Browser automation is a demanding, long-horizon, tool-calling workload — a 7B model will feel noticeably less reliable than a frontier model at multi-step tasks.
