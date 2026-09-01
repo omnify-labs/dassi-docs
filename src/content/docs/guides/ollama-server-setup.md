@@ -66,7 +66,9 @@ Use your exact extension ID. Don't set `OLLAMA_ORIGINS=*` or `chrome-extension:/
 
 ## Choosing a model
 
-Dassi accepts model IDs from a curated set of families. If your model ID doesn't match one, the connection is blocked with a message listing what's accepted. The families available in Ollama are:
+Dassi accepts model IDs from a curated set of families. If your model ID doesn't match one, the connection is blocked with a message listing what's accepted.
+
+Passing that check isn't enough on its own, though — the model also has to support tool calling. These families are on Dassi's list *and* ship tool-capable builds in Ollama:
 
 | Family | Example Ollama tags |
 |--------|---------------------|
@@ -75,11 +77,12 @@ Dassi accepts model IDs from a curated set of families. If your model ID doesn't
 | GPT-OSS | `gpt-oss:20b`, `gpt-oss:120b` |
 | DeepSeek | `deepseek-r1:14b` |
 | Mistral | `mistral`, `mixtral`, `devstral` |
-| Gemma | `gemma3:12b` |
-| Phi | `phi4` |
 | Command-R | `command-r7b` |
-| GLM | `glm4` |
 | Nemotron | `nemotron-mini` |
+
+Dassi will also accept **Gemma** (`gemma3`), **Phi** (`phi4`), and **GLM** (`glm4`), but Ollama's builds of those don't advertise tool support today — the endpoint connects and then the model talks back at you instead of clicking anything. Use them for non-browser work, not for tasks.
+
+Tool support changes as Ollama updates its builds, so check the `tools` label on a model's [library page](https://ollama.com/library) before committing to it.
 
 Beyond the family, size matters more than anything else. Browser tasks involve long contexts (page content, screenshots, tool history) and many sequential decisions. Under about 7B, expect the model to lose the thread on multi-step work. If you have the VRAM, run something in the 20B–70B range.
 
