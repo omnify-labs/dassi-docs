@@ -1,62 +1,67 @@
 ---
 title: Why repeat runs cost less
-description: The two things a browser agent's bill is made of, and what dassi does about each — prompt caching and learned site skills.
+description: The same job costs less the second time you run it. Here is what changes, and what doesn't.
 ---
 
-A browser agent's bill is mostly two things:
+The first time dassi does a job, it pays full price. Every time after, most of that cost is already gone.
 
-1. **Re-reading context it has already read.** The system prompt, your skills, the run history — sent again on every turn.
-2. **Working out how a site is put together.** Screenshotting a page, reading its DOM, finding the right selector — repeated from scratch on every run.
+<figure>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 300" style="width:100%;height:auto;max-width:720px" role="img" aria-labelledby="costTitle costDesc">
+<title id="costTitle">What a run costs, first time versus every time after</title>
+<desc id="costDesc">Two bars. The first run is made of three parts: reading everything, working out the site, and doing the actual work. On every run after, the first two shrink to slivers and the rest of the bar is gone; only the actual work stays the same size.</desc>
+<style>
+.lbl { font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 13px; fill: #1a1a1a; font-weight: 700; }
+.seg { font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; fill: #666666; }
+.gone{ font-family: 'JetBrains Mono', ui-monospace, monospace; font-size: 12px; fill: #999999; }
+</style>
+<text x="0" y="16" class="lbl">First run</text>
+<rect x="0"   y="30" width="250" height="40" fill="#FF5C00"/>
+<rect x="250" y="30" width="210" height="40" fill="#FFB088"/>
+<rect x="460" y="30" width="180" height="40" fill="#1a1a1a"/>
+<text x="0"   y="88" class="seg">Reading everything</text>
+<text x="250" y="88" class="seg">Working out the site</text>
+<text x="460" y="88" class="seg">The actual work</text>
+<text x="0" y="150" class="lbl">Every run after</text>
+<rect x="0"  y="164" width="26"  height="40" fill="#FF5C00"/>
+<rect x="26" y="164" width="34"  height="40" fill="#FFB088"/>
+<rect x="60" y="164" width="180" height="40" fill="#1a1a1a"/>
+<rect x="240" y="164" width="400" height="40" fill="none" stroke="#c4c4c4" stroke-width="1" stroke-dasharray="4 4"/>
+<text x="252" y="189" class="gone">you no longer pay for this part</text>
+<text x="60"  y="222" class="seg">The actual work — same job, same price</text>
+<line x1="0" y1="250" x2="720" y2="250" stroke="#e5e5e5" stroke-width="1"/>
+<rect x="0" y="266" width="10" height="10" fill="#FF5C00"/>
+<text x="18" y="275" class="seg">Context dassi already sent — billed at cached rates</text>
+<rect x="0" y="286" width="10" height="10" fill="#FFB088"/>
+<text x="18" y="295" class="seg">Figuring out the page — replaced by a shortcut dassi wrote itself</text>
+</svg>
+<figcaption>Illustrative. How much you actually save depends on the job, the site, and which model provider you're pointed at.</figcaption>
+</figure>
 
-dassi is built to stop paying full price for either. Neither is a setting you turn on; both are how the agent is put together.
+Two things shrink.
 
-## Prompt caching
+## It doesn't re-read what it already sent
 
-Every major provider will bill a repeated prompt prefix at a steep discount — on Claude, cached input tokens are up to 90% cheaper than fresh ones. The catch is that the discount only applies to a prefix that is **byte-for-byte identical** to the previous request. One character earlier in the prompt and the cache misses.
+Every model charges for the text you send it. A lot of that text is the same on every run — the instructions, what you taught dassi, the rules you set.
 
-So dassi is careful about what goes where.
+Model providers will bill repeated text at a steep discount, but only if it arrives *identical* to last time. So dassi is careful to keep it identical: anything that changes between runs is kept out of that part, right down to the current date. Put today's date in the wrong place and every run starts from scratch, once a day, forever.
 
-### Stable content first, mutable content after
+## It doesn't work out the same website twice
 
-The system prompt is assembled in a fixed order: the cacheable base prefix first, then per-run skill and site-workflow sections, then session context. Anything that can change between runs is appended *after* the part the provider caches.
+The other half of the bill is dassi looking at a page and figuring out how it's built — which button is the right button, where the table is, what the form wants.
 
-### The date isn't in the system prompt
+As it works a site, dassi writes itself a shortcut for that site: a small piece of code that knows where things are. Next time, it calls the shortcut instead of working it out again. The expensive part of the system stops doing work the cheap part can do.
 
-An obvious way to break your own cache is to bake the current date into the system prompt — it changes daily, so every run starts cold. dassi puts the timestamp in a per-turn user-message reminder instead. The model still knows what day it is; the cached prefix doesn't move.
+## What this means
 
-### Big results are stored by reference
+The two compound. A job you run every week sends mostly-discounted text *and* skips most of the page-reading it did the first time.
 
-Tool output and screenshots are written to IndexedDB and referenced by a deterministic id rather than inlined into the conversation. A replayed tool call resolves to the same id, so the prefix stays byte-identical across turns instead of drifting every time a large result lands.
-
-### The prompt is re-derived, not rebuilt
-
-On each run dassi re-derives the system prompt and compares it. If it's byte-identical, nothing is written and the provider's cache stays warm. It only changes when something real changed — a skill installed or edited, a site workflow captured, a model's knowledge cutoff moving.
-
-## Learned site skills
-
-Caching handles context you've already sent. It does nothing about the second cost: figuring out a website again on every run.
-
-As dassi works a site, it can write itself a small JavaScript library for that site — a set of functions that wrap the fiddly parts, attached to `window`. The library is matched to the site by domain and path patterns, and injected before every JavaScript call dassi makes on a matching page.
-
-The agent is told, in its own system prompt, to prefer them:
-
-> The following URL-matched JavaScript libraries are injected before each `browserjs()` call. They define APIs on window; use those APIs instead of re-deriving DOM selectors.
-
-So the second time through a job, the expensive part of the stack isn't squinting at a screenshot to find a button — the cheap part is calling a function that already knows where it is.
-
-## What this adds up to
-
-The two compound. A job you run weekly sends a mostly-cached prompt *and* skips most of the page-comprehension work it did the first time. The first run pays for the thinking; repeats shouldn't.
-
-It also means the economics improve the longer you keep a job, rather than staying flat — the opposite of paying per message.
+Which means the economics run the right way: a job gets cheaper the longer you keep it, rather than costing the same every time you ask.
 
 ## What it doesn't do
 
-Worth being clear about the limits:
-
-- **New work still costs what new work costs.** Caching discounts repetition. A task dassi has never seen, on a site it has never touched, pays full price.
-- **The discount is the provider's, not ours.** How much you save depends on who you're pointed at — Claude's cached-read pricing is the 90% figure quoted above; other providers differ, and a few don't offer prompt caching at all.
-- **A site that changes breaks its own shortcut.** When a site ships a redesign, the learned library for it can stop matching and dassi goes back to working it out directly.
+- **New work costs what new work costs.** This is a discount on repetition. A job dassi has never done, on a site it has never seen, pays full price.
+- **The discount is your provider's, not ours.** How much comes off depends on who you're pointed at — on Claude, repeated text is up to 90% cheaper. Other providers differ, and a few don't discount it at all.
+- **A redesign resets the shortcut.** When a site changes shape, the shortcut dassi wrote for it can stop fitting, and it goes back to working the page out directly until it has learned the new one.
 
 ## Related
 
