@@ -201,13 +201,13 @@ The Telegram integration now shows a "typing…" indicator while Dassi is proces
 
 You can now bring your own API key for four more providers — Groq, Cerebras, HuggingFace, and Mistral — alongside the existing lineup of OpenAI, Google, Anthropic, DeepSeek, OpenRouter, Kimi, and xAI. Each new provider shows up as its own card in **Settings → Connections**. Add your key, pick a model, and Dassi routes your tasks through it.
 
-[See all supported BYOK providers](/guides/connect-ai-provider/#supported-byok-providers)
+[See all supported BYOK providers](/guides/connect-ai-provider/#bring-your-own-key-byok)
 
 ### Telegram voice notes
 
 If you use Dassi through Telegram, you can now send a voice note instead of typing. Dassi transcribes it using Whisper and treats the text as your prompt. You'll need a BYOK key for either OpenAI or Groq, and you pick which one handles transcription in **Settings → Preferences → Voice transcription**.
 
-[Set up voice transcription](/guides/connect-ai-provider/#voice-transcription-for-telegram)
+[Set up voice transcription](/guides/connect-ai-provider/)
 
 ### Import skill bundles from .zip files
 
@@ -237,7 +237,7 @@ A new **Contact** tab in Settings gives you quick access to the support email, D
 
 dassi can now pick up an image from one web page and use it as an attachment on another — without any manual downloading. For example, it can copy a product photo from a catalog and attach it to an upload field on a different site.
 
-Captured images respect the source page's login session, so photos behind authentication work the same as public ones. [Learn more](/guides/browser-automation/#image-capture)
+Captured images respect the source page's login session, so photos behind authentication work the same as public ones. [Learn more](/guides/browser-automation/#screenshots)
 
 ### Telegram reaction feedback
 
@@ -256,15 +256,15 @@ Two under-the-hood improvements make extended tasks more consistent:
 
 ### Persistent site tools
 
-dassi can now install lightweight JavaScript tools directly on specific websites that persist across sessions. Once installed, dassi calls them automatically on matching pages without re-injecting code each time. You can view and delete installed tools in **Settings > User Scripts**. [Learn more](/guides/browser-automation/#persistent-site-tools)
+dassi can now install lightweight JavaScript tools directly on specific websites that persist across sessions. Once installed, dassi calls them automatically on matching pages without re-injecting code each time. You can view and delete installed tools in **Settings > User Scripts**. [Learn more](/guides/user-scripts/)
 
 ### More models on OpenRouter
 
-The OpenRouter provider now includes Qwen 3 (vision and text-only reasoning variants), Z.ai GLM (vision and text-only), and MiniMax M2.7, alongside the existing GPT-5.5, Grok 4, Kimi K2.6, and Llama 4 Scout. [See the full model list](/guides/connect-ai-provider/#openrouter)
+The OpenRouter provider now includes Qwen 3 (vision and text-only reasoning variants), Z.ai GLM (vision and text-only), and MiniMax M2.7, alongside the existing GPT-5.5, Grok 4, Kimi K2.6, and Llama 4 Scout. [See the full model list](/guides/connect-ai-provider/)
 
 ### Vision capability warning
 
-When you select a text-only model (one that can't analyze screenshots), dassi now shows a **⚠ No vision** badge next to the model name and a persistent reminder below the chat input. Models without vision still work well for writing, coding, and reasoning tasks. [Learn more](/guides/connect-ai-provider/#vision-capability)
+When you select a text-only model (one that can't analyze screenshots), dassi now shows a **⚠ No vision** badge next to the model name and a persistent reminder below the chat input. Models without vision still work well for writing, coding, and reasoning tasks. [Learn more](/guides/connect-ai-provider/)
 
 ### Improved subscription management
 
@@ -276,7 +276,7 @@ Starter, Pro, and Max subscribers can now connect their own API keys (BYOK) in a
 
 ### Richer skill details
 
-The skill detail view in **Settings > Skills** now shows each skill's token footprint (always-loaded tokens vs. on-activation tokens), any tool restrictions, and custom metadata from the skill's specification. [Learn more](/guides/skills-and-context/#skill-details)
+The skill detail view in **Settings > Skills** now shows each skill's token footprint (always-loaded tokens vs. on-activation tokens), any tool restrictions, and custom metadata from the skill's specification. [Learn more](/guides/skills-and-context/#managing-skills)
 
 ---
 
@@ -367,7 +367,7 @@ Dassi now handles Enter correctly when typing into rich text editors like Gmail 
 
 ### Sign in with Google for free Gemini access
 
-You can now connect your Google account to use Gemini models through Google's Cloud Code Assist free tier — no subscription or API key required. In **Settings → Connection**, find the Google row and click **Sign In**. Dassi opens Google's login page, you grant access, and Dassi automatically provisions a Cloud Code Assist project. [Learn more](/guides/connect-ai-provider/#sign-in-with-google)
+You can now connect your Google account to use Gemini models through Google's Cloud Code Assist free tier — no subscription or API key required. In **Settings → Connection**, find the Google row and click **Sign In**. Dassi opens Google's login page, you grant access, and Dassi automatically provisions a Cloud Code Assist project. [Learn more](/guides/connect-ai-provider/)
 
 <!-- TODO: screenshot of Google sign-in button in Connection tab -->
 
@@ -389,7 +389,7 @@ The **Settings > Plan** tab now has dedicated sections for **Managed Plans** and
 
 ### BYOK and Managed plans can now run together
 
-You can now subscribe to both a BYOK plan and a Managed plan at the same time. The Current Plan card shows both, and managing one subscription doesn't affect the other. [Learn more](/reference/plans-and-billing/#running-byok-and-a-managed-plan-together)
+You can now subscribe to both a BYOK plan and a Managed plan at the same time. The Current Plan card shows both, and managing one subscription doesn't affect the other. [Learn more](/reference/plans-and-billing/)
 
 ### BYOK annual billing
 

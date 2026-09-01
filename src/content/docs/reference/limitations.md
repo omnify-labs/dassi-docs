@@ -86,4 +86,4 @@ dassi uses AI models that can make mistakes. Always review dassi's work before t
 
 ### Speed
 
-Response times depend on the AI model you've selected and the complexity of the task. Some models are faster than others — see [AI Models](/guides/ai-providers/) for details.
+Response times depend on the AI model you've selected and the complexity of the task. Some models are faster than others — see [AI Models & Providers](/guides/connect-ai-provider/) for details.
