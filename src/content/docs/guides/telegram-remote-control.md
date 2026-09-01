@@ -5,7 +5,7 @@ description: Link your Telegram account to send tasks to Dassi from anywhere, an
 
 Telegram remote control lets you message `@dassi_ai_bot` from your phone and have Dassi carry out the task in Chrome on your computer. Your computer does the work; your phone is just the input.
 
-This feature is in **beta**. You'll see a BETA badge on the Gateway tab in Settings.
+This feature is in **beta**. You'll see a BETA badge on the **Remote** tab in Settings.
 
 ## Why you'd use it
 
@@ -23,13 +23,13 @@ You need:
 ## Connect your Telegram account
 
 1. Open **Settings** (**⋮** menu in the sidebar toolbar → **Settings**).
-2. Click the **Gateway** tab.
+2. Click the **Remote** tab.
 3. Click **Connect Telegram**. Dassi generates a pairing token — it expires in 5 minutes.
 4. Do one of the following:
    - Click **Open in Telegram** to jump straight to the `@dassi_ai_bot` chat. On first link, Telegram shows a **Start** button — tap it once. The bot replies "Linked".
    - Click **Copy /link `<token>`** and paste that command into `@dassi_ai_bot` yourself.
 
-<!-- TODO: screenshot of the Gateway tab with pairing token ready -->
+<!-- TODO: screenshot of the Remote tab with pairing token ready -->
 
 Once linked, you'll see the connection listed in the **Linked connections** section below the Connect card.
 
@@ -47,7 +47,7 @@ The conversation also appears in Dassi's side panel on your computer, so you can
 
 ## Manage linked connections
 
-The **Linked connections** card in the Gateway tab shows every active pairing. Each row shows:
+The **Linked connections** card in the Remote tab shows every active pairing. Each row shows:
 
 - The Telegram chat it came from
 - The bot it paired through
