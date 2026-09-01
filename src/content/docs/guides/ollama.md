@@ -7,12 +7,12 @@ Dassi can run on a model you host yourself. If you already use [Ollama](https://
 
 The setting is real but it's buried: it lives behind a collapsed section on the Models page, at the bottom of a long list of providers. This guide shows you exactly where to click.
 
-**On pricing:** bringing your own model doesn't make Dassi free — it moves you off the managed-credit tiers and onto **Developer**, a separate, cheaper track for people who supply their own keys. That option is hidden until you've connected a provider, so don't go looking for it first. See [Unlock the Developer plan](#unlock-the-developer-plan) below, or [Plans & Billing](/reference/plans-and-billing/) for the full comparison.
+**On pricing:** running your own model puts you on **Developer**, which costs less than the managed-credit tiers — you supply the keys, so you're only paying for the extension. It's hidden until you've connected a provider, so don't go looking for it first. See [Unlock the Developer plan](#unlock-the-developer-plan) below, or [Plans & Billing](/reference/plans-and-billing/) for the full comparison.
 
 ## Why you'd use it
 
 - **Your data stays on your machine.** Page text, screenshots, and prompts go to `localhost`, not to a model vendor.
-- **No per-token bill.** You're spending your own GPU time, not credits — on a [flat monthly plan](#unlock-the-developer-plan) for the client itself.
+- **No per-token bill.** You're spending your own GPU time, not credits — on a [cheaper flat monthly plan](#unlock-the-developer-plan).
 - **Your choice of model.** Swap between anything you've pulled, straight from the model picker in chat.
 
 The tradeoff is capability. Browser automation is a demanding, long-horizon, tool-calling workload — a 7B model will feel noticeably less reliable than a frontier model at multi-step tasks.
@@ -81,11 +81,11 @@ If that works, move up to a real task:
 
 ## Unlock the Developer plan
 
-Running a local model means you're not spending Dassi's managed credits — so the Starter / Pro / Max tiers aren't what you want. Dassi charges for the client instead, on a separate track called **Developer** ("Dassi for developers"): you bring the keys, Dassi bills for the extension.
+A local model means you don't need managed credits, so the Starter / Pro / Max tiers aren't what you want. **Developer** ("Dassi for developers") is the track built for this: you supply the keys, and it costs less than any of the managed tiers because you're only paying for the extension.
 
-**That option is hidden until you've connected a provider.** If you go looking for it before finishing step 4, it isn't on the Plan page at all — which is why it's easy to conclude Dassi has no bring-your-own-model pricing.
+**It's hidden until you've connected a provider.** If you go looking for it before finishing step 4, it isn't on the Plan page at all — which is why it's easy to miss that this cheaper option exists.
 
-Once your Ollama endpoint verifies, open **Settings → Plan**. The Developer option appears below the Starter / Pro / Max cards, set apart from them rather than sitting in the grid — it isn't a cheaper rung on the same ladder, it's a different deal.
+Once your Ollama endpoint verifies, open **Settings → Plan**. The Developer option appears below the Starter / Pro / Max cards, set apart rather than sitting in the grid — it's a different kind of plan, not another credit tier.
 
 ![The bottom of Dassi's Plan page. Below the Starter, Pro and Max cards, a separate strip labelled "Dassi for developers" is outlined, showing a monthly price, the line "Bring your own API keys — ChatGPT, Gemini, Claude and more", a dassi CLI link, and a Continue button.](/images/ollama-developer-plan.png)
 
