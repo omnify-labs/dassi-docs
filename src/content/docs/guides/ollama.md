@@ -83,7 +83,11 @@ Running a local model means you're not spending Dassi's managed credits — so t
 
 **That option is hidden until you've connected a provider.** If you go looking for it before finishing step 4, it isn't on the Plan page at all — which is why it's easy to conclude Dassi has no bring-your-own-model pricing.
 
-Once your Ollama endpoint verifies, open **Settings → Plan**. The Developer option appears below the Starter / Pro / Max cards, set apart from them rather than sitting in the grid — it isn't a cheaper rung on the same ladder, it's a different deal. You can pay by card or WeChat Pay.
+Once your Ollama endpoint verifies, open **Settings → Plan**. The Developer option appears below the Starter / Pro / Max cards, set apart from them rather than sitting in the grid — it isn't a cheaper rung on the same ladder, it's a different deal.
+
+![The bottom of Dassi's Plan page. Below the Starter, Pro and Max cards, a separate strip labelled "Dassi for developers" is outlined, showing a monthly price, the line "Bring your own API keys — ChatGPT, Gemini, Claude and more", a dassi CLI link, and a Continue button.](/images/ollama-developer-plan.png)
+
+Checkout is by card. Where managed-credit purchases are paused for your region, a WeChat Pay button appears next to it as well.
 
 It also shows up if you already subscribe to it, or if managed-credit plans are unavailable in your region.
 
