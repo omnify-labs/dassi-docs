@@ -7,6 +7,14 @@ Stay up to date with the latest dassi features, improvements, and fixes.
 
 ---
 
+## v0.67.0
+
+### Gemini 3.8 Flash is the new default managed model
+
+The default model for managed credits is now **Gemini 3.8 Flash**, replacing the previous Flash default. New accounts and anyone who hasn't manually picked a model start on Gemini 3.8 Flash automatically. If you'd already chosen a different model, your selection is unaffected — switch anytime in **Settings**. [See AI Models & Providers](/guides/connect-ai-provider/)
+
+---
+
 ## v0.39.0
 
 ### Task dashboard at app.dassi.ai
