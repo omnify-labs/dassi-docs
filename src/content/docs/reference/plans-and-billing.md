@@ -11,13 +11,13 @@ dassi offers a free tier and several paid options. All plans include full browse
 |---|---|---|---|---|---|
 | **Price** | $0 | $10/mo | $25/mo | $100/mo | $300/mo |
 | **Managed credits** | $5 one-time | — | Included | Included | Included |
-| **Models** | Gemini 3 Pro, 3.5 Flash | OpenAI models | All models | All models | All models |
+| **Models** | Gemini 3 Pro, 3.8 Flash | OpenAI models | All models | All models | All models |
 | **Custom skills** | yes | yes | yes | yes | yes |
 | **Priority support** | — | — | — | yes | yes |
 
 ### Free
 
-Try dassi at no cost. New accounts get a one-time $5 in managed credits — no credit card — to spend on Gemini 3 Pro and Gemini 3.5 Flash. Good for trying dassi before committing to a paid plan.
+Try dassi at no cost. New accounts get a one-time $5 in managed credits — no credit card — to spend on Gemini 3 Pro and Gemini 3.8 Flash. Good for trying dassi before committing to a paid plan.
 
 ### BYOK — $10/month
 
