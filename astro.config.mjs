@@ -39,6 +39,14 @@ export default defineConfig({
 				},
 			],
 			sidebar: [
+				{ label: '教程 / Tutorials', items: [
+					{ label: '中文实用教程', link: '/zh/tutorials/' },
+					{ label: 'English tutorials', link: '/tutorials/' },
+					{ label: '客户问价格，先写一版回复', link: '/zh/tutorials/price-reply/' },
+					{ label: '客户催物流，怎么解释当前进度', link: '/zh/tutorials/shipping-reply/' },
+					{ label: '把几家供应商放进一张对比表', link: '/zh/tutorials/supplier-compare/' },
+					{ label: '客户发来官网，先整理哪些信息', link: '/zh/tutorials/company-research/' },
+				] },
 				{ label: '中文上手', items: [
 					{ label: 'Edge 安装图解', link: '/zh/edge-install/' },
 					{ label: '紫鸟安装状态', link: '/zh/ziniao-install/' },

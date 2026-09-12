@@ -32,3 +32,7 @@ dassi runs entirely in your browser. Your browsing data is only sent to the AI p
 - [Install dassi](/getting-started/installation/) to get started
 - [Quick start guide](/getting-started/quick-start/) for a 2-minute walkthrough
 - [AI Models & Providers](/guides/connect-ai-provider/) to understand your options
+
+## Learn with a small task
+
+[中文实用教程](/zh/tutorials/) · [English tutorials](/tutorials/) — practice customer replies, quote comparisons and company research with sample data and copyable prompts.
