@@ -39,6 +39,11 @@ export default defineConfig({
 				},
 			],
 			sidebar: [
+				{ label: '中文上手', items: [
+					{ label: 'Edge 安装图解', link: '/zh/edge-install/' },
+					{ label: '紫鸟安装状态', link: '/zh/ziniao-install/' },
+					{ label: '外贸、电商任务模板', link: '/zh/ecommerce-start/' },
+				] },
 				{
 					label: 'Getting Started',
 					items: [
