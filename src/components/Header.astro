@@ -3,6 +3,7 @@ import Search from '@astrojs/starlight/components/Search.astro';
 import SocialIcons from '@astrojs/starlight/components/SocialIcons.astro';
 import LanguageSelect from '@astrojs/starlight/components/LanguageSelect.astro';
 import BrandTitle from './SiteTitle.astro';
+import { ctaUrl } from '../lib/tutorial-attribution';
 const signupUrl = 'https://www.dassi.ai/?signup=1&utm_source=dassi_docs&utm_medium=referral&utm_campaign=docs_header';
 const installUrl = 'https://chromewebstore.google.com/detail/dassi-ai-browser-agent/bjcngahpcjeililljmfegmlanlpgibdi?utm_source=dassi_docs&utm_medium=referral&utm_campaign=docs_header&utm_content=install';
 ---
@@ -11,8 +12,8 @@ const installUrl = 'https://chromewebstore.google.com/detail/dassi-ai-browser-ag
   <div class="search"><Search /></div>
   <div class="social"><SocialIcons /></div>
   <nav class="actions" aria-label="Get started with Dassi">
-    <a class="signup" href={signupUrl}>Sign up</a>
-    <a class="install" href={installUrl} target="_blank" rel="noopener noreferrer"><span class="full">Install dassi</span><span class="short">Install</span></a>
+    <a class="signup" href={ctaUrl(signupUrl, Astro.url.pathname)} data-docs-cta="signup">Sign up</a>
+    <a class="install" href={ctaUrl(installUrl, Astro.url.pathname)} data-docs-cta="install" target="_blank" rel="noopener noreferrer"><span class="full">Install dassi</span><span class="short">Install</span></a>
   </nav>
   <LanguageSelect />
 </div>
@@ -32,3 +33,7 @@ const installUrl = 'https://chromewebstore.google.com/detail/dassi-ai-browser-ag
 @media(max-width:50rem){.docs-header{gap:.5rem}.search{flex:0 0 auto}.actions{gap:.35rem}.actions a{padding:.4rem .55rem;font-size:12px}.full{display:none}.short{display:inline}.brand :global(.logo-text),.brand :global(.logo-divider),.brand :global(.docs-link){display:none}}
 @media print{.search,.social,.actions{display:none}}
 </style>
+
+<script>
+  import "../lib/tutorial-analytics";
+</script>
