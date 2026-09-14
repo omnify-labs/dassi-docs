@@ -23,6 +23,10 @@ The top bar includes:
 - **Clear chat** — clears the current conversation and starts fresh
 - **More menu** (three dots) — access Settings, Skills, and Bug Report
 
+For ongoing work, expand **Projects** below the toolbar to save this chat as a
+project or open an existing one. Projects keep the brief, files, and saved progress
+available across chats. See [Using projects](/guides/projects/) for a walkthrough.
+
 ### Chat area
 
 The scrollable middle section shows your conversation. When you first open a session, dassi shows suggested actions based on the current page.
