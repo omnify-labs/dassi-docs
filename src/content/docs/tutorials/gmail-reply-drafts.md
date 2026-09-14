@@ -32,7 +32,7 @@ Confirm each draft is saved and can be reopened. Return the thread subject, inte
 
 ## Check the result
 
-Open each draft and check the recipient, context, factual claims and tone. A generated reply shown in chat is not a saved Gmail draft. If there is no saved draft, mark that item incomplete and resolve the blocker before retrying.
+Open each draft and check the recipient, context, factual claims, and tone. A generated reply shown in chat is not a saved Gmail draft. If there is no saved draft, mark that item incomplete and resolve the blocker before retrying.
 
 Opening unread messages may mark them as read. If preserving unread status matters, include that requirement before starting and verify it afterwards.
 

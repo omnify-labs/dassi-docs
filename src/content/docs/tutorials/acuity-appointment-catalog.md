@@ -15,7 +15,7 @@ Use this workflow to compare your existing appointment catalog with an approved 
 
 New to Dassi? Follow the [installation guide](/getting-started/installation/) and [model setup guide](/guides/connect-ai-provider/).
 
-Open your Acuity Scheduling account in Chrome and Dassi alongside it. Prepare the exact name, duration, price, description, calendar and visibility for each requested appointment type. Start with three entries for one location. See Acuity's [appointment-type guide](https://help.acuityscheduling.com/hc/en-us/articles/16676922487949-Creating-and-editing-appointment-types) for the platform's settings.
+Open your Acuity Scheduling account in Chrome and Dassi alongside it. Prepare the exact name, duration, price, description, calendar, and visibility for each requested appointment type. Start with three entries for one location. See Acuity's [appointment-type guide](https://help.acuityscheduling.com/hc/en-us/articles/16676922487949-Creating-and-editing-appointment-types) for the platform's settings.
 
 ## 1. Find the missing entries
 
@@ -23,7 +23,7 @@ Open your Acuity Scheduling account in Chrome and Dassi alongside it. Prepare th
 Compare the first three entries in my approved master list with the appointment types in the Acuity account I have open.
 
 Business/location: [location]
-Master list: [name, duration, currency and price, description, calendar, visibility for each entry]
+Master list: [name, duration, currency and price, description, calendar, and visibility for each entry]
 
 Return a comparison table with exact matches, possible duplicates, missing entries and uncertain matches. Show the current values for any differences. Do not create, edit or delete anything yet. Stop if a required value or calendar assignment is unclear.
 ```
@@ -39,7 +39,7 @@ Reopen each created appointment type and compare every requested field with the 
 
 ## 3. Verify the customer-facing setup
 
-Check the saved name, duration, price, description, assigned calendar and intended visibility. Inspect the relevant scheduling page without placing a real booking. Verify availability separately: a saved appointment type alone does not establish that clients can book the intended times.
+Check the saved name, duration, price, description, assigned calendar, and intended visibility. Inspect the relevant scheduling page without placing a real booking. Verify availability separately: a saved appointment type alone does not establish that clients can book the intended times.
 
 Acuity notes that newly created appointment types may also need to be added to applicable packages, gift certificates or subscriptions. Review that separately before calling the service ready for customers.
 
