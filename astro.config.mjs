@@ -10,6 +10,7 @@ export default defineConfig({
 			title: 'dassi docs',
 			favicon: '/favicon.ico',
 			components: {
+				Header: './src/components/Header.astro',
 				SiteTitle: './src/components/SiteTitle.astro',
 			},
 			expressiveCode: {
