@@ -42,6 +42,9 @@ export default defineConfig({
 				{ label: '教程 / Tutorials', items: [
 					{ label: '中文实用教程', link: '/zh/tutorials/' },
 					{ label: 'English tutorials', link: '/tutorials/' },
+					{ label: 'Google Business Profile services', link: '/tutorials/google-business-profile-services/' },
+					{ label: 'Acuity appointment types', link: '/tutorials/acuity-appointment-catalog/' },
+					{ label: 'Gmail reply drafts', link: '/tutorials/gmail-reply-drafts/' },
 					{ label: '客户问价格，先写一版回复', link: '/zh/tutorials/price-reply/' },
 					{ label: '客户催物流，怎么解释当前进度', link: '/zh/tutorials/shipping-reply/' },
 					{ label: '把几家供应商放进一张对比表', link: '/zh/tutorials/supplier-compare/' },
