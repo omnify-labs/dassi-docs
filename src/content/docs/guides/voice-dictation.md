@@ -15,6 +15,9 @@ You need to be signed in to Dassi. Your extension must include **Models → Voic
 ## Start with Dassi managed
 
 1. In the sidebar, open **⋮ → Settings**.
+
+   ![Dassi sidebar menu with the three-dot button marked 1 and Settings marked 2](/images/ollama-open-settings.png)
+
 2. Select **Models**, then find **Voice**.
 3. Set **Voice transcription** to **Dassi managed (default)**.
 
