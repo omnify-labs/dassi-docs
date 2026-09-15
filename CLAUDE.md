@@ -43,3 +43,11 @@ All docs live in `src/content/docs/`:
 1. Create a `.md` file in the appropriate `src/content/docs/` subdirectory
 2. Add frontmatter with `title` and optionally `description`
 3. Add a link entry to the sidebar in `astro.config.mjs`
+4. Include relevant screenshots beside the instructions they illustrate.
+
+## Documentation Screenshots
+
+- Always include relevant screenshots in user-facing documentation you add or update.
+- Use real screenshots that match the documented UI. Reuse an existing image when it still accurately illustrates the step; keep assets in `public/images/`.
+- Place each screenshot beside its related step, with descriptive alt text. Exclude private account details, messages, and credentials.
+- Verify images render in the built page. A screenshot placeholder does not satisfy this requirement; if a needed capture is unavailable, report the gap.

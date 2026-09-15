@@ -55,8 +55,8 @@ applied as a reviewer.
 
 - Steps and commands actually work and match the current product.
 - New pages are added to `astro.config.mjs` sidebar nav.
-- `<!-- TODO: screenshot -->` placeholders are acceptable; flag if a critical step
-  clearly needs a visual and has none.
+- Follow the screenshot requirements in `CLAUDE.md`: flag missing relevant
+  screenshots, outdated UI, exposed private data, broken images, and placeholders.
 
 ## Output
 
