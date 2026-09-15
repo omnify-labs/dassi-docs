@@ -45,6 +45,12 @@ You can attach photos — Dassi will include them as part of the task.
 
 The conversation also appears in Dassi's side panel on your computer, so you can watch the task run live or pick it up later.
 
+## Send a voice message
+
+Send a voice note to `@dassi_ai_bot` from your linked account. Dassi transcribes it, runs the task, and replies in Telegram. Keep the connected computer awake and online with Chrome running.
+
+Choose **Dassi managed (default)** under **Settings → Models → Voice**, or select OpenAI/Groq with a matching speech API key. The same voice setting is used for sidebar dictation. See [Voice dictation](/guides/voice-dictation/#send-a-telegram-voice-message) for setup, limits, and troubleshooting.
+
 ## Manage linked connections
 
 The **Linked connections** card in the Remote tab shows every active pairing. Each row shows:

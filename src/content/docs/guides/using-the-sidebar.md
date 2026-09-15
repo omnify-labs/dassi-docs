@@ -43,6 +43,7 @@ The scrollable middle section shows your conversation. When you first open a ses
 The bottom bar is where you type messages:
 
 - **Attach files** — click the paperclip icon to attach images or text files. You can also drag-and-drop or paste images from your clipboard
+- **Record voice** — click the microphone to dictate, then finish recording to add editable text to your draft. See [Voice dictation](/guides/voice-dictation/) for permission setup and the browser shortcut
 - **Send** — press `Enter` to send, `Shift+Enter` for a new line
 - **Stop** — while dassi is working, the send button becomes a stop button
 
