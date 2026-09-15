@@ -72,6 +72,7 @@ export default defineConfig({
 						{ label: 'Set up Ollama for Dassi', link: '/guides/ollama-server-setup/' },
 						{ label: 'Your First Task', link: '/guides/first-task/' },
 						{ label: 'Using the Sidebar', link: '/guides/using-the-sidebar/' },
+						{ label: 'Voice Dictation', link: '/guides/voice-dictation/' },
 						{ label: 'Using Projects', link: '/guides/projects/' },
 						{ label: 'Task Dashboard', link: '/guides/task-dashboard/' },
 						{ label: 'Browser Automation', link: '/guides/browser-automation/' },

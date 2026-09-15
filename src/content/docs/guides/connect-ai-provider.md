@@ -87,6 +87,10 @@ Click **Advanced** in the Custom card to set a **response timeout** — how long
 - Dassi normalizes your base URL to end with `/v1`, so entering `http://localhost:11434` or `http://localhost:11434/v1` connects to the same endpoint.
 - If a request fails right after connecting successfully, it's usually the server's CORS policy blocking dassi's requests rather than a bad connection. For Ollama, restart it with `OLLAMA_ORIGINS=<your-origin> ollama serve` to allow the extension's origin, then retry — the [Ollama guide](/guides/ollama/) covers this in full.
 
+## Voice transcription
+
+Voice has a separate provider setting under **Settings → Models → Voice**. **Dassi managed (default)** needs no speech API key, including when you use BYOK for chat. To use your own speech provider, connect an OpenAI or Groq API key and select the matching voice option. This applies to both microphone dictation and Telegram voice messages. See [Voice dictation](/guides/voice-dictation/) for the steps and allowance.
+
 ## How dassi uses models
 
 dassi uses your selected model as the main reasoning engine. For certain visual tasks (like clicking at specific coordinates on a page), dassi automatically uses a faster secondary model to keep things quick and cost-efficient. You don't need to configure this — it happens automatically.

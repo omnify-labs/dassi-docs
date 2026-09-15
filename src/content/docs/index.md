@@ -32,6 +32,7 @@ dassi runs entirely in your browser. Your browsing data is only sent to the AI p
 - [Install dassi](/getting-started/installation/) to get started
 - [Quick start guide](/getting-started/quick-start/) for a 2-minute walkthrough
 - [AI Models & Providers](/guides/connect-ai-provider/) to understand your options
+- [Voice dictation](/guides/voice-dictation/) to speak into the sidebar or send Telegram voice messages
 
 ## Learn with a small task
 
