@@ -3,7 +3,7 @@ title: "准备三封 Gmail 回复草稿待审"
 description: "读取一小组邮件会话，保存回复草稿，发送前核对。"
 ---
 
-[English](/tutorials/gmail-reply-drafts/) · [全部教程](/zh/tutorials/)
+[English](/tutorials/gmail-reply-drafts/) · [全部场景](/zh/tutorials/)
 
 :::note[先从一小批开始]
 这个提示模板改编自观察到的用户工作流。结果取决于你的账号和当前页面。修改之前先检查对比结果，并在网站上核对已保存的内容。
@@ -38,4 +38,4 @@ description: "读取一小组邮件会话，保存回复草稿，发送前核对
 
 这是一个审核流程，不是无人值守的收件箱自动回复。如果中途被打断，保存结果列表，下次运行时先检查已有草稿。
 
-[试试另一个教程](/zh/tutorials/)
+[试试另一个场景](/zh/tutorials/)

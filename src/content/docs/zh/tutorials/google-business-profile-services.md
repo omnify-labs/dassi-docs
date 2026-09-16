@@ -3,7 +3,7 @@ title: "检查并补全 Google 商家档案的服务"
 description: "把已批准的服务清单和你的档案对比，检查缺失条目，并核对一小批修改。"
 ---
 
-[English](/tutorials/google-business-profile-services/) · [全部教程](/zh/tutorials/)
+[English](/tutorials/google-business-profile-services/) · [全部场景](/zh/tutorials/)
 
 :::note[先从一小批开始]
 这个提示模板改编自观察到的用户工作流。结果取决于你的账号和当前页面。修改之前先检查对比结果，并在网站上核对已保存的内容。
@@ -49,4 +49,4 @@ description: "把已批准的服务清单和你的档案对比，检查缺失条
 
 如果编辑器不可用、档案需要验证，或额度用完了，保留已完成项目的列表，先解决阻碍再继续。这个流程不承诺提升搜索排名，也不承诺完成 Google 的验证流程。
 
-[试试另一个教程](/zh/tutorials/)
+[试试另一个场景](/zh/tutorials/)

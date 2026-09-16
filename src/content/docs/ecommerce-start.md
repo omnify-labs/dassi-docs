@@ -35,6 +35,6 @@ The last two are templates to try, not something verified on your business site.
 
 [Install on Edge](/edge-install/) · [Ziniao browser status](/ziniao-install/)
 
-## Practice with a tutorial
+## Practice with a use case
 
-[Open the tutorials](/tutorials/) and use the practice data to draft a pricing reply, a shipping update, a supplier comparison or a customer-research summary.
+[Open the use cases](/tutorials/) and use the practice data to draft a pricing reply, a shipping update, a supplier comparison or a customer-research summary.

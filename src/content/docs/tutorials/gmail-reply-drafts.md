@@ -3,7 +3,7 @@ title: "Prepare three Gmail replies for review"
 description: "Read a small set of email threads, save reply drafts, and verify them before sending."
 ---
 
-[All tutorials](/tutorials/)
+[All use cases](/tutorials/)
 
 :::note[Start with a small batch]
 This prompt template adapts an observed user workflow. Results depend on your account and the current page. Review the comparison before making changes, and verify saved results on the site.
@@ -38,4 +38,4 @@ Opening unread messages may mark them as read. If preserving unread status matte
 
 This is a review workflow, not an unattended inbox responder. Save the result list if interrupted so a later run can check for existing drafts first.
 
-[Try another tutorial](/tutorials/)
+[Try another use case](/tutorials/)

@@ -3,7 +3,7 @@ title: "Check and complete Google Business Profile services"
 description: "Compare an approved service list with your profile, review missing entries, and verify a small batch of changes."
 ---
 
-[All tutorials](/tutorials/)
+[All use cases](/tutorials/)
 
 :::note[Start with a small batch]
 This prompt template adapts an observed user workflow. Results depend on your account and the current page. Review the comparison before making changes, and verify saved results on the site.
@@ -49,4 +49,4 @@ Compare each saved entry with your approved list. Keep the result table and prov
 
 If the editor is unavailable, the profile needs verification, or credits run out, keep the completed-item list and resolve that blocker before continuing. This workflow does not promise search-ranking improvements or completion of Google's verification process.
 
-[Try another tutorial](/tutorials/)
+[Try another use case](/tutorials/)

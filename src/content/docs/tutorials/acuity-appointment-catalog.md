@@ -3,7 +3,7 @@ title: "Add missing Acuity appointment types"
 description: "Compare your Acuity catalog with an approved master list and verify newly created appointment types."
 ---
 
-[All tutorials](/tutorials/)
+[All use cases](/tutorials/)
 
 :::note[Start with a small batch]
 This prompt template adapts an observed user workflow. Results depend on your account and the current page. Review the comparison before making changes, and verify saved results on the site.
@@ -45,4 +45,4 @@ Acuity notes that newly created appointment types may also need to be added to a
 
 If interrupted, give Dassi the last result table and ask it to recheck the account before creating anything else. Keep suspected duplicate deletion outside this workflow; reconcile uncertain entries before taking action.
 
-[Try another tutorial](/tutorials/)
+[Try another use case](/tutorials/)
