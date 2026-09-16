@@ -61,4 +61,12 @@ Four of these come with fictional practice pages in English and Chinese; the res
 - [Apply your reading preferences to any page](/tutorials/universal-accessibility-mode/)
 - [Check a booking date against your calendar](/tutorials/travel-booking-calendar-conflicts/)
 
+## On a Chromebook
+
+Everything in these three happens in Google's own apps, and nothing is sent, submitted, or bought without you. Start with the [Chromebook guide](/chromebook/) if you haven't installed Dassi yet.
+
+- [Turn rough notes into a formatted Google Doc](/chromebook/notes-to-doc/)
+- [Compare a product's price across three stores in a Google Sheet](/chromebook/price-check-sheet/)
+- [List what's due this week from Google Classroom](/chromebook/classroom-week/)
+
 Not sure where to start? [E-commerce task templates](/ecommerce-start/) has three prompts you can run on any product, company or review page.

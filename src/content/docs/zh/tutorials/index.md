@@ -61,4 +61,12 @@ title: 使用场景：从一个小任务开始
 - [把阅读偏好应用到任何页面](/zh/tutorials/universal-accessibility-mode/)
 - [订票前对一下日历冲突](/zh/tutorials/travel-booking-calendar-conflicts/)
 
+## 在 Chromebook 上
+
+这三个场景都在 Google 自家的应用里完成，不会替你发送、提交或购买任何东西。还没装 Dassi 的话，先看 [Chromebook 指南](/zh/chromebook/)。这几页目前只有英文版。
+
+- [把零散笔记整理成排版好的 Google 文档](/zh/chromebook/notes-to-doc/)
+- [在三家商店比价，填进 Google 表格](/zh/chromebook/price-check-sheet/)
+- [从 Google Classroom 列出本周要交的作业](/zh/chromebook/classroom-week/)
+
 不知道从哪开始？[外贸、电商任务模板](/zh/ecommerce-start/)里有三段可以在任何商品页、公司官网或评价页上跑的提示。

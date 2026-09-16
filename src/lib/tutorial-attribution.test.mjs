@@ -15,6 +15,11 @@ test('English and Chinese tutorials have separate language and stable tutorial i
   assert.equal(pageContext('/tutorials/').tutorial_id, 'index');
   assert.equal(pageContext('/guides/first-task/').is_tutorial, false);
 });
+test('Chromebook use cases count as tutorials under their own route with a prefixed id', () => {
+  assert.deepEqual(plain(pageContext('/chromebook/notes-to-doc/')), { page_path: '/chromebook/notes-to-doc/', tutorial_id: 'chromebook-notes-to-doc', content_language: 'en', is_tutorial: true });
+  assert.equal(pageContext('/zh/chromebook/').tutorial_id, 'chromebook-index');
+  assert.equal(new URL(ctaUrl('https://www.dassi.ai/', '/chromebook/price-check-sheet/')).searchParams.get('utm_campaign'), 'docs_tutorials');
+});
 test('organic signup carries exact tutorial path and keeps signup entry', () => {
   const url = new URL(ctaUrl('https://www.dassi.ai/?signup=1&utm_content=install', '/tutorials/acuity-appointment-catalog/'));
   assert.equal(url.searchParams.get('signup'), '1');

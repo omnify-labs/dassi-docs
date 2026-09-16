@@ -145,6 +145,16 @@ export default defineConfig({
 								{ label: 'Check a booking date against your calendar', translations: { 'zh-CN': '订票前对一下日历冲突' }, link: '/tutorials/travel-booking-calendar-conflicts/' },
 							],
 						},
+						{
+							label: 'On a Chromebook',
+							translations: { 'zh-CN': '在 Chromebook 上' },
+							collapsed: true,
+							items: [
+								{ label: 'Notes to a Google Doc', translations: { 'zh-CN': '笔记整理成 Google 文档' }, link: '/chromebook/notes-to-doc/' },
+								{ label: 'Price check in a Sheet', translations: { 'zh-CN': '三家比价填进表格' }, link: '/chromebook/price-check-sheet/' },
+								{ label: 'This week in Classroom', translations: { 'zh-CN': '本周 Classroom 作业清单' }, link: '/chromebook/classroom-week/' },
+							],
+						},
 					],
 				},
 				{
@@ -165,6 +175,7 @@ export default defineConfig({
 						{ label: 'AI Models & Providers', translations: { 'zh-CN': '模型与服务商' }, link: '/guides/connect-ai-provider/' },
 						{ label: 'Use Dassi with Ollama', translations: { 'zh-CN': '搭配 Ollama 使用' }, link: '/guides/ollama/' },
 						{ label: 'Set up Ollama for Dassi', translations: { 'zh-CN': '为 Dassi 配置 Ollama' }, link: '/guides/ollama-server-setup/' },
+						{ label: 'Use Dassi on a Chromebook', translations: { 'zh-CN': '在 Chromebook 上使用' }, link: '/chromebook/' },
 						{ label: 'Your First Task', translations: { 'zh-CN': '第一个任务' }, link: '/guides/first-task/' },
 						{ label: 'Using the Sidebar', translations: { 'zh-CN': '使用侧栏' }, link: '/guides/using-the-sidebar/' },
 						{ label: 'Voice Dictation', translations: { 'zh-CN': '语音输入' }, link: '/guides/voice-dictation/' },
