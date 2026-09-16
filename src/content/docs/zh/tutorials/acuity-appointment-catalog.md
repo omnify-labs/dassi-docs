@@ -3,7 +3,7 @@ title: "补齐 Acuity 缺失的预约类型"
 description: "把 Acuity 的预约目录和已批准的主清单对比，并核对新建的预约类型。"
 ---
 
-[English](/tutorials/acuity-appointment-catalog/) · [全部教程](/zh/tutorials/)
+[English](/tutorials/acuity-appointment-catalog/) · [全部场景](/zh/tutorials/)
 
 :::note[先从一小批开始]
 这个提示模板改编自观察到的用户工作流。结果取决于你的账号和当前页面。修改之前先检查对比结果，并在网站上核对已保存的内容。
@@ -45,4 +45,4 @@ Acuity 提到，新建的预约类型可能还需要加入相关的套餐、礼�
 
 如果中途被打断，把最后一张结果表给 dassi，让它在再创建任何东西之前先重新检查账号。疑似重复项的删除不在这个流程里；先把不确定的条目理清再行动。
 
-[试试另一个教程](/zh/tutorials/)
+[试试另一个场景](/zh/tutorials/)

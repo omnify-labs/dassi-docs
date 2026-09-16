@@ -51,8 +51,8 @@ export default defineConfig({
 			// Starlight injects the current locale itself.
 			sidebar: [
 				{
-					label: 'Tutorials',
-					translations: { 'zh-CN': '实用教程' },
+					label: 'Use cases',
+					translations: { 'zh-CN': '使用场景' },
 					items: [
 						{ label: 'Start with one small task', translations: { 'zh-CN': '从一个小任务开始' }, link: '/tutorials/' },
 						{ label: 'E-commerce task templates', translations: { 'zh-CN': '外贸、电商任务模板' }, link: '/ecommerce-start/' },
@@ -77,8 +77,8 @@ export default defineConfig({
 					],
 				},
 				{
-					label: 'Guides',
-					translations: { 'zh-CN': '使用指南' },
+					label: 'Features',
+					translations: { 'zh-CN': '功能说明' },
 					items: [
 						{ label: 'AI Models & Providers', translations: { 'zh-CN': '模型与服务商' }, link: '/guides/connect-ai-provider/' },
 						{ label: 'Use Dassi with Ollama', translations: { 'zh-CN': '搭配 Ollama 使用' }, link: '/guides/ollama/' },

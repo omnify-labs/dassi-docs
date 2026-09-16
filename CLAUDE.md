@@ -30,8 +30,8 @@ pnpm lint         # ESLint with astro plugin
 All docs live in `src/content/docs/`:
 - `index.md` — Introduction (home page)
 - `getting-started/` — Installation and quick start
-- `guides/` — Usage guides (AI provider setup, first task, sidebar)
-- `tutorials/` — Task-based tutorials with practice pages
+- `guides/` — the **Features** section: one page per feature (directory keeps its original name; the sidebar label is "Features")
+- `tutorials/` — the **Use cases** section: task-based walkthroughs with practice pages (directory keeps its original name; the sidebar label is "Use cases")
 - `zh/` — Simplified Chinese translations, mirroring the root layout
 
 ## Languages

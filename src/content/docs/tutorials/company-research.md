@@ -3,7 +3,7 @@ title: Research a potential customer
 description: Practice data, short steps and a copyable prompt.
 ---
 
-[中文](/zh/tutorials/company-research/) · [All tutorials](/tutorials/)
+[中文](/zh/tutorials/company-research/) · [All use cases](/tutorials/)
 
 Start with a small practice task, then use your own page.
 
@@ -33,12 +33,12 @@ If the page cannot be read, ask Dassi to identify missing information before sup
 
 ### An actual run
 
-This Chrome screenshot shows Dassi after running the English practice task. It separates stated facts from the fit hypothesis. The localhost URL belongs to our local tutorial preview; use the practice link above. Your wording and layout may vary.
+This Chrome screenshot shows Dassi after running the English practice task. It separates stated facts from the fit hypothesis. The localhost URL belongs to our local preview; use the practice link above. Your wording and layout may vary.
 
 ![Dassi company research result in Chrome](/images/tutorials/company-research-result-en.jpg)
 
 ## 4. Use your own page
 
-Open a relevant business page you are authorized to process. Adapt the product, quantity or language in the prompt. Review the draft or table before proceeding. This tutorial does not configure background auto-replies or send customer messages automatically.
+Open a relevant business page you are authorized to process. Adapt the product, quantity or language in the prompt. Review the draft or table before proceeding. This use case does not configure background auto-replies or send customer messages automatically.
 
-[Try another tutorial](/tutorials/)
+[Try another use case](/tutorials/)

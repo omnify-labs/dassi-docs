@@ -32,4 +32,4 @@ dassi 完全在你的浏览器里运行。只有在你发起任务时，网页�
 - [在 Edge 安装](/zh/edge-install/) — 带真实截图的安装图解
 - [在 Chrome 安装](/zh/getting-started/installation/)
 - [外贸、电商任务模板](/zh/ecommerce-start/) — 复制一段提示词，跑第一个任务
-- [实用教程](/zh/tutorials/) — 用练习资料完成问价回复、物流回复、供应商比较、客户资料整理
+- [使用场景](/zh/tutorials/) — 用练习资料完成问价回复、物流回复、供应商比较、客户资料整理
