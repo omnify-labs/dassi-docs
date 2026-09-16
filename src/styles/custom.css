@@ -56,6 +56,14 @@ starlight-theme-select {
 starlight-lang-select label {
 	--sl-select-width: 9.5em !important; /* beats the inline style Select.astro sets */
 }
+/* At phone width the header has no room for it: Sign up + Install + the picker
+   overlap the logo. Starlight's mobile menu (hamburger) renders its own
+   language picker in .mobile-preferences, so hide the header copy there. */
+@media (max-width: 50rem) {
+	.docs-header starlight-lang-select {
+		display: none;
+	}
+}
 
 /* ---- Header ---- */
 

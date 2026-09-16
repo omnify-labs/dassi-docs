@@ -15,7 +15,7 @@ description: 练习资料、简短步骤和可复制提示词。
 
 截图展示的是任务输入资料，不是 Dassi 的运行结果。
 
-还没安装？先看[Edge 安装图解](/zh/edge-install/)或[Chrome 安装指南](/getting-started/installation/)。打开 Dassi 侧边栏并完成登录；如果提示额度或模型配置，按[模型设置指南](/guides/connect-ai-provider/)完成设置。
+还没安装？先看[Edge 安装图解](/zh/edge-install/)或[Chrome 安装指南](/zh/getting-started/installation/)。打开 Dassi 侧边栏并完成登录；如果提示额度或模型配置，按[模型设置指南](/zh/guides/connect-ai-provider/)完成设置。
 
 ## 2. 复制这段 prompt
 
