@@ -36,4 +36,4 @@ dassi runs entirely in your browser. Your browsing data is only sent to the AI p
 
 ## Learn with a small task
 
-[中文实用教程](/zh/tutorials/) · [English tutorials](/tutorials/) — practice customer replies, quote comparisons and company research with sample data and copyable prompts.
+[Tutorials](/tutorials/) — practice customer replies, quote comparisons and company research with sample data and copyable prompts. Also available in [简体中文](/zh/tutorials/).

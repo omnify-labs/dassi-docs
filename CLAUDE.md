@@ -31,6 +31,16 @@ All docs live in `src/content/docs/`:
 - `index.md` — Introduction (home page)
 - `getting-started/` — Installation and quick start
 - `guides/` — Usage guides (AI provider setup, first task, sidebar)
+- `tutorials/` — Task-based tutorials with practice pages
+- `zh/` — Simplified Chinese translations, mirroring the root layout
+
+## Languages
+
+Starlight i18n is on (`locales` in `astro.config.mjs`): English is the `root` locale at `/`, Chinese is `zh` at `/zh/`.
+- A Chinese page lives at the same path under `zh/` (`guides/foo.md` ↔ `zh/guides/foo.md`). Same slug = language picker and hreflang link them.
+- Root pages with no `zh/` twin are served at `/zh/...` with the English body and a "not translated yet" notice. The reverse is not true: a page that only exists under `zh/` is unreachable from the English sidebar, so always create the root file first.
+- The sidebar is one list for both locales. Links are locale-less (`/guides/foo/`, never `/zh/guides/foo/`); give every label a `translations: { 'zh-CN': '…' }`.
+- Custom UI strings (header CTAs, search placeholder) live in `src/content/i18n/{en,zh-CN}.json`; new keys must be added to the `extend` schema in `src/content.config.ts`.
 
 ## Key Configuration
 
@@ -40,9 +50,9 @@ All docs live in `src/content/docs/`:
 
 ## Adding New Pages
 
-1. Create a `.md` file in the appropriate `src/content/docs/` subdirectory
+1. Create a `.md` file in the appropriate `src/content/docs/` subdirectory (English), and optionally the same path under `zh/`
 2. Add frontmatter with `title` and optionally `description`
-3. Add a link entry to the sidebar in `astro.config.mjs`
+3. Add a link entry to the sidebar in `astro.config.mjs`, with a `zh-CN` translation of the label
 4. Include relevant screenshots beside the instructions they illustrate.
 
 ## Documentation Screenshots
