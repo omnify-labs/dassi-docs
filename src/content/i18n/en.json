@@ -1,3 +1,7 @@
 {
-  "search.label": "Search docs..."
+  "search.label": "Search docs...",
+  "header.ctaLabel": "Get started with Dassi",
+  "header.signup": "Sign up",
+  "header.install": "Install dassi",
+  "header.installShort": "Install"
 }

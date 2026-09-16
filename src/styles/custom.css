@@ -52,6 +52,11 @@ starlight-theme-select {
 	display: none;
 }
 
+/* Language picker: Starlight's default 7em clips "简体中文" / "English" in the mono font */
+starlight-lang-select label {
+	--sl-select-width: 9.5em !important; /* beats the inline style Select.astro sets */
+}
+
 /* ---- Header ---- */
 
 .site-title {
