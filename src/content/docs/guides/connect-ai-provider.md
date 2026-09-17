@@ -35,25 +35,23 @@ The default model is **Gemini 3.5 Flash**. You can switch models in **Settings**
 
 ## Bring your own key (BYOK)
 
-If you prefer to use your own OpenAI API key:
+Dassi accepts API keys from OpenAI, Anthropic, Google, DeepSeek, xAI, Mistral, Groq, OpenRouter, Moonshot, Novita, and Azure OpenAI, plus a ChatGPT sign-in and any OpenAI-compatible endpoint (see [the next section](#custom-openai-compatible-endpoint)). You pay the provider directly for usage; on the Developer plan, that's the only model cost. During the 7-day trial, your own keys are unlimited — see [Plans & Billing](/reference/plans-and-billing/).
 
-1. Open **Settings** (**⋮** menu in the sidebar toolbar → **Settings**)
-2. Select **BYOK** as the billing mode
-3. Enter your **OpenAI API key**
-4. Choose a model:
+1. Open **Settings** (**⋮** menu in the sidebar toolbar → **Settings**).
 
-| Model | Description |
-|-------|-------------|
-| GPT-5 | Most capable OpenAI model |
-| GPT-5 Mini | Balanced performance and cost |
-| GPT-5 Nano | Fastest, most affordable |
+   ![Dassi's side panel with the three-dot menu open. The menu button in the top-right toolbar is outlined and labelled 1; the Settings item at the top of the menu is outlined and labelled 2.](/images/ollama-open-settings.png)
 
-### Getting an OpenAI API key
+2. Click **Models** in the left nav, then expand **API keys** — it's collapsed by default, so the provider list isn't visible until you click it.
 
-1. Sign up at [platform.openai.com](https://platform.openai.com)
-2. Navigate to **API Keys** in your account settings
-3. Click **Create new secret key**
-4. Copy the key and paste it in dassi's settings
+   ![Dassi's settings page on the Models tab. Models in the left nav is outlined and labelled 1; the collapsed API KEYS section heading near the bottom is outlined and labelled 2.](/images/ollama-models-api-keys.png)
+
+3. Find the provider's card, paste your key, and click **Save**. Dassi checks the key with a small billable request before saving, so an unfunded or free-tier key fails here rather than mid-task.
+
+   <!-- TODO: screenshot — an expanded provider card with the key field and Save button -->
+
+4. Pick a model from the picker in chat. Every model the key can reach shows up under that provider.
+
+Keys are stored in your browser and sent only to the provider they belong to. You can connect more than one provider and switch between them from the model picker.
 
 ## Custom (OpenAI-compatible) endpoint
 
