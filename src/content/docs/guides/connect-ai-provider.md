@@ -41,7 +41,7 @@ Dassi accepts API keys from OpenAI, Anthropic, Google, DeepSeek, xAI, Mistral, G
 
    ![Dassi's side panel with the three-dot menu open. The menu button in the top-right toolbar is outlined and labelled 1; the Settings item at the top of the menu is outlined and labelled 2.](/images/ollama-open-settings.png)
 
-2. Click **Models** in the left nav, then expand **API KEYS** — it's collapsed by default, so the provider list isn't visible until you click it.
+2. Click **Models** in the left nav, then expand **API keys** — it's collapsed by default, so the provider list isn't visible until you click it.
 
    ![Dassi's settings page on the Models tab. Models in the left nav is outlined and labelled 1; the collapsed API KEYS section heading near the bottom is outlined and labelled 2.](/images/ollama-models-api-keys.png)
 
@@ -65,7 +65,7 @@ You can connect any server that speaks the [OpenAI Chat Completions API](https:/
 ### Connecting
 
 1. Open **Settings** (**⋮** menu in the sidebar toolbar → **Settings**) and go to **Models**
-2. Expand the **API KEYS** section, scroll to the **Custom (OpenAI-compatible)** card at the bottom, and click **Add endpoint**
+2. Expand the **API keys** section, scroll to the **Custom (OpenAI-compatible)** card at the bottom, and click **Add endpoint**
 3. Enter the **Base URL** of your endpoint — for example, `https://my-resource.openai.azure.com/openai/v1` for Azure or `http://localhost:11434` for a local Ollama server
 4. Enter the **Model ID** — the exact identifier your server expects, e.g. `gpt-4o`, `llama3.2`, or `mistral-7b`. This is optional: leave it blank and dassi lists the models your endpoint reports so you can pick one in chat
 5. Enter your **API key**, if your server needs one. Servers that don't require auth (LM Studio, Ollama, vLLM) can leave this blank
