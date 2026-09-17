@@ -38,7 +38,13 @@ The default model is **Gemini 3.5 Flash**. You can switch models in **Settings**
 Dassi accepts API keys from OpenAI, Anthropic, Google, DeepSeek, xAI, Mistral, Groq, OpenRouter, Moonshot, Novita, and Azure OpenAI, plus a ChatGPT sign-in and any OpenAI-compatible endpoint (see [the next section](#custom-openai-compatible-endpoint)). You pay the provider directly for usage; on the Developer plan, that's the only model cost. During the 7-day trial your own keys are unlimited — see [Plans & Billing](/reference/plans-and-billing/).
 
 1. Open **Settings** (**⋮** menu in the sidebar toolbar → **Settings**).
+
+   ![Dassi's side panel with the three-dot menu open. The menu button in the top-right toolbar is outlined and labelled 1; the Settings item at the top of the menu is outlined and labelled 2.](/images/ollama-open-settings.png)
+
 2. Click **Models** in the left nav, then expand **API KEYS** — it's collapsed by default, so the provider list isn't visible until you click it.
+
+   ![Dassi's settings page on the Models tab. Models in the left nav is outlined and labelled 1; the collapsed API KEYS section heading near the bottom is outlined and labelled 2.](/images/ollama-models-api-keys.png)
+
 3. Find the provider's card, paste your key, and click **Save**. Dassi checks the key with a small billable request before saving, so an unfunded or free-tier key fails here rather than mid-task.
 4. Pick a model from the picker in chat. Every model the key can reach shows up under that provider.
 

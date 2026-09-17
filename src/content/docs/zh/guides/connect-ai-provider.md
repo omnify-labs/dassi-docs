@@ -38,7 +38,13 @@ dassi 支持多种 AI 模型。你可以使用托管额度（默认，无需设�
 Dassi 支持 OpenAI、Anthropic、Google、DeepSeek、xAI、Mistral、Groq、OpenRouter、Moonshot、Novita 和 Azure OpenAI 的 API key，也支持 ChatGPT 账号登录和任何 OpenAI 兼容的接口（见[下一节](#自定义openai-兼容端点)）。模型用量直接付给服务商；在 Developer 套餐上，这就是全部的模型费用。7 天试用期内，用自己的 key 不限量——见[套餐与计费](/zh/reference/plans-and-billing/)。
 
 1. 打开 **Settings**（侧栏工具栏的 **⋮** 菜单 → **Settings**）。
+
+   ![dassi 侧栏，三点菜单已展开。右上角工具栏的菜单按钮标为 1；菜单顶部的 Settings 项标为 2。](/images/ollama-open-settings.png)
+
 2. 点左侧导航的 **Models**，再展开 **API KEYS**——它默认是折叠的，不点开看不到服务商列表。
+
+   ![dassi 设置页的 Models 标签。左侧导航的 Models 标为 1；底部附近折叠的 API KEYS 区域标题标为 2。](/images/ollama-models-api-keys.png)
+
 3. 找到对应服务商的卡片，粘贴 key，点 **Save**。Dassi 会先用一个极小的计费请求验证 key，所以没有余额或免费档的 key 会在这一步失败，而不是任务跑到一半才报错。
 4. 在聊天里的模型选择器中选模型。这个 key 能用的模型都会列在该服务商下面。
 
