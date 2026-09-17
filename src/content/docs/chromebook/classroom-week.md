@@ -15,7 +15,7 @@ Google Classroom shows what's due, but across several classes it's a lot of scro
 
 New to Dassi? Follow the [installation guide](/getting-started/installation/) and the [Chromebook guide](/chromebook/).
 
-Open Google Classroom and go to the **To-do** page (from the menu at the top left, or at classroom.google.com/a/not-turned-in/all). Make sure you're signed in with the account that's enrolled in your classes. Open Dassi with **Alt+Shift+D**.
+Open Google Classroom and go to the **To-do** page (from the menu at the top left, or open [classroom.google.com/a/not-turned-in/all](https://classroom.google.com/a/not-turned-in/all)). Make sure you're signed in with the account that's enrolled in your classes. Open Dassi with `Alt+Shift+D`.
 
 Decide where you want the checklist: in the chat, or in a new Google Doc you can keep open all week. The prompt below asks for both.
 

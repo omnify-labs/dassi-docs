@@ -15,7 +15,7 @@ You want to buy one specific thing and you'd like to know where it's cheapest on
 
 New to Dassi? Follow the [installation guide](/getting-started/installation/) and the [Chromebook guide](/chromebook/).
 
-Create a new, empty Google Sheet and keep it open in Chrome. Open Dassi with **Alt+Shift+D**. Have the product name ready as precisely as you can — a model number beats a description, because the whole point is comparing the same item.
+Create a new, empty Google Sheet and keep it open in Chrome. Open Dassi with `Alt+Shift+D`. Have the product name ready as precisely as you can — a model number beats a description, because the whole point is comparing the same item.
 
 Pick three stores you'd actually buy from. Dassi will open them in new tabs; on a Chromebook with 4 GB of memory, close any tabs you don't need first so those new ones have room.
 

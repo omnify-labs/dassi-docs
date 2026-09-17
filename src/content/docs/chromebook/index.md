@@ -25,7 +25,7 @@ Not much, but a few things are worth knowing.
 
 **Models.** Dassi uses AI models in the cloud, so the Chromebook only has to run the browser. Managed credits work out of the box; you can also [connect your own API key](/guides/connect-ai-provider/). Running a local model through Ollama, which some people do on a desktop, isn't practical on a Chromebook — it needs more memory than most models have and a Linux container to run in.
 
-**Keyboard.** **Alt+Shift+D** opens the Dassi panel. Chromebooks have no Command key, so anywhere the docs say Cmd, use Ctrl.
+**Keyboard.** `Alt+Shift+D` opens the Dassi panel. Chromebooks have no Command key, so anywhere the docs say Cmd, use Ctrl.
 
 **Files.** Dassi works with Google Docs, Sheets, and Gmail in the browser, which is where most Chromebook work already lives. Anything Dassi downloads goes to the Files app like any other Chrome download.
 

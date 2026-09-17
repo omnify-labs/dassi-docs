@@ -15,7 +15,7 @@ You have notes — from a lecture, a meeting, a phone call — typed fast and ou
 
 New to Dassi? Follow the [installation guide](/getting-started/installation/) and the [Chromebook guide](/chromebook/).
 
-Open the Google Doc that holds your notes in Chrome, then open Dassi alongside it with **Alt+Shift+D**. If the notes are somewhere else — a text file, an email — paste them into a new Google Doc first so Dassi has one page to read.
+Open the Google Doc that holds your notes in Chrome, then open Dassi alongside it with `Alt+Shift+D`. If the notes are somewhere else — a text file, an email — paste them into a new Google Doc first so Dassi has one page to read.
 
 Decide two things before you run the prompt: who the finished document is for, and roughly how long it should be. Both change how Dassi organizes the material.
 
