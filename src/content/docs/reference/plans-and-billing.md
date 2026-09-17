@@ -1,27 +1,27 @@
 ---
 title: Plans & Billing
-description: dassi pricing plans — Free, BYOK, Starter, Pro, and Max.
+description: dassi pricing plans — the 7-day trial, Developer, Starter, Pro, and Max.
 ---
 
-dassi offers a free tier and several paid options. All plans include full browser automation capabilities.
+Every account starts with a 7-day trial, and after that there are several paid options. All plans include full browser automation capabilities.
 
 ## Plans
 
-| | Free | BYOK | Starter | Pro | Max |
+| | Trial (7 days) | Developer | Starter | Pro | Max |
 |---|---|---|---|---|---|
 | **Price** | $0 | $10/mo | $25/mo | $100/mo | $300/mo |
 | **Managed credits** | $5 one-time | — | Included | Included | Included |
-| **Models** | Gemini 3 Pro, 3.5 Flash | OpenAI models | All models | All models | All models |
+| **Models** | Gemini 3 Pro, 3.5 Flash, plus your own key | Any supported provider (your key) | All models | All models | All models |
 | **Custom skills** | yes | yes | yes | yes | yes |
 | **Priority support** | — | — | — | yes | yes |
 
-### Free
+### Trial — 7 days
 
-Try dassi at no cost. New accounts get a one-time $5 in managed credits — no credit card — to spend on Gemini 3 Pro and Gemini 3.5 Flash. Good for trying dassi before committing to a paid plan.
+Every new account gets a 7-day trial, no credit card. It includes a one-time $5 in managed credits to spend on Gemini 3 Pro and Gemini 3.5 Flash, plus unlimited use of your own API key. The trial starts the first time you open dassi. When it ends, both stop — pick a plan to keep going.
 
-### BYOK — $10/month
+### Developer — $10/month
 
-Bring your own OpenAI API key. You pay OpenAI directly for model usage, and dassi charges $10/month for platform access. Available OpenAI models include GPT-5, GPT-5 Mini, and GPT-5 Nano.
+Bring your own API key — OpenAI, Anthropic, Google, and other supported providers, or any OpenAI-compatible endpoint. You pay the provider directly for model usage, and dassi charges $10/month for the extension. No managed credits are included.
 
 See [AI Models & Providers](/guides/connect-ai-provider/) for setup instructions.
 
@@ -60,7 +60,7 @@ Managed credits cover the cost of AI model usage. Each message you send uses cre
 - The complexity of the task (longer conversations use more credits)
 - Screenshot and page content processing
 
-Paid-plan credits refresh monthly with your billing cycle; the Free tier's $5 is a one-time credit that doesn't refresh. You can track your usage in **Settings > Plan**.
+Paid-plan credits refresh monthly with your billing cycle; the trial's $5 is a one-time credit that doesn't refresh and expires with the trial. You can track your usage in **Settings > Plan**.
 
 ## Managing your subscription
 

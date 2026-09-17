@@ -1,27 +1,27 @@
 ---
 title: 套餐与计费
-description: dassi 的定价套餐——Free、BYOK、Starter、Pro 和 Max。
+description: dassi 的定价套餐——7 天试用、Developer、Starter、Pro 和 Max。
 ---
 
-dassi 提供免费档和几种付费选项。所有套餐都包含完整的浏览器自动化能力。
+每个账号都从 7 天试用开始，之后有几种付费选项。所有套餐都包含完整的浏览器自动化能力。
 
 ## 套餐
 
-| | Free | BYOK | Starter | Pro | Max |
+| | 试用（7 天） | Developer | Starter | Pro | Max |
 |---|---|---|---|---|---|
 | **价格** | $0 | $10/月 | $25/月 | $100/月 | $300/月 |
 | **托管额度** | 一次性 $5 | — | 包含 | 包含 | 包含 |
-| **模型** | Gemini 3 Pro、3.5 Flash | OpenAI 模型 | 全部模型 | 全部模型 | 全部模型 |
+| **模型** | Gemini 3 Pro、3.5 Flash，以及你自己的 key | 任意支持的服务商（你的 key） | 全部模型 | 全部模型 | 全部模型 |
 | **自定义技能** | 是 | 是 | 是 | 是 | 是 |
 | **优先支持** | — | — | — | 是 | 是 |
 
-### Free
+### 试用 — 7 天
 
-免费试用 dassi。新账号一次性获得 $5 托管额度——不需要信用卡——可用于 Gemini 3 Pro 和 Gemini 3.5 Flash。适合在选购付费套餐之前先试试。
+每个新账号都有 7 天试用，不需要信用卡。试用包含一次性 $5 托管额度（可用于 Gemini 3 Pro 和 Gemini 3.5 Flash），以及不限量使用你自己的 API key。试用从你第一次打开 dassi 时开始计算；到期后两者都会停止——选一个套餐继续使用。
 
-### BYOK — $10/月
+### Developer — $10/月
 
-使用你自己的 OpenAI API key。模型用量直接付给 OpenAI，dassi 每月收取 $10 的平台使用费。可用的 OpenAI 模型包括 GPT-5、GPT-5 Mini 和 GPT-5 Nano。
+使用你自己的 API key——OpenAI、Anthropic、Google 等支持的服务商，或任何 OpenAI 兼容的接口。模型用量直接付给服务商，dassi 每月收取 $10 的扩展使用费。不包含托管额度。
 
 设置步骤见[模型与服务商](/zh/guides/connect-ai-provider/)。
 
@@ -60,7 +60,7 @@ dassi 提供免费档和几种付费选项。所有套餐都包含完整的浏�
 - 任务的复杂度（更长的对话消耗更多额度）
 - 截图和页面内容的处理
 
-付费套餐的额度随计费周期每月刷新；Free 档的 $5 是一次性额度，不会刷新。可以在 **Settings > Plan** 查看用量。
+付费套餐的额度随计费周期每月刷新；试用的 $5 是一次性额度，不会刷新，并随试用到期而失效。可以在 **Settings > Plan** 查看用量。
 
 ## 管理订阅
 
