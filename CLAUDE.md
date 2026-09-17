@@ -32,6 +32,7 @@ All docs live in `src/content/docs/`:
 - `getting-started/` — Installation and quick start
 - `guides/` — the **Features** section: one page per feature (directory keeps its original name; the sidebar label is "Features")
 - `tutorials/` — the **Use cases** section: task-based walkthroughs with practice pages (directory keeps its original name; the sidebar label is "Use cases")
+- `chromebook/` — the Chromebook hub (`index.md`, listed under **Features**) and its use cases (listed under **Use cases**). Kept as its own top-level route so the URL leads with the keyword and matches `dassi.ai/chromebook/`; `tutorial-attribution.ts` treats `/chromebook/<id>` as a tutorial.
 - `zh/` — Simplified Chinese translations, mirroring the root layout
 
 ## Languages

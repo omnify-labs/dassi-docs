@@ -25,10 +25,11 @@ export function rememberCampaign(search: string, storage?: Pick<Storage, 'getIte
 }
 
 export function pageContext(path: string) {
-  const match = path.match(/^\/(zh\/)?tutorials(?:\/([^/]+))?\/?$/);
+  const match = path.match(/^\/(zh\/)?(tutorials|chromebook)(?:\/([^/]+))?\/?$/);
+  const tutorialId = match ? match[3] || 'index' : 'none';
   return {
     page_path: path,
-    tutorial_id: match ? match[2] || 'index' : 'none',
+    tutorial_id: match && match[2] === 'chromebook' ? `chromebook-${tutorialId}` : tutorialId,
     content_language: path.startsWith('/zh/') ? 'zh' : 'en',
     is_tutorial: Boolean(match),
   };
