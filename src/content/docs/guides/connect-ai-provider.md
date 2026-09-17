@@ -35,25 +35,14 @@ The default model is **Gemini 3.5 Flash**. You can switch models in **Settings**
 
 ## Bring your own key (BYOK)
 
-If you prefer to use your own OpenAI API key:
+Dassi accepts API keys from OpenAI, Anthropic, Google, DeepSeek, xAI, Mistral, Groq, OpenRouter, Moonshot, Novita, and Azure OpenAI, plus a ChatGPT sign-in and any OpenAI-compatible endpoint (see [the next section](#custom-openai-compatible-endpoint)). You pay the provider directly for usage; on the Developer plan, that's the only model cost. During the 7-day trial your own keys are unlimited — see [Plans & Billing](/reference/plans-and-billing/).
 
-1. Open **Settings** (**⋮** menu in the sidebar toolbar → **Settings**)
-2. Select **BYOK** as the billing mode
-3. Enter your **OpenAI API key**
-4. Choose a model:
+1. Open **Settings** (**⋮** menu in the sidebar toolbar → **Settings**).
+2. Click **Models** in the left nav, then expand **API KEYS** — it's collapsed by default, so the provider list isn't visible until you click it.
+3. Find the provider's card, paste your key, and click **Save**. Dassi checks the key with a small billable request before saving, so an unfunded or free-tier key fails here rather than mid-task.
+4. Pick a model from the picker in chat. Every model the key can reach shows up under that provider.
 
-| Model | Description |
-|-------|-------------|
-| GPT-5 | Most capable OpenAI model |
-| GPT-5 Mini | Balanced performance and cost |
-| GPT-5 Nano | Fastest, most affordable |
-
-### Getting an OpenAI API key
-
-1. Sign up at [platform.openai.com](https://platform.openai.com)
-2. Navigate to **API Keys** in your account settings
-3. Click **Create new secret key**
-4. Copy the key and paste it in dassi's settings
+Keys are stored in your browser and sent only to the provider they belong to. You can connect more than one provider and switch between them from the model picker.
 
 ## Custom (OpenAI-compatible) endpoint
 

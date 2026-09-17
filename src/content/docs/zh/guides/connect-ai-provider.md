@@ -35,25 +35,14 @@ dassi 支持多种 AI 模型。你可以使用托管额度（默认，无需设�
 
 ## 使用自己的 key（BYOK）
 
-如果你想用自己的 OpenAI API key：
+Dassi 支持 OpenAI、Anthropic、Google、DeepSeek、xAI、Mistral、Groq、OpenRouter、Moonshot、Novita 和 Azure OpenAI 的 API key，也支持 ChatGPT 账号登录和任何 OpenAI 兼容的接口（见[下一节](#自定义openai-兼容端点)）。模型用量直接付给服务商；在 Developer 套餐上，这就是全部的模型费用。7 天试用期内，用自己的 key 不限量——见[套餐与计费](/zh/reference/plans-and-billing/)。
 
-1. 打开 **Settings**（侧栏工具栏的 **⋮** 菜单 → **Settings**）
-2. 计费模式选 **BYOK**
-3. 输入你的 **OpenAI API key**
-4. 选择模型：
+1. 打开 **Settings**（侧栏工具栏的 **⋮** 菜单 → **Settings**）。
+2. 点左侧导航的 **Models**，再展开 **API KEYS**——它默认是折叠的，不点开看不到服务商列表。
+3. 找到对应服务商的卡片，粘贴 key，点 **Save**。Dassi 会先用一个极小的计费请求验证 key，所以没有余额或免费档的 key 会在这一步失败，而不是任务跑到一半才报错。
+4. 在聊天里的模型选择器中选模型。这个 key 能用的模型都会列在该服务商下面。
 
-| 模型 | 说明 |
-|-------|-------------|
-| GPT-5 | OpenAI 能力最强的模型 |
-| GPT-5 Mini | 性能与成本均衡 |
-| GPT-5 Nano | 最快、最便宜 |
-
-### 获取 OpenAI API key
-
-1. 在 [platform.openai.com](https://platform.openai.com) 注册
-2. 进入账户设置中的 **API Keys**
-3. 点击 **Create new secret key**
-4. 复制 key，粘贴到 dassi 的设置里
+Key 保存在你的浏览器里，只会发给它所属的服务商。可以同时连接多个服务商，在模型选择器里切换。
 
 ## 自定义（OpenAI 兼容）端点
 
