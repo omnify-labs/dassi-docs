@@ -46,6 +46,9 @@ Dassi 支持 OpenAI、Anthropic、Google、DeepSeek、xAI、Mistral、Groq、Ope
    ![dassi 设置页的 Models 标签。左侧导航的 Models 标为 1；底部附近折叠的 API KEYS 区域标题标为 2。](/images/ollama-models-api-keys.png)
 
 3. 找到对应服务商的卡片，粘贴 key，点 **Save**。Dassi 会先用一个极小的计费请求验证 key，所以没有余额或免费档的 key 会在这一步失败，而不是任务跑到一半才报错。
+
+   <!-- TODO: screenshot — 展开后的服务商卡片，含 key 输入框和 Save 按钮 -->
+
 4. 在聊天里的模型选择器中选模型。这个 key 能用的模型都会列在该服务商下面。
 
 Key 保存在你的浏览器里，只会发给它所属的服务商。可以同时连接多个服务商，在模型选择器里切换。
@@ -62,7 +65,7 @@ Key 保存在你的浏览器里，只会发给它所属的服务商。可以同�
 ### 连接步骤
 
 1. 打开 **Settings**（侧栏工具栏的 **⋮** 菜单 → **Settings**），进入 **Models**
-2. 展开 **API keys** 区域，滚动到底部的 **Custom (OpenAI-compatible)** 卡片，点击 **Add endpoint**
+2. 展开 **API KEYS** 区域，滚动到底部的 **Custom (OpenAI-compatible)** 卡片，点击 **Add endpoint**
 3. 输入端点的 **Base URL** — 比如 Azure 是 `https://my-resource.openai.azure.com/openai/v1`，本地 Ollama 是 `http://localhost:11434`
 4. 输入 **Model ID** — 服务器要求的准确标识，如 `gpt-4o`、`llama3.2` 或 `mistral-7b`。这一项可选：留空的话 dassi 会列出端点上报的模型，让你在聊天里选
 5. 如果服务器需要，输入 **API key**。不需要鉴权的服务器（LM Studio、Ollama、vLLM）可以留空
