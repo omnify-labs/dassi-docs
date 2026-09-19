@@ -14,7 +14,7 @@ No API key is required to get started — dassi includes managed credits out of 
 
 ## Install from Chrome Web Store
 
-1. Visit the [dassi Chrome Web Store page](https://chromewebstore.google.com/detail/dassi-ai-browser-agent/bjcngahpcjeililljmfegmlanlpgibdi)
+1. Visit the [dassi Chrome Web Store page](https://dassi.ai/install?utm_source=docs&utm_medium=installation)
 2. Click **Add to Chrome**
 3. Confirm the installation when prompted
 
