@@ -7,6 +7,22 @@ Stay up to date with the latest dassi features, improvements, and fixes.
 
 ---
 
+## v0.77.0
+
+### A new Lite plan for eligible accounts
+
+Some accounts now see **Lite**, a $10/month plan with managed credits included — no API key needed. It's offered automatically to accounts dassi detects as eligible based on location; there's no manual way to opt in, and it doesn't show up on the public pricing page. If your account qualifies, you'll see it next to Starter and Pro under the **Monthly** toggle in **Settings → Plan & Billing**. [See Plans & Billing](/reference/plans-and-billing/#lite--10month)
+
+### Upgrade prompts go straight to the right checkout
+
+Hitting an upgrade prompt inside dassi now opens checkout for the plan that actually fits your account instead of a generic plans page: your own billing management if you're already subscribed, Developer checkout if you're using your own API key, and otherwise Lite or Starter checkout depending on eligibility. The "bring your own key" plan is now labeled **Developer** throughout dassi, rather than BYOK. [Learn more](/reference/plans-and-billing/#upgrading-from-a-prompt-inside-dassi)
+
+### Didn't finish checkout? You'll get a reminder
+
+If you start checkout and don't complete payment, dassi now emails your account's verified address about an hour later with a link to pick up where you left off, from any device. You'll get at most one reminder a day, and none if you've already subscribed another way or unsubscribed from checkout reminders. [Learn more](/reference/plans-and-billing/#if-you-dont-finish-checkout)
+
+---
+
 ## v0.39.0
 
 ### Task dashboard at app.dassi.ai
