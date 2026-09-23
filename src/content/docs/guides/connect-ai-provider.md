@@ -13,7 +13,7 @@ Available models depend on your plan:
 
 | Model | Free credit | Paid plans |
 |-------|-----------|------------|
-| Gemini 3.5 Flash | yes | yes |
+| Gemini 3.8 Flash | yes | yes |
 | Gemini 3 Pro | yes | yes |
 | Claude Haiku 4.5 | — | yes |
 | Claude Sonnet 4.5 | — | yes |
@@ -22,11 +22,11 @@ Available models depend on your plan:
 | DeepSeek V3.2 | — | yes |
 | GLM 4.7 | — | yes |
 
-The default model is **Gemini 3.5 Flash**. You can switch models in **Settings** at any time.
+The default model is **Gemini 3.8 Flash**. You can switch models in **Settings** at any time.
 
 ### Choosing a model
 
-- **Gemini 3.5 Flash** — fast and cost-efficient. Good all-around default choice
+- **Gemini 3.8 Flash** — fast and cost-efficient. Good all-around default choice
 - **Gemini 3 Pro** — strong general-purpose model, good for complex reasoning
 - **Claude Sonnet 4.5** — excellent for writing, analysis, and complex reasoning
 - **Claude Haiku 4.5** — fastest response times, good for simple tasks
