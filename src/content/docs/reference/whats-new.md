@@ -7,6 +7,14 @@ Stay up to date with the latest dassi features, improvements, and fixes.
 
 ---
 
+## v0.93.2
+
+### Clearer message when a free trial isn't available
+
+Each device gets one free trial. If you sign in to a new account on a device that already used its trial, Dassi now says so in the side panel instead of showing a generic credit or paywall error. The notice has **Switch account** (to sign back in to the account you used before and reach any remaining credits), **View plans**, and **Contact support** if you think it's a mistake. The **Plan** tab in Settings also marks the trial as unavailable.
+
+---
+
 ## v0.39.0
 
 ### Task dashboard at app.dassi.ai
