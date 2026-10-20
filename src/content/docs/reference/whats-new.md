@@ -7,6 +7,22 @@ Stay up to date with the latest dassi features, improvements, and fixes.
 
 ---
 
+## v0.97.0
+
+### Guided setup for connecting an AI app to your Chrome
+
+The `/connect` page on dassi.ai now walks you through connecting an AI app, such as ChatGPT or Claude, to the Chrome where Dassi is installed. The same guided steps appear when an app asks for permission to use your browser.
+
+The page signs your Dassi extension in with the account you're already using on the site, sets up Dassi's managed models if your account has them, and then asks you to turn on browser access. You approve the app yourself with a click, and nothing is enabled behind your back. If you already chose an account or a model provider in the extension, setup keeps your choices. If you open the page before installing Dassi, it picks up where you left off as soon as the extension is installed.
+
+Setup ends with a quick check: the AI app asks your browser to read a short code from a page, and the setup page confirms it came back. That way you know the whole path works, not just the first step.
+
+On a phone, setup can email you the setup link at your verified address, so you can finish on a computer that's connected. You can also see the status of a task and cancel it from the page.
+
+Tasks only start when your browser has checked in within the last three minutes, so a closed or sleeping Chrome shows up as disconnected instead of silently hanging. A task that your browser doesn't pick up within two minutes expires. Retrying a request won't create a duplicate task.
+
+---
+
 ## v0.39.0
 
 ### Task dashboard at app.dassi.ai
