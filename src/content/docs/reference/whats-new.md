@@ -7,6 +7,49 @@ Stay up to date with the latest dassi features, improvements, and fixes.
 
 ---
 
+## v0.99.2
+
+### One account across the website, app, and extension
+
+The app now has a shared account menu in the top-right corner, with a single sign-in dialog. Your plan and publishing use the same website account, so signing in once covers all three. Signing out in one place signs you out everywhere. Existing app sessions carry over, so you won't need to sign in again after updating.
+
+### Buy plans from the app
+
+[app.dassi.ai/plan](https://app.dassi.ai/plan) lets you compare personal and Team plans without installing the extension or signing in. When you're ready, pay or manage your subscription in Stripe and you'll return to the same page.
+
+### Plan availability follows your country
+
+Whether you can buy Lite, Starter, Pro, or Max now depends on the country you're buying from, not on your interface language. If your language is set to Chinese and you're outside China, you can buy managed plans. Lite also has a CN¥70 option. [See Plans & Billing](/reference/plans-and-billing/)
+
+### Buy Lite once, and see how you'll pay
+
+Where one-time purchases are available (India today), the Lite card has **Buy once · 30 days**. It gives you 30 days of Lite with no renewal, and you can buy again to extend. The **Buy once** button now shows your payment method: UPI in India, WeChat Pay and Alipay in China. One-time checkout also says plainly that it won't renew.
+
+If you hold a one-time plan, subscriptions below it are disabled until it ends, with a note saying when they become available.
+
+### Inactive teams stay out of your personal billing
+
+In **Plan & Billing**, your personal plan now comes first. A team with no current subscription shows as a compact **Inactive team** card with an optional **Set up billing** button. Members, pending invitations, and past usage stay manageable.
+
+### Tasks keep running when you close the side panel
+
+Closing the side panel no longer interrupts a task. Reopen it to see the same progress or the finished result. **Stop** and closing the task's tab group still cancel it. If you close the last tab in the group, the task stops and History explains why.
+
+### Live status card in the conversation
+
+A compact card now shows what the current task is doing or waiting for. Open **Details** to see active tasks and finished steps, or click **Stop** to interrupt. The card replaces the separate running activity feed. The branch selector, **Continue from here**, and **Fresh context** controls are gone; your stored history is unchanged.
+
+### Smaller improvements
+
+- The toolbar's gift icon is now a labeled **Invite** button. Its tooltip shows the referral reward.
+- Chrome's `Failed to fetch` model errors now retry automatically instead of ending the task. Completed tool results are kept, and **Stop** cancels the wait.
+- When Chrome blocks dragging a local file onto a page, Dassi explains the restriction and suggests a file-input upload instead.
+- Configured MCP servers can now list and read resources.
+- The out-of-credit notice shows the next plan up with its price in your billing currency.
+- The CLI can save a local HTML and JSON report of a delegated task with `result <task-id> --output-dir <folder>` or `run --wait <duration> --output-dir <folder>`. Reports include the answer, conversation, tool calls, screenshots, and generated files.
+
+---
+
 ## v0.39.0
 
 ### Task dashboard at app.dassi.ai
