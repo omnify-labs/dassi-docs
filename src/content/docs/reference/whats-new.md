@@ -7,6 +7,14 @@ Stay up to date with the latest dassi features, improvements, and fixes.
 
 ---
 
+## v0.101.2
+
+### Clearer plan picker and Legacy badge
+
+The plan picker in Settings is now headed **Pricing plans**. If you're on a plan with your original billing terms, a **Legacy** badge now appears beside the plan name. Your current price and credits are kept while you stay on that plan. Switching plans or billing periods uses current pricing and replaces your legacy allowance.
+
+---
+
 ## v0.39.0
 
 ### Task dashboard at app.dassi.ai
