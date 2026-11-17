@@ -7,6 +7,18 @@ Stay up to date with the latest dassi features, improvements, and fixes.
 
 ---
 
+## v0.103.5
+
+### A new welcome page after you install
+
+Installing dassi now opens a welcome page at [app.dassi.ai](https://app.dassi.ai). If you're signed out, you sign in right on the page with Google or an email code, and then the getting-started guide appears in your workspace.
+
+The guide walks you through setup with screenshots of the real side panel, including how to pin the extension. It keeps its progress in sync with the extension, so steps check off as you finish them. You don't have to finish setup first: the starter tasks are available right away, and you can skip to your workspace whenever you like.
+
+One starter task reads the top stories on Hacker News and saves a brief to Google Docs. Dassi opens a tab and the side panel for you and starts the task. If it can't, the page shows an error you can retry instead of marking the step done. Older `/installed` links still land on the same page.
+
+---
+
 ## v0.39.0
 
 ### Task dashboard at app.dassi.ai
