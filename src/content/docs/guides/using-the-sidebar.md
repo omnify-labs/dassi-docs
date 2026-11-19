@@ -10,6 +10,8 @@ The dassi sidebar is your main interface for interacting with the AI agent.
 - **Click the dassi icon** in your Chrome toolbar
 - **Press `Alt+Shift+D`** to toggle the sidebar open
 
+The sidebar is shared across the tabs in a browser window. Switching to another tab or opening a new one keeps the same sidebar and the same selected task, so it doesn't reload. If you close it, it stays closed until you open it again. Each browser window remembers its own task and whether the sidebar is open.
+
 ## Layout
 
 The sidebar has three main areas:
@@ -52,6 +54,8 @@ The bottom bar is where you type messages:
 Each Chrome tab group has its own independent conversation. When dassi opens new tabs during a task, they join the same tab group and share the conversation context.
 
 To start a fresh conversation, click the **trash icon** in the toolbar. This clears the current session's history.
+
+New task groups open in the same window as the tab they started from, even if that window is in the background. When you ask about the page you're looking at, dassi follows your current tab without moving the conversation to it.
 
 If the sidebar closes or Chrome restarts, your active conversation is preserved. When you reopen the sidebar on the same tab, dassi picks up right where you left off.
 

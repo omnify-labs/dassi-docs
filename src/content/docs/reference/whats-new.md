@@ -7,6 +7,28 @@ Stay up to date with the latest dassi features, improvements, and fixes.
 
 ---
 
+## v0.103.9
+
+### One sidebar per browser window
+
+The sidebar now stays open as you switch tabs. Opening or switching tabs keeps the same sidebar and the same selected task, and closing it keeps it closed until you open it again from the toolbar icon. Each browser window keeps its own task and open or closed state.
+
+New task groups stay in the window of the tab they started from, instead of Chrome moving a background-window tab into the window you're focused on. Questions about the page you're viewing follow your current tab without changing which task owns the conversation, and voice dictation continues the current window's conversation. [Learn more](/guides/using-the-sidebar/)
+
+### Sign-in keeps your first message
+
+If you send a message or attach a page before signing in, it's saved through sign-in and the extension reload, then sent once you're connected. Cancelling removes it, and logging out or switching accounts never carries it over.
+
+### Plan & Billing improvements
+
+Plan & Billing shows all eligible personal plans in one horizontally scrolling row, so **See all plans** and **Show fewer plans** are gone. Quick upgrade now offers the same plans as Plan & Billing for your region. [See Plans & Billing](/reference/plans-and-billing/)
+
+### History errors are recoverable
+
+If conversation history can't be read, dassi now shows a retry action instead of an empty list. Bug reports also include a small storage health log (IDs, timestamps, and error types only, never conversation text) to help diagnose these problems.
+
+---
+
 ## v0.39.0
 
 ### Task dashboard at app.dassi.ai
